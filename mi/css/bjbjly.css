@@ -1,0 +1,178 @@
+.top{
+	width: 100%;
+	height: 50px;
+	background: #333333;
+}
+.top .top-nav{
+	height: 50px;
+	width: 700px;
+	float: left;
+	margin-left: 11%;
+}
+.top .top-nav .top-list{
+	list-style: none;
+}
+.top .top-nav .top-list .top-list-detail{
+	display: inline-block;
+	color: #b0b0b0;
+	font-size: 12px;
+	line-height: 50px;
+}
+.top .top-nav .top-list .top-list-detail a{
+	color: #b0b0b0;
+	text-decoration: none;
+}
+.top .top-nav .top-list .top-list-detail a:hover{
+	color: white;
+}
+.top .top-cart{
+	width: 150px;
+	height: 50px;
+	float: right;
+	background: #424242;
+	margin-right: 12%;
+	color: #b0b0b0;
+	position: relative;
+}
+.top .top-cart a{
+	font-size: 16px;
+	text-decoration: none;
+	color: #b0b0b0;
+	position: absolute;
+	top:14px;
+	left:46px;
+}
+.top .top-cart .iconfont{
+	font-size: 30px;
+	position: absolute;
+	top:9px;
+	left:16px;
+}
+.top .top-cart:hover{
+	background: #fff;
+}
+.top .top-cart:hover a{
+	color: tomato;
+}
+.top .top-cart:hover .iconfont{
+	color: tomato;
+}
+.top .top-user-info{
+	height: 50px;
+	float: right;
+}
+.top .top-user-info .user-info{
+	list-style: none;
+	margin-right: 35px;
+}
+.top .top-user-info .user-info .user-info-detail{
+	width: 60px;
+	height: 50px;
+	display: inline-block;
+	font-size: 12px;
+	color: #b0b0b0;
+	line-height: 50px;
+	text-align: center;
+}
+.top .top-user-info .user-info .user-info-detail:hover{
+	color: white;
+}
+.hed{
+	width: 100%;
+	height: 130px;
+	position: relative;
+}
+.hed .logo{
+	width: 60px;
+	height: 60px;
+	background: #ff6700;
+	position: absolute;
+	top:35px;
+	left: 11%;
+}
+.hed .logo img{
+	position: absolute;
+	top:5px;
+	left:5px;
+	cursor: pointer;
+}
+.hed .dh{
+	list-style: none;
+	position: absolute;
+	top:48px;
+	left:372px;
+}
+.hed .dh .dht{
+	display: inline-block;
+	font-size: 20px;
+	margin-right: 21px;
+}
+.bod .bod-list .img-qbjs{
+	width: 100%;
+	height: 780px;
+}
+.bod .bod-list .img-qbjs img{
+	width: 100%;
+	height: 100%;
+}
+.bod .bod-list{
+	width: 100%;
+	list-style: none;
+}
+.bod .bod-list .img-baokuan{
+	width: 100%;
+}
+.bod .bod-list .img-baokuan .bk{
+	color: #295b97;
+	font-size: 70px;
+	text-align: center;
+	line-height: 180px;
+}
+.bod .bod-list .img-baokuan .bk-shis{
+	height: 442px;
+	width: 1226px;
+	margin:0px auto;
+	position: relative;
+	transition: transform 0.2s linear 0s;
+}
+.bod .bod-list .img-baokuan .bk-shis:hover{
+	box-shadow: -1px 4px 8px 4px rgba(0,0,0,0.1);
+	transform: translateY(-5px);
+}
+.bod .bod-list .img-baokuan .bk-shis .bk-shis-text1{
+	position: absolute;
+	color: #474747;
+	font-size: 32px;
+	top:120px;
+	left:910px;
+}
+.bod .bod-list .img-baokuan .bk-shis .bk-shis-text2{
+	font-size: 16px;
+	position: absolute;
+	top:224px;
+	left:911px;
+	color: #707070;
+}
+.bod .bod-list .img-baokuan .bk-shis .bk-shis-text3{
+	font-size: 24px;
+	color: #ff6700;
+	position: absolute;
+	top:268px;
+	left:906px;
+}
+.bod .bod-list .img-baokuan .bk-shis .bk-shis-text4{
+	font-size: 16px;
+	position: absolute;
+	top:331px;
+	left:901px;
+	color: #707070;
+}
+.bod .bod-list .img-baokuan .bk-shis img{
+	height: 100%;
+}
+.bod .bod-list .img-sh{
+	width: 1226px;
+	height: 442px;
+	background: red;
+	margin: 5px auto;
+}
