@@ -177,8 +177,27 @@
 .bod .bod-list .img-sh{
 	width: 1226px;
 	height: 442px;
-	background: red;
 	margin: 5px auto;
+}
+.bod .bod-list .img-sh .img-sh1{
+	width: 610px;
+	height: 442px;
+	background: blue;
+	float: left;
+}
+.bod .bod-list .img-sh .img-sh1 img{
+	width: 100%;
+	height: 75%;
+}
+.bod .bod-list .img-sh .img-sh2{
+	width: 610px;
+	height: 442px;
+	background: yellow;
+	float: right;
+}
+.bod .bod-list .img-sh .img-sh2 img{
+	width: 100%;
+	height: 75%;
 }
 .hed .search{
 	float: right;
