@@ -251,6 +251,48 @@
 	width: 100%;
 	height: 75%;
 }
+.bod .bod-list .img-if .img-if-list .img-if-txt1{
+	font-size: 24px;
+    position: absolute;
+    top: 374px;
+    left: 45px;
+}
+.bod .bod-list .img-if .img-if-list .img-if-txt2{
+	font-size: 16px;
+    color: grey;
+    position: absolute;
+    top: 404px;
+    left: 64px;
+}
+.bod .bod-list .img-if .img-if-list .img-if-txt3{
+	color: #ff6700;
+    font-size: 32px;
+    font-weight: lighter;
+    position: absolute;
+    top: 385px;
+    left: 430px;
+}
+.bod .bod-list .img-if .img-mx .img-mx-txt1{
+	font-size: 24px;
+    position: absolute;
+    top: 374px;
+    left: 45px;
+}
+.bod .bod-list .img-if .img-mx .img-mx-txt2{
+	font-size: 16px;
+    color: grey;
+    position: absolute;
+    top: 404px;
+    left: 64px;
+}
+.bod .bod-list .img-if .img-mx .img-mx-txt3{
+	color: #ff6700;
+    font-size: 32px;
+    font-weight: lighter;
+    position: absolute;
+    top: 385px;
+    left: 430px;
+}
 .hed .search{
 	float: right;
 	width: 296px;
@@ -438,9 +480,11 @@
 }
 .footer{
 	height: 300px;
+	position: relative;
 }
 .footer .service{
 	border-bottom: 1px solid #e0e0e0;
+	margin:0px auto;
 }
 .footer .service .service-item{
 	float: left;
@@ -448,6 +492,8 @@
 	height: 16px;
 	padding: 30px 0;
 	text-align: center;
+	list-style: none;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .footer .service .service-item a{
 	display: inline-block;
@@ -472,6 +518,14 @@
 	padding: 40px 0;
 	margin-right: 105px;
 }
+.footer .links{
+	position: absolute;
+	top:100px;
+	left:370px;
+}
+.footer .service .service-item a{
+	text-decoration: none;
+}
 .footer .links .links-item dt{
 	font-size: 14px;
 	color: #424242;
@@ -484,6 +538,10 @@
 }
 .footer .links .links-item dd a:hover{
 	color: #ff6700;
+}
+.footer .links .links-item dd a{
+	text-decoration: none;
+	color: grey;
 }
 .footer .links .links-contact{
 	float: right;
@@ -540,8 +598,8 @@
 	background: #ff6700;
 	margin-top: 22px;
 	position: absolute;
-	top:7px;
-	left:372px;
+	top:27px;
+	left:370px;
 }
 .end .info .logo a{
 	display: block;
@@ -555,8 +613,8 @@
 .end .a1-item{
 	width: 900px;
 	position: absolute;
-	top:6px;
-	left:433px;
+	top:25px;
+	left:430px;
 }
 .end .a1-item a{
 	text-decoration: none;
@@ -565,8 +623,8 @@
 	color: #757575;
 	font-size: 10px;
 	position: absolute;
-	top:44px;
-	left:438px;
+	top:60px;
+	left:430px;
 }
 .end .a1 .icp a{
 	text-decoration: none;
@@ -589,17 +647,15 @@
 .end .a1-item a:last-child{
 	border-right: none;
 }
-.end .a2-item{
-	color: #bbbbbb;
-}
 .end .a2-item a:hover{
 	color: #ff6700;
 }
 .end .a2-item{
 	float: right;
 	position: absolute;
-	top: 20px;
-	right: 150px;
+	top: 72px;
+	right: 163px;
+	color: #bbbbbb;
 }
 .end .a2-item img{
 	height: 28px;
