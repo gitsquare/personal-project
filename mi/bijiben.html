@@ -24,7 +24,11 @@
 				<li class="top-list-detail"><a href="#">Select Region</a></li>
 			</ul>
 		</div>
-		<div class="top-cart"><i class="iconfont icon-xiazai1"></i><a href="#">购物车（0）</a></div>
+		<div class="top-cart">
+			<i class="iconfont icon-xiazai1"></i>
+			<a href="#">购物车（0）</a>
+			<div class="xuangou">购物车中还没商品，赶紧选购吧！</div>
+		</div>
 		<div class="top-user-info">
 			<ul class="user-info">
 				<li class="user-info-detail">登录</li><span>|</span>
@@ -34,13 +38,32 @@
 		</div>
 	</section>
 	<header class="hed">
-		<div class="logo">
+		<div class="logo" title="小米官网">
+			<i class="iconfont icon-home"></i>
 			<img src="images/logo.png" alt="">
 		</div>
 		<ul class="dh">
-			<li class="dht">全部商品分类</li>
-			<li class="dht">小米手机</li>
-			<li class="dht">红米</li>
+			<li class="dht" onmouseover="document.getElementById('fl').style.display='block';"
+							onmouseout="document.getElementById('fl').style.display='none';">
+				全部商品分类</li>
+			<ul id="fl">
+				<li class="flt">手机 电话卡<i class="iconfont icon-arrow-right"></i></li>
+				<li class="flt">电视 盒子<i class="iconfont icon-arrow-right"></i></li>
+				<li class="flt">笔记本 平板<i class="iconfont icon-arrow-right"></i></li>
+				<li class="flt">家电 插线板<i class="iconfont icon-arrow-right"></i></li>
+				<li class="flt">出行 穿戴<i class="iconfont icon-arrow-right"></i></li>
+				<li class="flt">智能 路由器<i class="iconfont icon-arrow-right"></i></li>
+				<li class="flt">电源 配件<i class="iconfont icon-arrow-right"></i></li>
+				<li class="flt">健康 儿童<i class="iconfont icon-arrow-right"></i></li>
+				<li class="flt">耳机 音响<i class="iconfont icon-arrow-right"></i></li>
+				<li class="flt">生活 箱包<i class="iconfont icon-arrow-right"></i></li>
+			</ul>
+			<li class="dht" onmouseover="document.getElementById('bod-xm').style.display='block';"
+							onmouseout="document.getElementById('bod-xm').style.display='none';" >小米手机
+			</li>
+			<li class="dht" onmouseover="document.getElementById('hm').style.display='block';"
+							onmouseout="document.getElementById('hm').style.display='none';" >红米
+			</li>
 			<li class="dht">电视</li>
 			<li class="dht">笔记本</li>
 			<li class="dht">空调</li>
@@ -59,24 +82,43 @@
 					<a class="search-hot-words-item" href="#">小米8</a>
 					<a class="search-hot-words-item" href="#">小米MIX 2S</a>
 				</div>	
-					<div class="search-keyword-list">
-						<ul>
-							<li class="keyword-item"><a href="#"><span class="keyword">小米6X</span><span class="num">约有6件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">小米MIX 2S</span><span class="num">约有5件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">黑鲨游戏手机</span><span class="num">约有3件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">红米Note 5</span><span class="num">约有6件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">红米5A</span><span class="num">约有13件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">小米电视4C</span><span class="num">约有5件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">电视32英寸</span><span class="num">约有3件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">笔记本pro</span><span class="num">约有5件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">空气净化器</span><span class="num">约有11件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">净水器</span><span class="num">约有8件</span></a></li>
-						</ul>
+				<div class="search-keyword-list">
+					<ul>
+						<li class="keyword-item"><a href="#"><span class="keyword">小米6X</span><span class="num">约有6件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">小米MIX 2S</span><span class="num">约有5件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">黑鲨游戏手机</span><span class="num">约有3件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">红米Note 5</span><span class="num">约有6件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">红米5A</span><span class="num">约有13件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">小米电视4C</span><span class="num">约有5件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">电视32英寸</span><span class="num">约有3件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">笔记本pro</span><span class="num">约有5件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">空气净化器</span><span class="num">约有11件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">净水器</span><span class="num">约有8件</span></a></li>
+					</ul>
 				</div>
 			</div>	
 		</div>	
 	</header>
 	<section class="bod">
+		<div id="hm">
+			<ul class="hml">
+				<li class="hml-detail"><span class="hmjg">799元</span><span class="hmsj">红米手机</span><span class="xphm">新品</span><img src="images/hm.png" alt=""></li>
+				<li class="hml-detail"><span class="hmjg">799元</span><span class="hmsj">红米手机</span><span class="xphm">新品</span><img src="images/hm.png" alt=""></li>
+				<li class="hml-detail"><span class="hmjg">799元</span><span class="hmsj">红米手机</span><span class="xphm">新品</span><img src="images/hm.png" alt=""></li>
+				<li class="hml-detail"><span class="hmjg">799元</span><span class="hmsj">红米手机</span><span class="xphm">新品</span><img src="images/hm.png" alt=""></li>
+				<li class="hml-detail"><span class="hmjg">799元</span><span class="hmsj">红米手机</span><span class="xphm">新品</span><img src="images/hm.png" alt=""></li>
+			</ul>
+		</div>
+		<div id="bod-xm">
+			<ul class="xmsj">
+			<li class="xmsj-list"><span class="jg">3900元起</span><span class="sxt">小米摄像头</span><span class="xp">新品</span><img src="images/ca.png" alt=""></li>
+			<li class="xmsj-list"><span class="jg">3900元起</span><span class="sxt">小米摄像头</span><span class="xp">新品</span><img src="images/ca.png" alt=""></li>
+			<li class="xmsj-list"><span class="jg">3900元起</span><span class="sxt">小米摄像头</span><span class="xp">新品</span><img src="images/ca.png" alt=""></li>
+			<li class="xmsj-list"><span class="jg">3900元起</span><span class="sxt">小米摄像头</span><span class="xp">新品</span><img src="images/ca.png" alt=""></li>
+			<li class="xmsj-list"><span class="jg">3900元起</span><span class="sxt">小米摄像头</span><span class="xp">新品</span><img src="images/ca.png" alt=""></li>
+			<li class="xmsj-list"><span class="jg">3900元起</span><span class="sxt">小米摄像头</span><span class="xp">新品</span><img src="images/ca.png" alt=""></li>
+		</ul>
+		</div>
 		<ul class="bod-list">
 			<li class="img-qbjs">
 				<img src="images/ad4.png" alt="">
@@ -110,6 +152,7 @@
 				</div>
 			</li>
 			<li class="img-bd">
+				<p class="img-bd-bk">潮流风向 新品推荐</p>
 				<div class="img-bd-list">
 					<p class="img-bd-text1">13.3"笔记本 四核i7<br>
 						8G 256G MX150
