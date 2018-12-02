@@ -115,7 +115,7 @@
 	top:5px;
 	left:6px;
 	cursor: pointer;
-	transition: transform 0.2s linear 0s;
+	transition: transform 0.1s linear 0s;
 }
 .hed .logo:hover img{
 	transform: translateX(46px);
@@ -126,7 +126,7 @@
 	position: absolute;
 	top:11px;
 	left:-28px;
-	transition: transform 0.2s ease-in-out 0s;
+	transition: transform 0.1s ease-in-out 0s;
 }
 .hed .logo:hover .iconfont{
 	display: block;
@@ -562,7 +562,8 @@
 	text-decoration: none;
 }
 .hed .search .search-keyword-list .keyword-item:hover{
-	background: #eee;
+	background: #ff6700;
+
 }
 .hed .keyword{
 	color: #333;
@@ -745,6 +746,7 @@
 	line-height: 30px;
 	border: 1px solid #ff6700;
 	background-color: #fff;
+	text-decoration: none;
 }
 .footer .links .links-contact .call a i,
 .footer .links .links-contact .call a{

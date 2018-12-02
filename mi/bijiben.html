@@ -43,10 +43,8 @@
 			<img src="images/logo.png" alt="">
 		</div>
 		<ul class="dh">
-			<li class="dht" onmouseover="document.getElementById('fl').style.display='block';"
-							onmouseout="document.getElementById('fl').style.display='none';">
-				全部商品分类</li>
-			<ul id="fl">
+			<li class="dht" onmouseover="appear()" onmouseout="disAppear()">全部商品分类</li>
+			<ul id="fl" onmouseover="flappear()" onmouseout="fldisappear()">
 				<li class="flt">手机 电话卡<i class="iconfont icon-arrow-right"></i></li>
 				<li class="flt">电视 盒子<i class="iconfont icon-arrow-right"></i></li>
 				<li class="flt">笔记本 平板<i class="iconfont icon-arrow-right"></i></li>
@@ -58,12 +56,8 @@
 				<li class="flt">耳机 音响<i class="iconfont icon-arrow-right"></i></li>
 				<li class="flt">生活 箱包<i class="iconfont icon-arrow-right"></i></li>
 			</ul>
-			<li class="dht" onmouseover="document.getElementById('bod-xm').style.display='block';"
-							onmouseout="document.getElementById('bod-xm').style.display='none';" >小米手机
-			</li>
-			<li class="dht" onmouseover="document.getElementById('hm').style.display='block';"
-							onmouseout="document.getElementById('hm').style.display='none';" >红米
-			</li>
+			<li class="dht" onmouseover="xxs()"onmouseout="xss()" >小米手机</li>
+			<li class="dht" onmouseover="xsxs()"onmouseout="sxsx()" >红米</li>
 			<li class="dht">电视</li>
 			<li class="dht">笔记本</li>
 			<li class="dht">空调</li>
@@ -162,7 +156,7 @@
 					</p>
 					<span class="img-bd-text3">5799元</span>
 					<span class="img-bd-text4">了解产品<i class="iconfont icon-arrow-right"></i></span>
-					<img src="images/bk.png" alt="">
+					<img src="images/ad8.png" alt="">
 				</div>				
 			</li>
 			<li class="img-if">
@@ -170,13 +164,13 @@
 					<p class="img-if-txt1">13.3'四核i7 MX150</p>
 					<p class="img-if-txt2">带独立显卡的轻薄笔记本</p>
 					<span class="img-if-txt3">5999元</span>
-					<img src="images/ad5.png" alt="">
+					<img src="images/ad9.png" alt="">
 				</div>
 				<div class="img-mx">
 					<p class="img-mx-txt1">13.3'八代i3 集显</p>
 					<p class="img-mx-txt2">轻薄全金属机身, 8G内存</p>
 					<span class="img-mx-txt3">3999元</span>
-					<img src="images/ad6.png" alt="">
+					<img src="images/ad7.png" alt="">
 				</div>	
 			</li>
 			<li class="img-is-mx"></li>
@@ -284,4 +278,14 @@
 			</div>	
 		</section>
 </body>
+<script src="js/jsjly.js">
+	/*function appear(){
+		var xs = document.getElementById('fl');
+		xs.style.display="block";
+	}
+	function disAppear(){
+		var cx = document.getElementById('fl');
+		cx.style.display="none";
+	}*/
+</script>
 </html>
