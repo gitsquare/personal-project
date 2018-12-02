@@ -207,7 +207,7 @@
 		width: 2466px;
 		height: 300px;
 		float: left;
-		animation: sport 1s linear 3s;
+		animation: sport 5s linear infinite 3s;
 }
 
 	@keyframes sport{
@@ -321,12 +321,10 @@ height: 750px;
 	background: #fff;
 }
 .main .bottom .box .list-name{
-	/*margin-top: 10px;*/
 	margin-bottom: 20px;
 }
 .service{
 	width: 100%;
-	height: 1000px;
 	margin-top: 50px;
 }
 .box1{
@@ -342,3 +340,161 @@ height: 750px;
 	height: 750px;
 	background-color: purple;
 }
+.end{
+	height: 300px;
+}
+.end .service{
+	border-bottom: 1px solid #e0e0e0;
+}
+.end .service .service-item{
+	float: left;
+	width: 20%;
+	height: 16px;
+	padding: 30px 0;
+	text-align: center;
+}
+.end .service .service-item a{
+	display: inline-block;
+	width: 100%;
+	font-size: 16px;
+	color: #616161;
+	border-right: 1px solid #e0e0e0;
+}
+.end .service .service-item a:hover:hover{
+	color: #ff6700;
+}
+.end .service .service-item:last-child a{
+	border: none;
+}
+.end .service .service-item a i{
+	font-size: 22px;
+	margin-right: 8px;
+	vertical-align: -4px;
+}
+.end .links .links-item{
+	float: left;
+	padding: 40px 0;
+	margin-right: 105px;
+}
+.end .links .links-item dt{
+	font-size: 14px;
+	color: #424242;
+	margin-bottom: 26px;
+}
+.end .links .links-item dd{
+	font-size: 12px;
+	color: #757575;
+	margin-bottom: 16px;
+}
+.end .links .links-item dd a:hover{
+	color: #ff6700;
+}
+.end .links .links-contact{
+	float: right;
+	width: 246px;
+	height: 117px;
+	margin: 40px 0;
+	text-align: center;
+	border-left: 1px solid #e0e0e0;
+}
+.end .links .links-contact .phone-nub{
+	font-size: 22px;
+	color: #ff6700;
+}
+.end .links .links-contact .work-time,
+.end .links .links-contact .desc{
+	font-size: 12px;
+	color: #616161;
+}
+.end .links .links-contact .desc{
+	margin-bottom: 16px;
+}
+.end .links .links-contact .call a{
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ff6700;
+	background-color: #fff;
+}
+.end .links .links-contact .call a i,
+.end .links .links-contact .call a{
+	font-size: 12px;
+	color: #ff6700;
+}
+.end .links .links-contact .call a i{
+	margin-right: 3px;
+}
+.end .links .links-contact .call a:hover{
+	background-color: #ff6700;
+	color: #fff;
+}
+.end .links .links-contact .call a:hover i{
+	color: #fff;
+}
+
+.footer{
+	height: 148px;
+	width: 100%;
+	position: relative;
+}
+.footer .info .logo{
+	float: left;
+	height: 55px;
+	width: 55px;
+	background: #ff6700;
+	margin-top: 22px;
+}
+.footer .info .logo a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(../imgzsc/logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -100em;
+}
+.footer .a1-item{
+	width: 900px;
+}
+.footer .a1 .icp{
+	color: #757575;
+	font-size: 10px;
+}
+.footer .a1 .icp a:hover{
+	color: #ff6700;
+}
+.footer .a1-item a{
+	display: inline-block;
+	font-size: 10px;
+	margin-top: 20px;
+	color: #757575;
+	padding-right: 5px;
+	border-right: 1px solid #e0e0e0;
+}
+.footer .a1-item a:hover{
+	color: #ff6700;
+}
+.footer .a1-item a:last-child{
+	border-right: none;
+}
+.footer .a2-item{
+	color: #bbbbbb;
+}
+.footer .a2-item a:hover{
+	color: #ff6700;
+}
+.footer .a2-item{
+	float: right;
+	position: absolute;
+	top: 20px;
+	right: 150px;
+}
+.footer .a2-item img{
+	height: 28px;
+}
+.footer .foot{
+	height: 40px;
+	background-image: url(../imgzsc/slogan.png);
+	background-repeat: no-repeat;
+	background-position:center bottom ;
