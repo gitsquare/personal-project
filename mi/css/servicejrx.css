@@ -1,3 +1,33 @@
+/*共同样式*/
+.webfont{
+	font-size: 30px;
+	margin-top: 30px;
+	color: #666;
+	text-align: center;
+	line-height: 106px;
+}
+.transi-up{
+	float: left;
+	position: relative;
+	height: 277px;
+	width: 296px;
+	margin: 0 14px 18px 0;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: -13px -15px;
+	text-align: center;
+	transition: all 0.7s;
+}
+.transi-up:hover{
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+	transform: translateY(-8px);
+}
+
+
+
+
+
+
 /*顶部区域开始*/
 	.top{
 		height: 40px;
@@ -257,23 +287,86 @@
 	display: inline-block;
 }
 .carousel .controls .controls-list a{
-	float: left;
-	display: block;
-	width: 6px;
-	height: 6px;
-	margin: 0 5px;
-	border: 2px solid rgba(0,0,0,0.4);
-	border-radius: 10px;
-	text-align: center;
-	overflow: hidden;
-}
-.carousel .controls .controls-list a{
 	background: rgba(255,255,255,0.4);
 }
 .carousel .controls .controls-list a:hover{
 	background: rgba(0,0,0,0.4);
 	border-color: rgba(255,255,255,0.3);
 }
+
+.index-fquestion .fquestion .transi-up:hover h3,
+.index-fquestion .fquestion .transi-up:hover span{
+	color: #ff6700;
+}
+.index-fquestion .fquestion .transi-up{
+	background-image: url(../images/selfservice_icon_01.png) ;
+}
+.index-fquestion .fquestion .transi-up{
+	float: left;
+	position: relative;
+	height: 277px;
+	width: 296px;
+	margin: 0 14px 18px 0;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: -13px -15px;
+	text-align: center;
+	transition: all 0.7s;
+}
+.index-fquestion .fquestion .transi-up:nth-child(4),
+.index-fquestion .fquestion .transi-up:nth-child(8){
+	margin-right: 0;
+}
+.index-fquestion .fquestion .transi-up a{
+	display: block;
+	height: 100%;
+	color: #757575;
+}
+.index-fquestion .fquestion .transi-up a img{
+	margin-top: 76px;
+	width: 66px;
+	height: 66px;
+}
+.index-fquestion .fquestion .transi-up a h3{
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 46px;
+	opacity: 0.8;
+}
+.index-fquestion .fquestion .transi-up a span{
+	display: block;
+	font-size: 14px;
+	line-height: 14px;
+}
+.index-goods .transi-up{
+	height: 287px;
+}
+.transi-up:nth-child(4),
+.transi-up:nth-child(8){
+	margin-right: 0;
+}
+.index-goods .transi-up:hover span{
+	color: #ff6700;
+}
+.index-goods .transi-up a{
+	display: inline-block;
+	color: #424242;
+	width: 100%;
+	height: 180px;
+}
+.index-goods .transi-up a img{
+	margin: 45px auto 0; 
+	width: 180px;
+	height: 180px;
+}
+.index-goods .transi-up a span{
+	display: block;
+	color: #666;
+	font-size: 16px;
+	line-height: 28px;
+}
+
 .footer{
 	height: 300px;
 }
