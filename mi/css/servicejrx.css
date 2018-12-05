@@ -417,9 +417,106 @@
 .index-center .right a:hover{
 	color: #ff6700;
 }
-
-
-
+.index-needhelp h2{
+	margin-top: 50px;
+}
+.index-needhelp .search-wrap{
+	position: relative;
+	width: 646px;
+	height: 50px;
+	margin: 0 auto 50px;
+	background-color: #fff;
+}
+.index-needhelp .search-wrap .search-content{
+	width: 567px;
+	height: 48px;
+	padding: 0 52px 0 27px;
+	color: #000;
+	border: none;
+	outline: 0;
+}
+.index-needhelp .search-wrap .search-btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 52px;
+	height: 50px;
+	color: #616161;
+	font-size: 24px;
+	text-align: center;
+	line-height: 50px;
+	transition: all 0.2s;
+}
+.index-needhelp .search-wrap .search-btn:hover{
+	background: #ff6700;
+}
+.index-needhelp .search-wrap .search-btn:hover .iconfont{
+	color: #fff;
+}
+.index-needhelp .content{
+	background: #fff;
+}
+.index-needhelp .content .tab-title li{
+	float: left;
+	width: 14.28%;
+	color: #333;
+	font-size: 18px;
+	line-height: 66px;
+	text-align: center;
+	border-bottom: 1px solid #f5f5f5;
+}
+.index-needhelp .content .tab-title li.active{
+	color: #fff;
+	background: #ff6700;
+	border-bottom: 1px solid #f60;
+}
+.index-needhelp .content .tab-title li:hover{
+	color: #fff;
+	background: #ff6700;
+	border-bottom: 1px solid #f60;
+} 
+.index-needhelp .content .tab-content .per{
+	padding: 30px 0 16px 0;
+	text-align: center;
+}
+.index-needhelp .content .tab-content .per li{
+	float: left;
+	width: 44%;
+	margin-left: 6%;
+	color: #e2e2e2;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	list-style: disc;
+}
+.index-needhelp .content .tab-content .per li a{
+	/*float: left;*/
+	display: block;
+	width: 87%;
+	color: #000;
+	font-size: 16px;
+	opacity: 0.87;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: left;
+	overflow: hidden;
+}
+.index-needhelp .content .tab-content .per li:hover{
+	color: #ff6700;
+}
+.index-needhelp .content .tab-content .per li:hover a{
+	color: #ff6700;
+}
+.index-needhelp .content .tab-content .per>a{
+	display: block;
+	font-size: 16px;
+	color: #000;
+	opacity: 0.5;
+}
+.index-needhelp .content .tab-content .per>a:hover{
+	color: #ff6700;
+	opacity: 1;
+}
 .footer{
 	height: 300px;
 }
