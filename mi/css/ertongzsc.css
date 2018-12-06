@@ -70,9 +70,31 @@
 	line-height: 40px;
 	text-align: center;
 }
+.top .cart .cart-box:hover .box1{
+	display: block;
+	transform: translateY(-1px);
+	box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+	height: 100px;
+
+}
 .top .cart .cart-box .icon-cart{
 	font-size: 20px;
 	vertical-align: -4px;
+}
+.top .cart .cart-box .box1{
+	width: 320px;
+	height: 100px;
+	position: absolute;
+	top:40px;
+	right: 175px;
+	text-align: center;
+	line-height: 100px;
+	z-index: 2;
+	color: #424242;
+	display: none;
+	background-color: #fff;
+	transition: all 0.3s ;
+	transition-property: height 1s;
 }
 .top .cart .cart-box a:hover{
 	background: #fff;
