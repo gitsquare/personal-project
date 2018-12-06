@@ -65,6 +65,27 @@
 	background: #fff;
 	color: #ff6700;
 }
+.top .cart .cart-box .box1{
+	width: 320px;
+	height: 100px;
+	position: absolute;
+	top:40px;
+	right: 102px;
+	text-align: center;
+	line-height: 100px;
+	z-index: 2;
+	color: #424242;
+	display: none;
+	background-color: #fff;
+	transition: all 0.3s ;
+	transition-property: height 1s;
+}
+.top .cart .cart-box:hover .box1{
+	display: block;
+	transform: translateY(-1px);
+	box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+	height: 100px;
+}
 .header{
 	height: 100px;
 	position: relative;
@@ -141,7 +162,7 @@
 	margin-left: 50px;
 }
 .header .header-nav .header-nav-item .box .box1:first-child{
-	margin-left: 215px
+	margin-left: 100px
 }
 .header .header-nav .header-nav-item .box .box1 .box2{
 	width: 205px;
