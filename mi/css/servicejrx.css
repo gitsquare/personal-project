@@ -517,6 +517,39 @@
 	color: #ff6700;
 	opacity: 1;
 }
+.index-contact .contact-wrap li{
+	width: 400px;
+	margin: 0 13px 17px 0;
+	cursor: pointer;
+}
+.index-contact .contact-wrap li:nth-child(3),
+.index-contact .contact-wrap li:nth-child(6){
+	margin-right: 0;
+}
+.index-contact .contact-wrap li a{
+	display: block;
+	width: 100%;
+	height: 100px;
+}
+.contact-wrap li .content{
+	padding-top: 117px;
+	color: #000;
+	font-size: 18px;
+	text-align: center;
+	opacity: 0.87;
+}
+.contact-wrap li .content span{
+	position: relative;
+	top: -14px;
+	margin-left: 20px;
+}
+
+
+
+
+
+
+
 .footer{
 	height: 300px;
 }
