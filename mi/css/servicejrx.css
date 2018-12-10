@@ -94,7 +94,7 @@
 		display: block;
 		width: 100%;
 		height: 100%;
-		background-image: url(../images/logo.png);
+		background-image: url(../imagesjrx/logo.png);
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 		text-indent: -999em;
@@ -313,7 +313,7 @@
 		color: #ff6700;
 	}
 	.index-fquestion .fquestion .transi-up{
-		background-image: url(../images/selfservice_icon_01.png) ;
+		background-image: url(../imagesjrx/selfservice_icon_01.png) ;
 	}
 	.index-fquestion .fquestion .transi-up{
 		float: left;
@@ -680,7 +680,7 @@
 		height: 57px;
 		margin-right: 10px;
 		background-color: #ff6700;
-		background-image: url(../images/logo.png);
+		background-image: url(../imagesjrx/logo.png);
 		background-repeat: no-repeat;
 		background-position: center center;
 	}
@@ -719,7 +719,7 @@
 	}
 	.end2 .slogan{
 		height: 60px;
-		background-image: url(../images/slogan.png);
+		background-image: url(../imagesjrx/slogan.png);
 		background-repeat: no-repeat;
 		background-position: center bottom;
 	}
