@@ -479,6 +479,7 @@
 		top: 0px;
 		left: 0px;
 		height: 100%;
+		transition: all 0.5s;
 	}
 	.home .banner .carousel .arrow{
 		position: absolute;
@@ -523,7 +524,8 @@
 		border-radius: 50%;
 		cursor: pointer;
 	}
-	.home .banner .carousel .carousel-btn li:hover{
+	.home .banner .carousel .carousel-btn li:hover,
+	.home .banner .carousel .carousel-btn li.active{
 		background: #fcf9f0;
 		border-color: #979590;
 	}
