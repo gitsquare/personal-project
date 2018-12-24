@@ -1,3 +1,33 @@
+//购物车
+var oCart = document.querySelector('.top .cart');
+var oCartLink = document.querySelector('.top .cart .cart-box a');
+var oCartContent = document.querySelector('.top .cart .cart-content');
+var oLoader = oCartContent.querySelector('.loader');
+var oEmptyCart = oCartContent.querySelector('.empty-cart');
+oCart.onmouseenter = function(){
+	oCartLink.style.backgroundColor = '#fff';
+	oCartLink.style.color = '#ff6700';
+	oLoader.style.display = 'block';
+	//显示购物车内容，假设购物车完全显示就获取到了购物车数据
+	animate(oCartContent,{height:100},true,function(){
+		oLoader.style.display = 'none';
+		oEmptyCart.style.display = 'block';
+	});
+}
+oCart.onmouseleave = function(){
+	oCartLink.style.backgroundColor = '#424242';
+	oCartLink.style.color = '#b0b0b0';
+	animate(oCartContent,{height:0},true);
+	oLoader.style.display = 'none';
+	oEmptyCart.style.display = 'none';
+}
+
+
+
+
+
+
+
 /*轮播图*/
 	var aImg = document.querySelectorAll('.carousel-imgs-item');
 	var oLeftArrow = document.querySelector('.left-arrow');

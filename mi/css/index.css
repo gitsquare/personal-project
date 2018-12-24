@@ -265,6 +265,7 @@
 	}
 	.top .cart{
 		float: right;
+		position: relative;
 		width: 120px;
 		background: #424242;
 	}
@@ -279,14 +280,33 @@
 		font-size: 20px;
 		vertical-align: -4px;
 	}
-	.top .cart .cart-box a:hover{
-		background: #fff;
-		color: #ff6700;
+	.top .cart .cart-content{
+		position: absolute;
+		top: 40px;
+		right: 0;
+		width: 300px;
+		height: 0;
+		z-index: 999;
+		text-align: center;
+		background-color: #fff;
+		box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+		overflow: hidden;
+	}
+	.top .cart .cart-content .loader{
+		display: none;
+		margin-top: 40px;
+	}
+	.top .cart .cart-content .empty-cart{
+		display: none;
+		margin-top: 40px;
+		font-size: 12px;
+		font-weight: 400;
 	}
 /*顶部区域结束*/
 
 /*导航区域开始*/
 	.header{
+		position: relative;
 		height: 100px;
 	}
 	.header .logo{
@@ -321,6 +341,53 @@
 	}
 	.header .header-nav .header-nav-item a:hover{
 		color: #ff6700;
+	}
+	.header .header-nav-content{
+		position: absolute;
+		top: 100px;
+		width: 100%;
+		height: 230px;
+		border-top: 1px solid #ccc;
+		z-index: 1000;
+		background-color: #fff;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+	}
+	.header .header-nav-content li{
+		position: relative;
+		float: left;
+		width: 200px;
+		height: 100%;
+		text-align: center;
+
+	}
+	.header .header-nav-content li .img-box{
+		width: 100%;
+		height: 100px;
+		margin-top: 30px;
+		border-right: 1px solid #ccc;
+	}
+	.header .header-nav-content li .img-box img{
+		width: 100px;
+		height: 100%;
+	}
+	.header .header-nav-content .product-name{
+		font-size: 12px;
+	}
+	.header .header-nav-content .product-price{
+		font-size: 12px;
+		color: #ff6700;
+	}
+	.header .header-nav-content .tag{
+		position: absolute;
+		top: -1px;
+		left: 50%;
+		width: 70px;
+		height: 20px;
+		line-height: 20px;
+		color: #ff6700;
+		margin-left: -35px;
+		border: 1px solid #ff6700;
+		text-align: center;
 	}
 	.header .search{
 		position: relative;
