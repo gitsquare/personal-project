@@ -1,9 +1,12 @@
 
+
+
 handleCart();
+handleNav();
 handleCarousel();
 handleTime();
 
-/*购物车*/
+//处理购物车
 	function handleCart(){
 		var oCart = document.querySelector('.top .cart');
 		var oCartLink = document.querySelector('.top .cart .cart-box a');
@@ -29,64 +32,79 @@ handleTime();
 		}
 	}
 
-/*导航栏*/
+//处理导航栏
 	function handleNav(){
-
+		var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
+		var oNavContent = document.querySelector('.header .header-nav-content');
+		var oNavContentContainer = oNavContent.querySelector('.container');
+		var hideTimer = 0;
+		var loadTimer = 0;
+		for(var i = 0;i<aNavItem.length-2;i++){
+			aNavItem[i].index = i;
+			aNavItem[i].onmouseenter = function(){
+				clearTimeout(hideTimer);
+				oNavContent.style.borderTop = '1px solid #fff';
+				oNavContentContainer.innerHTML = '<div class="loader"></div>';
+				animate(oNavContent,{height:180},true,function(){
+					oNavContent.style.overflow = 'visible';
+				});
+				//模拟数据加载
+				var index = this.index;
+				//去除不必要的加载
+				clearTimeout(loadTimer);
+				var loadTimer = setTimeout(function(){
+					loadData(index);
+				},500)
+			}
+			aNavItem[i].onmouseleave = function(){
+				hideNavContent();
+			}
+		}
+		oNavContent.onmouseenter = function(){
+			clearTimeout(hideTimer);
+		}
+		oNavContent.onmouseleave = function(){
+			hideNavContent();
+		}
+		function hideNavContent(){
+			hideTimer = setTimeout(function(){
+				oNavContent.style.overflow = 'hidden';
+				animate(oNavContent,{height:0},true,function(){
+					oNavContent.style.borderTop = 'none';
+				})
+			},500)
+		}
+		function loadData(index){
+			var data = aNavItemDate[index];
+			var html = '<ul>';
+			for(var i = 0;i<data.length;i++){
+				html +=	'<li>';
+				html +=	'	<div class="img-box">';
+				html +=	'		<a href="#">';
+				html +=	'			<img src="imagesjrx/ph1.jpg" alt="">';
+				html +=	'		</a>';
+				html +=	'	</div>';
+				html +=	'	<p class="product-name">小米MIX3</p>';
+				html +=	'	<p class="product-price">3299元起</p>';
+				if(data[i].tag){
+					html +=	'<span class="tag">新品</span>';
+				}
+				html +=	'</li>';
+			}
+			html += '</ul>';
+			oNavContentContainer.innerHTML = html;
+		}
 	}
 
-
-
-
-
-
-/*轮播图*/
+//处理轮播图
 	function handleCarousel(){
-		var aImg = document.querySelectorAll('.carousel-imgs-item');
-		var oLeftArrow = document.querySelector('.left-arrow');
-		var oRightArrow = document.querySelector('.right-arrow');
-		var aBtn = document.querySelector('.carousel-btn').children;
-		var oCarousel = document.querySelector('.carousel');
-		var timer = 0;
-
-		var now = 0;
-		function tab(){
-			for(var i = 0;i<aImg.length;i++){
-				aImg[i].style.zIndex = '0';
-				aBtn[i].className = '';
-				aImg[i].style.opacity = '0';
-			}
-				aImg[now].style.zIndex = '99';
-				aBtn[now].className = 'active';
-				aImg[now].style.opacity = '1';
-		}
-		oRightArrow.onclick = function(){
-			now++;
-			if(now >= aImg.length){
-				now = 0;
-			}
-			tab();
-		}
-		oLeftArrow.onclick = function(){
-			now--;
-			if(now < 0){
-				now = aImg.length - 1;
-			}
-			tab();
-		}
-		for(var i = 0;i<aBtn.length;i++){
-			aBtn[i].index = i;
-			aBtn[i].onclick = function(){
-				now = this.index;
-				tab();
-			}
-		}
-		timer = setInterval(oRightArrow.onclick,5000);
-		oCarousel.onmouseover = function(){
-			clearInterval(timer);
-		}
-		oCarousel.onmouseout = function(){
-			timer = setInterval(oRightArrow.onclick,5000);
-		}
+		new Carousel({
+			id:'carousel',
+			aImg:['imagesjrx/b1.jpg','imagesjrx/b2.jpg','imagesjrx/b3.jpg'],
+			width:1226,
+			height:460,
+			playDuration:5000
+		});
 	}
 
 /*倒计时*/
@@ -115,6 +133,6 @@ handleTime();
 		timer = setInterval(tonow,1000);
 		tonow();
 	}
-
+	
 /*选项卡*/
 	

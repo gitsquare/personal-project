@@ -390,6 +390,9 @@
 		border: 1px solid #ff6700;
 		text-align: center;
 	}
+	.header .header-nav-content .loader{
+		margin-top: 50px;
+	}
 	.header .search{
 		position: relative;
 		float: right;
@@ -538,6 +541,7 @@
 	.home .banner .cate .cate-item i{
 		float: right;
 	}
+	/*
 	.home .banner .carousel{
 		position: relative;
 		height: 100%;
@@ -596,6 +600,57 @@
 	.home .banner .carousel .carousel-btn li.active{
 		background: #fcf9f0;
 		border-color: #979590;
+	}
+	*/
+	.home .banner .leftArrow,
+	.home .banner .rightArrow{
+		position: absolute;
+		top: 50%;
+		width: 40px;
+		height: 70px;
+		line-height: 70px;
+		margin-top: -30px;
+		font-size: 35px;
+		text-align: center;
+		color: #fff;
+		cursor: pointer;
+		user-select: none;
+	}
+	.home .banner .leftArrow{
+		left: 234px;
+	}
+	.home .banner .rightArrow{
+		right: 0;
+	}
+	.home .banner .leftArrow:hover,
+	.home .banner .rightArrow:hover{
+		background: rgba(0,0,0,0.4);
+	}
+	.home .banner .bottomBtn{
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+	}
+	.home .banner .bottomBtn li{
+		float: left;
+		width: 6px;
+		height: 6px;
+		border: 2px solid #fff;
+		border-color: rgba(255,255,255,0.3);
+		border-radius: 10px;
+		background-color: rgba(0,0,0,0.5);
+		margin-right: 5px;
+		cursor: pointer;
+	}
+	.home .banner .bottomBtn li.active{
+		background-color: rgba(255,255,255,0.4);
+		border-color: rgba(0,0,0,0.3);
+		color: #fff;
+	}
+	.home .banner .bottomBtn li:hover{
+		background-color: rgba(255,255,255,0.4);
+		border-color: rgba(0,0,0,0.3);
+		color: #fff;
 	}
 /*home-banner区域结束*/
 

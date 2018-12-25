@@ -115,3 +115,136 @@ function getScrollTop(){
 function getScrollLeft(){
 	return document.documentElement.scrollLeft || document.body.scrollLeft || window.pageXOffset;
 }
+
+function Carousel(options){
+	//1.罗列属性
+	this.oBox = document.getElementById(options.id);
+	this.aImg = options.aImg;
+	this.width = options.width;
+	this.height = options.height;
+	this.oLeftArrow = null;
+	this.oRightArrow = null;
+	this.oUlImg = null;
+	this.oUlBtn = null;
+	this.playDuration = options.playDuration;
+	this.now = 0;//当前显示的图片下标
+	//2.初始化DOM节点
+	this.init();
+	//3.绑定事件
+	this.bindEvent();
+	if(this.playDuration){
+		this.auto();
+	}
+}
+Carousel.prototype.init = function(){
+	//处理外层父容器
+	this.oBox.style.position = 'relative';
+	this.oBox.style.width = this.width + 'px';
+	this.oBox.style.height = this.height + 'px';
+	//1.生成图片的容器
+	this.oUlImg = document.createElement('ul');
+	//2.底部指示按钮
+	this.oUlBtn = document.createElement('ul');
+	this.oUlBtn.className = 'bottomBtn';
+	this.oUlBtn.style.zIndex = 99;
+	for(var i = 0;i<this.aImg.length;i++){
+		//图片容器
+		var oLi = document.createElement('li');
+		oLi.style.position = 'absolute';
+		oLi.style.left = 0;
+		oLi.style.top = 0;
+		//底部指示按钮
+		var oBtn = document.createElement('li');
+
+		if(i==0){
+			oLi.style.zIndex = 50;
+			oLi.style.opacity = 1;
+			oBtn.className = 'active';
+		}else{
+			oLi.style.zIndex = 0;
+			oLi.style.opacity = 0.5;
+		}
+		var oImg = document.createElement('img');
+		oImg.style.width = this.width + 'px';
+		oImg.style.height = this.height + 'px';
+		oImg.src = this.aImg[i];
+		oLi.appendChild(oImg);
+		this.oUlImg.appendChild(oLi);
+		this.oUlBtn.appendChild(oBtn);
+	}
+	//2.生成左右箭头
+	this.oLeftArrow = document.createElement('span');
+	this.oRightArrow = document.createElement('span');
+	this.oLeftArrow.className = 'leftArrow iconfont';
+	this.oRightArrow.className = 'rightArrow iconfont';
+	this.oLeftArrow.style.zIndex = 99;
+	this.oRightArrow.style.zIndex = 99;
+	this.oLeftArrow.innerHTML = '&#xe627;';
+	this.oRightArrow.innerHTML = '&#xe622;';
+
+	//添加图片的容器到外层父容器中
+	this.oBox.appendChild(this.oUlImg);
+	//添加箭头的容器到外层父容器中
+	this.oBox.appendChild(this.oLeftArrow);
+	this.oBox.appendChild(this.oRightArrow);
+	//添加底部指示按钮到外层父容器中
+	this.oBox.appendChild(this.oUlBtn);
+	// this.oUlBtn.style.marginLeft = - this.oUlBtn.offsetWidth * 0.5 + 'px';
+}
+
+Carousel.prototype.bindEvent = function(){
+	var _this = this;
+	//绑定右按钮
+	this.oRightArrow.onclick = function(){
+		
+		//2.显示下一张
+			_this.now++;
+			if(_this.now>=_this.aImg.length){
+				_this.now = 0;
+			}
+			_this.tab();
+			
+	}
+	//绑定左按钮
+	this.oLeftArrow.onclick = function(){
+		_this.now--;
+		if(_this.now < 0){
+				_this.now = _this.aImg.length - 1;
+			}
+		_this.tab();
+	}
+	//绑定底部指示按钮
+	for(var i = 0;i<this.oUlBtn.children.length;i++){
+		this.oUlBtn.children[i].index = i;
+		this.oUlBtn.children[i].onclick = function(){
+			_this.now = this.index;
+			_this.tab();
+		}
+	}
+}
+
+Carousel.prototype.tab = function(){
+	//1.清除所有
+	for(var i = 0;i<this.aImg.length;i++){
+		this.oUlImg.children[i].style.zIndex = 0;
+		this.oUlImg.children[i].style.opacity = 0.5;
+		this.oUlBtn.children[i].className = '';
+	}
+	//显示新的
+	this.oUlImg.children[this.now].style.zIndex = 50;
+	// this.oUlImg.children[this.now].style.opacity = 1;
+	animate(this.oUlImg.children[this.now],{opacity:100});
+	this.oUlBtn.children[this.now].className = 'active';
+}
+
+Carousel.prototype.auto = function(){
+	var timer = 0;
+	var _this = this;
+	timer = setInterval(this.oRightArrow.onclick,this.playDuration);
+	this.oBox.onmouseover = function(){
+		clearInterval(timer);
+	}
+	this.oBox.onmouseout = function(){
+		timer = setInterval(_this.oRightArrow.onclick,_this.playDuration);
+	}
+}
