@@ -4,6 +4,7 @@
 handleCart();
 handleNav();
 handleCarousel();
+handleCate();
 handleTime();
 
 //处理购物车
@@ -81,13 +82,13 @@ handleTime();
 				html +=	'<li>';
 				html +=	'	<div class="img-box">';
 				html +=	'		<a href="#">';
-				html +=	'			<img src="imagesjrx/ph1.jpg" alt="">';
+				html +=	'			<img src=" '+data[i].img+' " alt="">';
 				html +=	'		</a>';
 				html +=	'	</div>';
-				html +=	'	<p class="product-name">小米MIX3</p>';
-				html +=	'	<p class="product-price">3299元起</p>';
+				html +=	'	<p class="product-name">'+data[i].name+'</p>';
+				html +=	'	<p class="product-price">'+data[i].price+'</p>';
 				if(data[i].tag){
-					html +=	'<span class="tag">新品</span>';
+					html +=	'<span class="tag">'+data[i].tag+'</span>';
 				}
 				html +=	'</li>';
 			}
@@ -107,10 +108,58 @@ handleTime();
 		});
 	}
 
+//处理分类面板
+function handleCate(){
+	var aCateItem = document.querySelectorAll('.home .banner .cate .cate-item');
+	var oCateContent = document.querySelector('.home .banner .cate-content');
+	var oCateBox = document.querySelector('.home .banner .cate-box');
+
+	for(var i = 0;i<aCateItem.length;i++){
+		aCateItem[i].index = i;
+		aCateItem[i].onmouseenter = function(){
+			oCateContent.style.display = 'block';
+			for(var j = 0;j<aCateItem.length;j++){
+				aCateItem[j].className = 'cate-item';
+			}
+			this.className = 'cate-item active'
+			loadData(this.index);
+		}
+		oCateBox.onmouseleave = function(){
+			oCateContent.style.display = 'none';
+			for(var j = 0;j<aCateItem.length;j++){
+				aCateItem[j].className = 'cate-item';
+			}
+		}
+	}
+
+
+	/*<li>
+		<a href="#">
+			<img src="imagesjrx/small1.jpg" alt="">
+			<span>小米6X</span>
+		</a>
+	</li>*/
+	function loadData(index){
+			var data = aCateItemDate[index];
+			var html = '<ul>';
+			for(var i = 0;i<data.length;i++){
+				html +=	'<li>';
+				html +=	'	<a href="#">';
+				html +=	'		<img src="imagesjrx/ph1.jpg" alt="">';
+				html +=	'		<span></span>';
+				html +=	'	</a>';
+				html +=	'</li>';
+			}
+			html += '</ul>';
+			oNavContentContainer.innerHTML = html;
+		}
+}
+
+
 /*倒计时*/
 	function handleTime(){
 		var oTimeNum = document.querySelectorAll('.timer-num');
-		var endDate = new Date('2018-12-24 20:50:00');
+		var endDate = new Date('2018-12-25 20:50:00');
 		var endtimes = endDate.getTime();
 		var timer = 0
 		function to2Str(num){

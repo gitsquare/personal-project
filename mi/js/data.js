@@ -32,28 +32,58 @@ var aNavItemDate = [
 	[
 		{
 			url:'',
-			img:'imagesjrx/ph1.jpg',
+			img:'imagesjrx/ph3.jpg',
 			name:'小米MIX3',
 			price:'3299元',
-			tag:'新品'
+			tag:'热卖'
 		},
 		{
 			url:'',
-			img:'imagesjrx/ph1.jpg',
+			img:'imagesjrx/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
-			tag:'新品'
+			tag:'热卖'
 		},
 		{
 			url:'',
-			img:'imagesjrx/ph1.jpg',
+			img:'imagesjrx/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
-			tag:'新品'
+			tag:'热卖'
 		},
 		{
 			url:'',
-			img:'imagesjrx/ph1.jpg',
+			img:'imagesjrx/ph2.jpg',
+			name:'小米MIX3',
+			price:'3299元',
+			tag:'新品'
+		}
+	],
+	[
+		{
+			url:'',
+			img:'imagesjrx/ph3.jpg',
+			name:'小米MIX3',
+			price:'3299元',
+			tag:'热卖'
+		},
+		{
+			url:'',
+			img:'imagesjrx/ph2.jpg',
+			name:'小米MIX3',
+			price:'3299元',
+			tag:'热卖'
+		},
+		{
+			url:'',
+			img:'imagesjrx/ph2.jpg',
+			name:'小米MIX3',
+			price:'3299元',
+			tag:'热卖'
+		},
+		{
+			url:'',
+			img:'imagesjrx/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'新品'

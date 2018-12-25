@@ -528,7 +528,7 @@
 		color: #fff;
 		cursor: pointer;
 	}
-	.home .banner .cate .cate-item:hover{
+	.home .banner .cate .cate-item.active{
 		background: #ff6700;
 	}
 	.home .banner .cate .cate-item a{
@@ -540,6 +540,42 @@
 	}
 	.home .banner .cate .cate-item i{
 		float: right;
+	}
+	.home .banner .cate-content{
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 234px;
+		min-width: 500px;
+		height: 100%;
+		background-color: #fff;
+		box-sizing: border-box;
+		box-shadow: 0 2px 2px 2px rgba(0,0,0,0.15);
+		z-index: 9999;
+	}
+	.home .banner .cate-content li{
+		float: left;
+		width: 248px;
+		height: 76px;
+	}
+	.home .banner .cate-content li:hover span{
+		color: #ff6700;
+		transition: all 0.3s;
+	}
+	.home .banner .cate-content li a{
+		display: block;
+		padding: 18px 20px;
+		color: #333;
+	}
+	.home .banner .cate-content li a img{
+		width: 40px;
+		height: 40px;
+		vertical-align: middle;
+	}
+	.home .banner .cate-content li a span{
+		color: #333;
+		text-align: center;
+		font-size: 14px;
 	}
 	/*
 	.home .banner .carousel{
