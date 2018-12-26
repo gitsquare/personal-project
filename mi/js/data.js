@@ -93,3 +93,166 @@ var aNavItemDate = [
 	[],
 
 ]
+
+var aCateItemDate = [
+	[
+		{
+			url:'',
+			img:'imagesjrx/small1.jpg',
+			name:'红米6X'
+		},
+		{
+			url:'',
+			img:'imagesjrx/small1.jpg',
+			name:'红米7X'
+		}
+	],
+	[
+		{
+			url:'',
+			img:'imagesjrx/small1.jpg',
+			name:'红米7X'
+		},
+		{
+			url:'',
+			img:'imagesjrx/small1.jpg',
+			name:'红米7X'
+		}
+	]
+	
+]
+
+var aElecItemData = [
+	[
+		{
+			url:'',
+			img:'imagesjrx/p1.jpg',
+			name:'小米MX2 8GB+128GB 黑',
+			desc:'Unibody 全陶瓷',
+			price:'3699',
+			del:'4699',
+			flag:{
+				name:'off-flag',
+				content:'减800元'
+			},
+			view:{
+				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				author:'yonghu'
+			}
+		},
+		{
+			url:'',
+			img:'imagesjrx/p1.jpg',
+			name:'小米MX2 8GB+128GB 黑',
+			desc:'Unibody 全陶瓷',
+			price:'3699',
+			del:'4699',
+			flag:{
+				name:'off-flag',
+				content:'减800元'
+			},
+			view:{
+				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				author:'yonghu'
+			}
+		},
+		{
+			url:'',
+			img:'imagesjrx/p1.jpg',
+			name:'小米MX2 8GB+128GB 黑',
+			desc:'Unibody 全陶瓷',
+			price:'3699',
+			del:'4699',
+			flag:{
+				name:'off-flag',
+				content:'减800元'
+			},
+			view:{
+				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				author:'yonghu'
+			}
+		},
+		{
+			url:'',
+			img:'imagesjrx/p1.jpg',
+			name:'小米MX2 8GB+128GB 黑',
+			desc:'Unibody 全陶瓷',
+			price:'3699',
+			del:'4699',
+			flag:{
+				name:'off-flag',
+				content:'减800元'
+			},
+			view:{
+				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				author:'yonghu'
+			}
+		},
+		{
+			url:'',
+			img:'imagesjrx/p1.jpg',
+			name:'小米MX2 8GB+128GB 黑',
+			desc:'Unibody 全陶瓷',
+			price:'3699',
+			del:'4699',
+			flag:{
+				name:'off-flag',
+				content:'减800元'
+			},
+			view:{
+				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				author:'yonghu'
+			}
+		},
+		{
+			url:'',
+			img:'imagesjrx/p1.jpg',
+			name:'小米MX2 8GB+128GB 黑',
+			desc:'Unibody 全陶瓷',
+			price:'3699',
+			del:'4699',
+			flag:{
+				name:'off-flag',
+				content:'减800元'
+			},
+			view:{
+				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				author:'yonghu'
+			}
+		},
+		{
+			url:'',
+			img:'imagesjrx/p1.jpg',
+			name:'小米MX2 8GB+128GB 黑',
+			desc:'Unibody 全陶瓷',
+			price:'3699',
+			del:'4699',
+			flag:{
+				name:'off-flag',
+				content:'减800元'
+			},
+			view:{
+				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				author:'yonghu'
+			}
+		},
+		{
+			top:{
+				url:'',
+				img:'imagesjrx/ca.png',
+				name:'小米MX2 8GB+128GB 黑',
+				price:'3699',
+			},
+			bottom:{
+				url:'',
+				txt:'浏览更多',
+				tag:'热门',
+				icon:'&#xe615;'
+			}
+		}
+	],
+	[
+	
+	],
+]
+

@@ -73,7 +73,6 @@
 		font-size: 16px;
 		cursor: pointer;
 	}
-	.hd .more.tab .tab-item:hover,
 	.hd .more.tab .tab-item-active{
 		color: #ff6700;
 		border-bottom: 2px solid #ff6700;
@@ -821,6 +820,13 @@
 		text-align: center;
 		font-size: 20px;
 	}
+	.flash .bd .col2{
+		overflow: hidden;
+	}
+	.flash .bd .product-list{
+		width: 1956px;
+		transition: all 0.5s;
+	}
 	.flash .product-item{
 		height:340px;
 		padding: 30px 20px 0px 20px;
@@ -846,6 +852,18 @@
 	}
 	.flash .product-item:nth-child(4){
 		border-top: 1px solid yellow;
+	}
+	.flash .product-item:nth-child(5){
+		border-top: 1px solid red;
+	}
+	.flash .product-item:nth-child(6){
+		border-top: 1px solid pink;
+	}
+	.flash .product-item:nth-child(7){
+		border-top: 1px solid green;
+	}
+	.flash .product-item:nth-child(8){
+		border-top: 1px solid skyblue;
 	}
 /*home-flash区域结束*/
 

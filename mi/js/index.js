@@ -6,6 +6,8 @@ handleNav();
 handleCarousel();
 handleCate();
 handleTime();
+handleFlashProduct();
+handleElecProduct();
 
 //处理购物车
 	function handleCart(){
@@ -117,10 +119,10 @@ function handleCate(){
 	for(var i = 0;i<aCateItem.length;i++){
 		aCateItem[i].index = i;
 		aCateItem[i].onmouseenter = function(){
-			oCateContent.style.display = 'block';
 			for(var j = 0;j<aCateItem.length;j++){
 				aCateItem[j].className = 'cate-item';
 			}
+			oCateContent.style.display = 'block';
 			this.className = 'cate-item active'
 			loadData(this.index);
 		}
@@ -131,27 +133,19 @@ function handleCate(){
 			}
 		}
 	}
-
-
-	/*<li>
-		<a href="#">
-			<img src="imagesjrx/small1.jpg" alt="">
-			<span>小米6X</span>
-		</a>
-	</li>*/
 	function loadData(index){
 			var data = aCateItemDate[index];
 			var html = '<ul>';
-			for(var i = 0;i<data.length;i++){
+			for(var k = 0;k<data.length;k++){
 				html +=	'<li>';
-				html +=	'	<a href="#">';
-				html +=	'		<img src="imagesjrx/ph1.jpg" alt="">';
-				html +=	'		<span></span>';
+				html +=	'	<a href="'+data[k].url+'">';
+				html +=	'		<img src="'+data[k].img+'" alt="">';
+				html +=	'		<span>'+data[k].name+'</span>';
 				html +=	'	</a>';
 				html +=	'</li>';
 			}
 			html += '</ul>';
-			oNavContentContainer.innerHTML = html;
+			oCateContent.innerHTML = html;
 		}
 }
 
@@ -183,5 +177,88 @@ function handleCate(){
 		tonow();
 	}
 	
-/*选项卡*/
-	
+//处理闪购商品
+function handleFlashProduct(){
+	var oProductList = document.querySelector('.flash .product-list');
+	var aSpan = document.querySelectorAll('.flash .ctr-btn');
+
+	aSpan[0].onclick = function(){
+		oProductList.style.marginLeft = '0px';
+	}
+	aSpan[1].onclick = function(){
+		oProductList.style.marginLeft = '-978px';
+	}
+}
+
+//处理家电选项卡
+function handleElecProduct(){
+	var aTabItem = document.querySelectorAll('.elec .tab .tab-item');
+	var oElecProduct = document.querySelector('.elec .elec-product');
+	//初始化加载
+	loadData(0);
+	for(var i = 0;i<aTabItem.length;i++){
+		aTabItem[i].index = i;
+		aTabItem[i].onmouseenter = function(){
+			for(var j = 0;j<aTabItem.length;j++){
+				aTabItem[j].className = 'tab-item';
+			}
+			this.className = 'tab-item tab-item-active';
+			//加载数据
+			loadData(this.index);
+		}
+	}
+	function loadData(index){
+		var data = aElecItemData[index];
+		var html = '';
+		//根据数据构建html
+		for(var i = 0;i<data.length;i++){
+
+
+			html +=	'<li class="product-item product-item-m">'
+			html +=	'	<a href="'+data[i].url+'">'
+			html +=	'		<img src="'+data[i].img+'" alt="" class="product-img">'
+			html +=	'	</a>'
+			html +=	'	<h3 class="product-name">'+data[i].name+'</h3>'
+			html +=	'	<p class="product-desc">'+data[i].desc+'</p>'
+			html +=	'	<p class="product-price">'
+			html +=	'		<strong>'+data[i].price+'</strong><span>&nbsp;元</span>'
+			html +=	'		<del>'+data[i].del+'元</del>'
+			html +=	'	</p>'
+			if(data[i].flag){
+				html +=	'	<span class="flag '+data[i].flag.name+'">'+data[i].flag.content+'</span>'
+			}
+			if(data[i].view){
+				html +=	'	<div class="view">'
+				html +=	'		<p class="recommend">'+data[i].view.recommend+''
+				html +=	'		</p>'
+				html +=	'		<p class="author">'
+				html +=	'			来自于<span>'+data[i].view.author+'</span>的评价'
+				html +=	'		</p>'
+				html +=	'	</div>'
+			}
+			
+			html +=	'</li>';
+		}
+		var lastData = data[data.length-1];
+
+			html +=	'<li class="product-item product-item-min">';
+			html +=	'	<a href="'+lastData.top.url+'">';
+			html +=	'		<img src="'+lastData.top.img+'" alt="" class="product-img">';
+			html +=	'	</a>';
+			html +=	'	<a href="../mi-band/mi-band.html">';
+			html +=	'		<h3 class="product-name">'+lastData.top.name+'</h3>';
+			html +=	'	</a>';
+			html +=	'	<p class="product-price">';
+			html +=	'		<strong>'+lastData.top.price+'</strong><span>&nbsp;元</span>';
+			html +=	'	</p>';
+			html +=	'</li>';
+			html +=	'<li class="product-item product-item-min">';
+			html +=	'	<a href="'+lastData.top.url+'" class="more">';
+			html +=	'		'+lastData.bottom.txt+'<span>'+lastData.top.tag+'</span>';
+			html +=	'		<i class="iconfont">'+lastData.bottom.icon+'</i>';
+			html +=	'	</a>';
+			html +=	'</li>';
+
+		oElecProduct.innerHTML = html;
+	}
+}
