@@ -111,46 +111,47 @@ handleElecProduct();
 	}
 
 //处理分类面板
-function handleCate(){
-	var aCateItem = document.querySelectorAll('.home .banner .cate .cate-item');
-	var oCateContent = document.querySelector('.home .banner .cate-content');
-	var oCateBox = document.querySelector('.home .banner .cate-box');
+	function handleCate(){
+		var aCateItem = document.querySelectorAll('.home .banner .cate .cate-item');
+		var oCateContent = document.querySelector('.home .banner .cate-content');
+		var oCateBox = document.querySelector('.home .banner .cate-box');
 
-	for(var i = 0;i<aCateItem.length;i++){
-		aCateItem[i].index = i;
-		aCateItem[i].onmouseenter = function(){
-			for(var j = 0;j<aCateItem.length;j++){
-				aCateItem[j].className = 'cate-item';
+		for(var i = 0;i<aCateItem.length;i++){
+			aCateItem[i].index = i;
+			aCateItem[i].onmouseenter = function(){
+				for(var j = 0;j<aCateItem.length;j++){
+					aCateItem[j].className = 'cate-item';
+				}
+				oCateContent.style.display = 'block';
+				this.className = 'cate-item active'
+				loadData(this.index);
 			}
-			oCateContent.style.display = 'block';
-			this.className = 'cate-item active'
-			loadData(this.index);
-		}
-		oCateBox.onmouseleave = function(){
-			oCateContent.style.display = 'none';
-			for(var j = 0;j<aCateItem.length;j++){
-				aCateItem[j].className = 'cate-item';
+			oCateBox.onmouseleave = function(){
+				oCateContent.style.display = 'none';
+				for(var j = 0;j<aCateItem.length;j++){
+					aCateItem[j].className = 'cate-item';
+				}
 			}
 		}
+		function loadData(index){
+				var data = aCateItemDate[index];
+				var html = '<ul>';
+				
+				for(var k = 0;k<data.length;k++){
+					html +=	'<li>';
+					html +=	'	<a href="'+data[k].url+'">';
+					html +=	'		<img src="'+data[k].img+'" alt="">';
+					html +=	'		<span>'+data[k].name+'</span>';
+					html +=	'	</a>';
+					html +=	'</li>';
+				}
+					html += '</ul>';
+				
+				oCateContent.innerHTML = html;
+			}
 	}
-	function loadData(index){
-			var data = aCateItemDate[index];
-			var html = '<ul>';
-			for(var k = 0;k<data.length;k++){
-				html +=	'<li>';
-				html +=	'	<a href="'+data[k].url+'">';
-				html +=	'		<img src="'+data[k].img+'" alt="">';
-				html +=	'		<span>'+data[k].name+'</span>';
-				html +=	'	</a>';
-				html +=	'</li>';
-			}
-			html += '</ul>';
-			oCateContent.innerHTML = html;
-		}
-}
 
-
-/*倒计时*/
+//倒计时
 	function handleTime(){
 		var oTimeNum = document.querySelectorAll('.timer-num');
 		var endDate = new Date('2018-12-25 20:50:00');
@@ -178,17 +179,17 @@ function handleCate(){
 	}
 	
 //处理闪购商品
-function handleFlashProduct(){
-	var oProductList = document.querySelector('.flash .product-list');
-	var aSpan = document.querySelectorAll('.flash .ctr-btn');
+	function handleFlashProduct(){
+		var oProductList = document.querySelector('.flash .product-list');
+		var aSpan = document.querySelectorAll('.flash .ctr-btn');
 
-	aSpan[0].onclick = function(){
-		oProductList.style.marginLeft = '0px';
+		aSpan[0].onclick = function(){
+			oProductList.style.marginLeft = '0px';
+		}
+		aSpan[1].onclick = function(){
+			oProductList.style.marginLeft = '-978px';
+		}
 	}
-	aSpan[1].onclick = function(){
-		oProductList.style.marginLeft = '-978px';
-	}
-}
 
 //处理家电选项卡
 function handleElecProduct(){
@@ -211,54 +212,49 @@ function handleElecProduct(){
 		var data = aElecItemData[index];
 		var html = '';
 		//根据数据构建html
-		for(var i = 0;i<data.length;i++){
-
-
-			html +=	'<li class="product-item product-item-m">'
-			html +=	'	<a href="'+data[i].url+'">'
-			html +=	'		<img src="'+data[i].img+'" alt="" class="product-img">'
-			html +=	'	</a>'
-			html +=	'	<h3 class="product-name">'+data[i].name+'</h3>'
-			html +=	'	<p class="product-desc">'+data[i].desc+'</p>'
-			html +=	'	<p class="product-price">'
-			html +=	'		<strong>'+data[i].price+'</strong><span>&nbsp;元</span>'
-			html +=	'		<del>'+data[i].del+'元</del>'
-			html +=	'	</p>'
-			if(data[i].flag){
-				html +=	'	<span class="flag '+data[i].flag.name+'">'+data[i].flag.content+'</span>'
+		for(var k = 0;k<data.length-1;k++){
+			html +=	'<li class="product-item product-item-m">';
+			html +=	'	<a href="'+data[k].url+'">';
+			html +=	'		<img src="'+data[k].img+'" alt="" class="product-img">';
+			html +=	'	</a>';
+			html +=	'	<h3 class="product-name">'+data[k].name+'</h3>';
+			html +=	'	<p class="product-desc">'+data[k].desc+'</p>';
+			html +=	'	<p class="product-price">';
+			html +=	'		<strong>'+data[k].price+'</strong><span>&nbsp;元</span>';
+			html +=	'		<del>'+data[k].del+'元</del>';
+			html +=	'	</p>';
+			if(data[k].flag){
+				html +=	'	<span class="flag '+data[k].flag.name+'">'+data[k].flag.content+'</span>';
 			}
-			if(data[i].view){
-				html +=	'	<div class="view">'
-				html +=	'		<p class="recommend">'+data[i].view.recommend+''
-				html +=	'		</p>'
-				html +=	'		<p class="author">'
-				html +=	'			来自于<span>'+data[i].view.author+'</span>的评价'
-				html +=	'		</p>'
-				html +=	'	</div>'
+			if(data[k].view){
+				html +=	'	<div class="view">';
+				html +=	'		<p class="recommend">'+data[k].view.recommend+'';
+				html +=	'		</p>';
+				html +=	'		<p class="author">';
+				html +=	'			来自于<span>'+data[k].view.author+'</span>的评价';
+				html +=	'		</p>';
+				html +=	'	</div>';
 			}
-			
 			html +=	'</li>';
 		}
 		var lastData = data[data.length-1];
-
-			html +=	'<li class="product-item product-item-min">';
-			html +=	'	<a href="'+lastData.top.url+'">';
-			html +=	'		<img src="'+lastData.top.img+'" alt="" class="product-img">';
-			html +=	'	</a>';
-			html +=	'	<a href="../mi-band/mi-band.html">';
-			html +=	'		<h3 class="product-name">'+lastData.top.name+'</h3>';
-			html +=	'	</a>';
-			html +=	'	<p class="product-price">';
-			html +=	'		<strong>'+lastData.top.price+'</strong><span>&nbsp;元</span>';
-			html +=	'	</p>';
-			html +=	'</li>';
-			html +=	'<li class="product-item product-item-min">';
-			html +=	'	<a href="'+lastData.top.url+'" class="more">';
-			html +=	'		'+lastData.bottom.txt+'<span>'+lastData.top.tag+'</span>';
-			html +=	'		<i class="iconfont">'+lastData.bottom.icon+'</i>';
-			html +=	'	</a>';
-			html +=	'</li>';
-
+		html +=	'<li class="product-item product-item-min">';
+		html +=	'	<a href="'+lastData.top.url+'">';
+		html +=	'		<img src="'+lastData.top.img+'" alt="" class="product-img">';
+		html +=	'	</a>';
+		html +=	'	<a href="../mi-band/mi-band.html">';
+		html +=	'		<h3 class="product-name">'+lastData.top.name+'</h3>';
+		html +=	'	</a>';
+		html +=	'	<p class="product-price">';
+		html +=	'		<strong>'+lastData.top.price+'</strong><span>&nbsp;元</span>';
+		html +=	'	</p>';
+		html +=	'</li>';
+		html +=	'<li class="product-item product-item-min">';
+		html +=	'	<a href="'+lastData.top.url+'" class="more">';
+		html +=	'		'+lastData.bottom.txt+'<span>'+lastData.bottom.tag+'</span>';
+		html +=	'		<i class="iconfont">'+lastData.bottom.icon+'</i>';
+		html +=	'	</a>';
+		html +=	'</li>';
 		oElecProduct.innerHTML = html;
 	}
 }
