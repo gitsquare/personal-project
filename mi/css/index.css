@@ -96,6 +96,7 @@
 		margin-bottom: 14px;
 		overflow: hidden;
 		transition: all 0.2s linear;
+		list-style: none;
 	}
 	.product-item-min{
 		height: 143px;
@@ -104,6 +105,7 @@
 		text-align: left;
 		box-sizing: border-box;
 		transition: all 0.2s linear;
+		list-style: none;
 	}
 	.product-item-min:hover{
 		box-shadow: 0 5px 20px rgba(0,0,0,0.3);
@@ -224,7 +226,7 @@
 		font-size: 12px;
 		text-align: center;	
 	}
-	.flag-off{
+	.off-flag{
 		background: #ff6700;
 	}
 	.new-flag{
@@ -546,11 +548,16 @@
 		top: 0;
 		left: 234px;
 		min-width: 500px;
-		height: 100%;
+		height: 460px;
 		background-color: #fff;
 		box-sizing: border-box;
 		box-shadow: 0 2px 2px 2px rgba(0,0,0,0.15);
 		z-index: 9999;
+	}
+	.home .banner .cate-content .children-list{
+		float: left;
+		height: 460px;
+		width: 248px;
 	}
 	.home .banner .cate-content li{
 		float: left;

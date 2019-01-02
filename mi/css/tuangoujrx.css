@@ -29,6 +29,7 @@
 		margin: 0 0.3em;
 	}
 	.top .cart{
+		position: relative;
 		float: right;
 		width: 164px;
 		background: #424242;
@@ -44,9 +45,27 @@
 		font-size: 20px;
 		vertical-align: -4px;
 	}
-	.top .cart .cart-box a:hover{
-		background: #fff;
-		color: #ff6700;
+	.top .cart .cart-content{
+		position: absolute;
+		top: 40px;
+		right: 0;
+		width: 300px;
+		height: 0;
+		z-index: 999;
+		text-align: center;
+		background-color: #fff;
+		box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+		overflow: hidden;
+	}
+	.top .cart .cart-content .loader{
+		display: none;
+		margin-top: 40px;
+	}
+	.top .cart .cart-content .empty-cart{
+		display: none;
+		margin-top: 40px;
+		font-size: 12px;
+		font-weight: 400;
 	}
 /*顶部区域结束*/
 

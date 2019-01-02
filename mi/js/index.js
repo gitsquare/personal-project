@@ -115,7 +115,6 @@ handleElecProduct();
 		var aCateItem = document.querySelectorAll('.home .banner .cate .cate-item');
 		var oCateContent = document.querySelector('.home .banner .cate-content');
 		var oCateBox = document.querySelector('.home .banner .cate-box');
-
 		for(var i = 0;i<aCateItem.length;i++){
 			aCateItem[i].index = i;
 			aCateItem[i].onmouseenter = function(){
@@ -134,9 +133,24 @@ handleElecProduct();
 			}
 		}
 		function loadData(index){
-				var data = aCateItemDate[index];
-				var html = '<ul>';
-				
+			var data = aCateItemDate[index];
+			var html = '<ul>';
+			for(var k = 0;k<data.length;k++){
+				html +=	'<li>';
+				html +=	'	<a href="'+data[k].url+'">';
+				html +=	'		<img src="'+data[k].img+'" alt="">';
+				html +=	'		<span>'+data[k].name+'</span>';
+				html +=	'	</a>';
+				html +=	'</li>';
+			}
+				html += '</ul>';
+			oCateContent.innerHTML = html;
+		}
+		/*function loadData(index){
+			var data = aCateItemDate[index];
+			var ZS = Math.ceil(data.length/6);
+			for(var l = 0;l<ZS;l++){
+				var html = '<ul class="children-list">';
 				for(var k = 0;k<data.length;k++){
 					html +=	'<li>';
 					html +=	'	<a href="'+data[k].url+'">';
@@ -145,10 +159,11 @@ handleElecProduct();
 					html +=	'	</a>';
 					html +=	'</li>';
 				}
-					html += '</ul>';
-				
+				html += '</ul>';
 				oCateContent.innerHTML = html;
 			}
+			console.log(html);
+		}*/
 	}
 
 //倒计时
