@@ -70,10 +70,10 @@
 	height: 100px;
 	position: absolute;
 	top:40px;
-	right: 102px;
+	right: 60px;
 	text-align: center;
 	line-height: 100px;
-	z-index: 2;
+	z-index: 66;
 	color: #424242;
 	display: none;
 	background-color: #fff;
@@ -128,24 +128,26 @@
 }
 .header .header-nav .header-nav-item .search-keyword-list{
 	width: 247px;
+	cursor: pointer;
 	display: none;
 	position: absolute;
 	top: 100px;
-	left: 180px;
+	left: 250px;
 	width: 247px;
 	border: 1px solid #ff6700;
 	box-sizing: border-box;
 	background: #fff;
 	font-size: 12px;
-	z-index: 2
+	z-index: 66
 }
 .header .header-nav .header-nav-item .box{
 	background-color: #fff;
+	cursor: pointer;
 	height: 250px;
 	width: 1600px;
 	position: absolute;
 	top: 100px;
-	left: 0;
+	left: 60px;
 	border-top: 1px solid #e0e0e0;
 	box-sizing: border-box;
 	font-size: 12px;
@@ -293,7 +295,7 @@
 	box-sizing: border-box;
 	background: #fff;
 	font-size: 12px;
-	z-index: 2
+	z-index: 66
 }
 .header .search-text:focus~.search-keyword-list{
 	display: block;
@@ -331,29 +333,22 @@
 }
 .logo .content{
 		list-style: none;
-		width: 3699px;
+		width: 1233px;
 		height: 300px;
-		float: left;
-		animation: sport 5s linear infinite 3s;
-}
-
-	@keyframes sport{
-		from{
-			margin-left: 0px;
-		}
-		to{
-			margin-left: -1233px;
-		}
+		position: relative;
 }
 .logo li{
 		width: 1233px;
 		height: 250px;
-		float: left;
 	}
 .logo li img{
 	margin-top:10px;
 	width: 100%;
-	height: 100%;
+	height: 250px;
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	left: 0;	
 }
 .logo .carousel-btn {
 	position: absolute;
@@ -362,6 +357,7 @@
 	bottom: 60px;
 	left: 50%;
 	margin-left: -20px;
+	z-index: 6
 }
 .logo .carousel-btn li{
 		float: left;
@@ -373,7 +369,8 @@
 		border-radius: 50%;
 		cursor: pointer;
 	}
-.logo .carousel-btn li:hover{
+.logo .carousel-btn li:hover,
+.logo .carousel-btn li.active{
 		background: #fcf9f0;
 		border-color: #979590;
 	}
@@ -552,13 +549,70 @@
 	width: 175px;
 	height: 65px;
 }
-.service .box2  a{
+.service .box2 .header-nav #tab-container .tab-item .a1{
+	font-size: 15px;
+	color: #222222;
+	margin-left: 30px;
+}
+.service .box2 .header-nav #tab-container .tab-item .a1:hover .d1{
+	background-color: #ff6700;
+}
+.service .box2 .header-nav #tab-container .tab-item .a1:hover {
+	color: #ff6700;
+}
+.service .box2 .header-nav #tab-container .tab-item .a1 .d1{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #e2e2e2;
+	position: absolute;
+	top: 12px;
+	left: 10px;
+}
+.service .box2 .header-nav #tab-container .tab-item{
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 20px;
+	position: relative;
+}
+.service .box2 .header-nav #tab-container>li:first-child{
+	display: block;
+}
+/*.service .box2 .header-nav #tab-container li:nth-child(2){
+	display: block;
+}
+.service .box2 .header-nav #tab-container li:nth-child(2){
+	display: block;
+}*/
+.service .box2 .header-nav #tab-container>li{
+	display: none;
+}
+.service .box2 .header-nav #tab-container p{
+	color: #767676;
+	position: absolute;
+	bottom: -240px;
+	left: 50%;
+	font-size: 16px;
+	cursor: pointer;
+}
+.service .box2 .header-nav #tab-container p:hover{
+	color: #ff6700;
+}
+.service .box2 .header-nav #tab-container .left,
+.service .box2 .header-nav #tab-container .right{
+	margin-top: 20px;
+	width: 45%;
+	height: 170px;
 	float: left;
+	margin-left: 57px;
 }
 .service .header-nav{
+	margin-top: 20px;
 	float: left;
 	height: 100px;
 	width: 100%;
+	position: relative;
 }
 .service .header-nav .header-nav-item{
 	float: left;
@@ -606,12 +660,16 @@
 .service .header-nav .header-nav-item .a1 p:hover{
 	color: #ff6700;
 }
+.service .header-nav .header-nav-item .a1 .a2{
+	width: 900px;
+
+}
 .service .header-nav .header-nav-item .a1 .a2 a{
 	width: 330px;
 	float: left;
 	color: #222222;
 	margin-top: -40px;
-	margin-left: 100px
+	margin-left: 110px
 }
 .service .header-nav .header-nav-item .a1 .a2 a:hover{
 	color: #ff6700;

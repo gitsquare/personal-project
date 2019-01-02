@@ -85,7 +85,7 @@
 	height: 100px;
 	position: absolute;
 	top:40px;
-	right: 175px;
+	right: 125px;
 	text-align: center;
 	line-height: 100px;
 	z-index: 2;
@@ -123,7 +123,7 @@
 .header .header-nav{
 	float: left;
 	height: 100px;
-	margin-left: 190px;
+	margin-left: 120px;
 }
 .header .header-nav .header-nav-item{
 	float: left;

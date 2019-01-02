@@ -528,12 +528,13 @@
 	<section class="logo container">
 		<a href="#" class="hd">首页&nbsp;&nbsp;/&nbsp;&nbsp;帮助中心</a>
 		<ul class="content clearfix"> 
-			<li><img src="imgzsc/A.jpg" alt=""></li>
-			<li><img src="imgzsc/B.jpg" alt=""></li>
-			<li><img src="imgzsc/A.jpg" alt=""></li>
+			<li class="carousel-imgs-item" style="z-index: 3"><img src="imgzsc/A.jpg" alt=""></li>
+			<li class="carousel-imgs-item"><img src="imgzsc/B.jpg" alt=""></li>
 		</ul>
+		<span class="arrow left-arrow iconfont"></span>
+		<span class="arrow right-arrow iconfont"></span>
 		<ul class="carousel-btn">
-			<li></li>
+			<li class="active"></li>
 			<li></li>
 		</ul>
 	</section>
@@ -657,19 +658,9 @@
 					<i class="iconfont">&#xe616;</i>
 				</div>
 				<nav class="header-nav">
-						<ul>
-							<li class="header-nav-item">
-								<a class="tp" herf="#" id="active">账户管理</a>
-								<ul class="a1">
-									<li class="a2"><a href="#">小米账户如何注册<div class="d1"></div></a></li>
-									<li class="a2"><a href="#">什么是账号申诉重置密码保护<div class="d1"></div></a></li>
-									<li class="a2"><a href="#">小米账号忘记密码如何找回<div class="d1"></div></a></li>
-									<li class="a2"><a href="#">手机如何申诉解锁<div class="d1"></div></a></li>
-									<li class="a2"><a href="#">如何进行重置密码保护<div class="d1"></div></a></li>
-									<li class="a2"><a href="#">如何认证小米社区<VIPdiv class="d1"></VIPdiv></a></li>
-									<p>查看更多></p>
-								</ul>
-					
+					<ul id="tab-list">
+						<li class="header-nav-item active">
+							<a class="tp" herf="#" id="active">账户管理</a>
 						</li>
 						<li class="header-nav-item">
 							<a class="tp" herf="#">购物指南</a>
@@ -688,6 +679,143 @@
 						</li>
 						<li class="header-nav-item">
 							<a class="tp"herf="#">线下销售渠道</a>
+						</li>
+					</ul>
+					<ul id="tab-container">
+						<li style="display: block;">
+							<div class="box clearfix">
+								<div id="content1" class="clearfix">
+									<div class="left">
+										<ul>
+											<li class="tab-item">
+												<a class="a1" href="#">小米账户如何注册
+													<div class="d1"></div>
+												</a>
+											</li>
+											<li class="tab-item"><a class="a1" href="#">什么是账号申诉重置密码保护<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">小米账号忘记密码如何找回<div class="d1"></div></a></li>
+										</ul>
+									</div>
+									<div class="right">
+										<ul>
+											<li class="tab-item"><a class="a1" href="#">手机如何申诉解锁<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何进行重置密码保护<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何认证小米社区<div class="d1"></div></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+								<p>查看更多></p>
+						</li>
+						<li>
+							<div class="box">
+								<div class="left">
+									<ul>
+										<li class="tab-item">
+											<a class="a1" href="#">小米账户如何注册
+												<div class="d1"></div>
+											</a>
+										</li>
+										<li class="tab-item"><a class="a1" href="#">什么是账号申诉重置密码保护<div class="d1"></div></a></li>
+										<li class="tab-item"><a class="a1" href="#">小米账号忘记密码如何找回<div class="d1"></div></a></li>
+									</ul>
+								</div>
+									<div class="right">
+										<ul>
+											<li class="tab-item"><a class="a1" href="#">手机如何申诉解锁<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何进行重置密码保护<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何认证小米社区<div class="d1"></div></a></li>
+										</ul>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<div class="left">
+									<ul>
+										<li class="tab-item">
+											<a class="a1" href="#">小米账户如何注册
+												<div class="d1"></div>
+											</a>
+										</li>
+										<li class="tab-item"><a class="a1" href="#">什么是账号申诉重置密码保护<div class="d1"></div></a></li>
+										<li class="tab-item"><a class="a1" href="#">小米账号忘记密码如何找回<div class="d1"></div></a></li>
+									</ul>
+								</div>
+									<div class="right">
+										<ul>
+											<li class="tab-item"><a class="a1" href="#">手机如何申诉解锁<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何进行重置密码保护<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何认证小米社区<div class="d1"></div></a></li>
+										</ul>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<div class="left">
+									<ul>
+										<li class="tab-item">
+											<a class="a1" href="#">小米账户如何注册
+												<div class="d1"></div>
+											</a>
+										</li>
+										<li class="tab-item"><a class="a1" href="#">什么是账号申诉重置密码保护<div class="d1"></div></a></li>
+										<li class="tab-item"><a class="a1" href="#">小米账号忘记密码如何找回<div class="d1"></div></a></li>
+									</ul>
+								</div>
+									<div class="right">
+										<ul>
+											<li class="tab-item"><a class="a1" href="#">手机如何申诉解锁<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何进行重置密码保护<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何认证小米社区<div class="d1"></div></a></li>
+										</ul>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<div class="left">
+									<ul>
+										<li class="tab-item">
+											<a class="a1" href="#">小米账户如何注册
+												<div class="d1"></div>
+											</a>
+										</li>
+										<li class="tab-item"><a class="a1" href="#">什么是账号申诉重置密码保护<div class="d1"></div></a></li>
+										<li class="tab-item"><a class="a1" href="#">小米账号忘记密码如何找回<div class="d1"></div></a></li>
+									</ul>
+								</div>
+									<div class="right">
+										<ul>
+											<li class="tab-item"><a class="a1" href="#">手机如何申诉解锁<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何进行重置密码保护<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何认证小米社区<div class="d1"></div></a></li>
+										</ul>
+									</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<div class="left">
+									<ul>
+										<li class="tab-item">
+											<a class="a1" href="#">小米账户如何注册
+												<div class="d1"></div>
+											</a>
+										</li>
+										<li class="tab-item"><a class="a1" href="#">什么是账号申诉重置密码保护<div class="d1"></div></a></li>
+										<li class="tab-item"><a class="a1" href="#">小米账号忘记密码如何找回<div class="d1"></div></a></li>
+									</ul>
+								</div>
+									<div class="right">
+										<ul>
+											<li class="tab-item"><a class="a1" href="#">手机如何申诉解锁<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何进行重置密码保护<div class="d1"></div></a></li>
+											<li class="tab-item"><a class="a1" href="#">如何认证小米社区<div class="d1"></div></a></li>
+										</ul>
+									</div>
+							</div>
 						</li>
 					</ul>
 				</nav>
@@ -830,6 +958,8 @@
 			</div>	
 		</footer>
 </body>
+<script src="js/fu.js"></script>
+<script src="js/z.js"></script>
 </html>
 
 
