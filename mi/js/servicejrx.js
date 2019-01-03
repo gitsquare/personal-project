@@ -1,6 +1,6 @@
 handleCart();
 handleNav();
-// handleCarousel();
+handleCarousel();
 handleCate();
 handleSelector()
 
@@ -95,15 +95,15 @@ function handleNav(){
 	}
 
 //轮播图
-/*function handleCarousel(){
+function handleCarousel(){
 		new Carousel({
 			id:'carousel',
-			aImg:['imagesjrx/c1.jpg','imagesjrx/b2.jpg','imagesjrx/c2.jpg'],
+			aImg:['imagesjrx/c1.jpg','imagesjrx/c2.jpg'],
 			width:1226,
-			height:460,
-			playDuration:5000
+			height:250,
+			playDuration:3000
 		});
-	}*/
+	}
 
 //处理分类面板
 	function handleCate(){
@@ -148,6 +148,9 @@ function handleNav(){
 		}
 		oCate.onmouseenter = function(){
 			oCate.style.display = 'block';
+		}
+		oCate.onmouseleave = function(){
+			oCate.style.display = 'none';
 		}
 		oCateContent.onmouseleave = function(){
 			oCate.style.display = 'none';
