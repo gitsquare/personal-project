@@ -1,6 +1,4 @@
 
-
-
 handleCart();
 handleNav();
 handleCarousel();

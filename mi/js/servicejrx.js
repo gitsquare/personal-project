@@ -1,7 +1,8 @@
 handleCart();
 handleNav();
-handleCarousel();
+// handleCarousel();
 handleCate();
+handleSelector()
 
 
 //购物车
@@ -94,7 +95,7 @@ function handleNav(){
 	}
 
 //轮播图
-function handleCarousel(){
+/*function handleCarousel(){
 		new Carousel({
 			id:'carousel',
 			aImg:['imagesjrx/c1.jpg','imagesjrx/b2.jpg','imagesjrx/c2.jpg'],
@@ -102,42 +103,105 @@ function handleCarousel(){
 			height:460,
 			playDuration:5000
 		});
-	}
+	}*/
 
 //处理分类面板
 	function handleCate(){
+		var aCateBtn = document.querySelector('.header-nav .header-nav-category>a');
 		var aCateItem = document.querySelectorAll('.header-nav .header-nav-category .cate .cate-item');
 		var oCateContent = document.querySelector('.header-nav .header-nav-category .cate-content');
 		var oCateBox = document.querySelector('.header-nav .header-nav-category .cate-box');
-		for(var i = 0;i<aCateItem.length;i++){
-			aCateItem[i].index = i;
-			aCateItem[i].onmouseenter = function(){
-				for(var j = 0;j<aCateItem.length;j++){
-					aCateItem[j].className = 'cate-item';
+		var oCate = document.querySelector('.header-nav .header-nav-category .cate-box .cate');
+		aCateBtn.onmouseenter = function(){
+			oCate.style.display = 'block';
+			for(var i = 0;i<aCateItem.length;i++){
+				aCateItem[i].index = i;
+				aCateItem[i].onmouseenter = function(){
+					for(var j = 0;j<aCateItem.length;j++){
+						aCateItem[j].className = 'cate-item';
+					}
+					oCateContent.style.display = 'block';
+					this.className = 'cate-item active'
+					loadData(this.index);
 				}
-				oCateContent.style.display = 'block';
-				this.className = 'cate-item active'
-				loadData(this.index);
+				oCateBox.onmouseleave = function(){
+					oCateContent.style.display = 'none';
+					for(var j = 0;j<aCateItem.length;j++){
+						aCateItem[j].className = 'cate-item';
+					}
+				}
 			}
-			oCateBox.onmouseleave = function(){
-				oCateContent.style.display = 'none';
-				for(var j = 0;j<aCateItem.length;j++){
-					aCateItem[j].className = 'cate-item';
+			function loadData(index){
+				var data = aCateItemDate[index];
+				var html = '<ul>';
+				for(var k = 0;k<data.length;k++){
+					html +=	'<li>';
+					html +=	'	<a href="'+data[k].url+'">';
+					html +=	'		<img src="'+data[k].img+'" alt="">';
+					html +=	'		<span>'+data[k].name+'</span>';
+					html +=	'	</a>';
+					html +=	'</li>';
 				}
+					html += '</ul>';
+				oCateContent.innerHTML = html;
 			}
 		}
-		function loadData(index){
-			var data = aCateItemDate[index];
-			var html = '<ul>';
-			for(var k = 0;k<data.length;k++){
-				html +=	'<li>';
-				html +=	'	<a href="'+data[k].url+'">';
-				html +=	'		<img src="'+data[k].img+'" alt="">';
-				html +=	'		<span>'+data[k].name+'</span>';
-				html +=	'	</a>';
-				html +=	'</li>';
-			}
-				html += '</ul>';
-			oCateContent.innerHTML = html;
+		oCate.onmouseenter = function(){
+			oCate.style.display = 'block';
+		}
+		oCateContent.onmouseleave = function(){
+			oCate.style.display = 'none';
 		}
 	}
+
+
+//处理选项卡
+function handleSelector(){
+	var aTabTitle = document.querySelectorAll('.index-needhelp .content .tab-title li');
+	var oQuestion = document.querySelector('.index-needhelp .content .tab-content');
+	var ajuti = document.querySelectorAll('.index-needhelp .content .tab-content li');
+	//初始化加载
+	loadData(0);
+	for(var i = 0;i<aTabTitle.length;i++){
+		aTabTitle[i].index = i;
+		aTabTitle[i].onmouseenter = function(){
+			for(var j = 0;j<aTabTitle.length;j++){
+				aTabTitle[j].className = 'yangshi';
+			}
+			this.className = 'yangshi question-active';
+			//加载数据
+			loadData(this.index);
+		}
+	}
+	function loadData(index){
+		var data = aQuestionData[index];
+		var html = '';
+		//根据数据构建html
+		for(var k = 0;k<data.length;k++){
+			html +=	'<div class="per xianshi-active">';
+			html +=	'	<ul class="clearfix">';
+			html +=	'		<li class="juti"><a href="#" class="alj">'+data[0].ques1+'</a></li>';
+			html +=	'		<li class="juti"><a href="#" class="alj">'+data[0].ques2+'</a></li>';
+			html +=	'		<li class="juti"><a href="#" class="alj">'+data[0].ques3+'</a></li>';
+			html +=	'		<li class="juti"><a href="#" class="alj">'+data[0].ques4+'</a></li>';
+			html +=	'		<li class="juti"><a href="#" class="alj">'+data[0].ques5+'</a></li>';
+			html +=	'		<li class="juti"><a href="#" class="alj">'+data[0].ques6+'</a></li>';
+			html +=	'	</ul>';
+			html +=	'	<a href="#" class="gengduo">查看更多 &gt;</a>';
+			html +=	'</div>';
+		}
+		for(var i = 0;i<ajuti.length;i++){
+			console.log(1)
+			ajuti[i].index = i;
+			ajuti[i].onmouseenter = function(){
+				for(var j = 0;j<ajuti.length;j++){
+					ajuti[j].className = 'juti';
+				}
+				this.className = 'juti juti-active';
+			}
+		}
+		oQuestion.innerHTML = html;
+	}
+}
+
+
