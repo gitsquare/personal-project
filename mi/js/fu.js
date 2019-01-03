@@ -1,10 +1,9 @@
-
+	
 		var aImg =document.querySelectorAll('.carousel-imgs-item');
 		var oLeftArrow=document.querySelector('.left-arrow');
 		var oRightArrow=document.querySelector('.right-arrow');
 		var aBtn=document.querySelector('.carousel-btn').children;
 		var oCarousel = document.querySelector('.content');
-		console.log(oCarousel)
 		var timer =0;
 
 		//当前图片
@@ -52,25 +51,17 @@
 			timer=setInterval(oRightArrow.onclick,2000);
 		}
 
-
-
-	var aBtn1 = document.querySelectorAll('#tab-list li')
-	var aContent = document.querySelectorAll('#tab-container')
-	var oContent1 = document.querySelector('#content1')
-	console.log(oContent1)
-		for(var i=0;i<aBtn1.length;i++){
-			aBtn1[i].index= i;
-			aBtn1[i].onmouseover =function(){
-				for(var j=0;j<aBtn1.length;j++){
-					aBtn1[j].className ='';
-					// oContent1[j].style.display ='none';
+var aBtn1 = document.querySelectorAll('#tab-list li')
+var aLi = document.querySelectorAll('#tab-container li')
+	for(var i = 0;i<aBtn1.length;i++){
+			aBtn1[i].index = i;  
+			aBtn1[i].onmouseover = function(){
+				for(var j = 0;j<aBtn1.length;j++){
+					aBtn1[j].className = 'header-nav-item';
 				}
-				oContent1[this.index].style.display = 'block'
-				
-				// console.log(typeof this)
-				this.className="active"
+				aLi[j].style.display = 'block'
+				this.className = 'header-nav-item active';
 			}
-		}
-
+	}
 
 	

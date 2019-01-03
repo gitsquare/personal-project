@@ -11,498 +11,68 @@
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/ertongzsc.css">
 	<link rel="stylesheet" href="css/ertongcommon.css">
+	<link rel="stylesheet" href="css/common.css">
 </head>
 <body>
 	<section class="top">
 		<div class="container clearfix">
-		<nav class="top-nav">
-			<ul>
-				<li class="top-nav-itme"><a href="" herf="#">小米商城</a><span class="sep">|</span></li>
-				<li class="top-nav-itme"><a href="" herf="#">MIUI</a><span class="sep">|</span></li>
-				<li class="top-nav-itme"><a href="" herf="#">loT</a><span class="sep">|</span></li>
-				<li class="top-nav-itme"><a href="" herf="#">云服务</a><span class="sep">|</span></li>
-				<li class="top-nav-itme"><a href="" herf="#">水滴</a><span class="sep">|</span></li>
-				<li class="top-nav-itme"><a href="" herf="#">金融</a><span class="sep">|</span></li>
-				<li class="top-nav-itme"><a href="" herf="#">有品</a><span class="sep">|</span></li>
-				<li class="top-nav-itme"><a href="" herf="#">Select Region</a></li>
-			</ul>
-		</nav>
-		<nav class="cart">
-			<div class="cart-box">
-				<a href="#">
-					<i class="iconfont icon-cart">&#xe60c;</i>
-					<span class="cart-text">购物车
-						<div class="box1">
-						购物车中还没有商品，赶紧选购吧！
-					</div>
-					</span>(<span class="cart-num">0</span>)
-				</a>
+			<nav class="top-nav">
+				<ul>
+					<li class="top-nav-item"><a href="#">小米商城</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="#">MIUI</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="#">loT</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="#">云服务</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="#">水滴</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="#">金融</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="#">商品</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="#">Select Region</a></li>
+				</ul>
+			</nav>
+			<div class="cart">
+				<div class="cart-box">
+					<a href="#">
+						<i class="iconfont icon-cart">&#xe60c;</i>
+						<span class="cart-text">购物车</span>
+						(<span class="cart-num">0</span>)
+					</a>
+				</div>
+				<div class="cart-content">
+					<div class="loader"></div>
+					<span class="empty-cart">购物车还没有东西,赶紧选购吧!</span>
+				</div>
 			</div>
-		</nav>
-		<div class="user-info">
-			<ul>
-				<li class="user-info-item"><a href="" herf="#">登录</a><span class="sep">|</span></li>
-				<li class="user-info-item"><a href="" herf="#">注册</a><span class="sep">|</span></li>
-				<li class="user-info-item"><a href="" herf="#">消息通知</a></li>
-			</ul>	
-		</div>
-		</div>
+			<div class="user-info">
+				<ul>
+					<li class="user-info-item"><a href="#">登录</a><span class="sep">|</span></li>
+					<li class="user-info-item"><a href="#">注册</a><span class="sep">|</span></li>
+					<li class="user-info-item"><a href="#">消息通知</a></li>
+				</ul>
+			</div>			
+		</div>	
 	</section>
 	<header class="header">
 		<div class="container">
 			<h1 class="logo">
-				<a href="#">小米官网</a>
+				<a href="#">
+					小米官网
+				</a>
 			</h1>
 			<nav class="header-nav">
+				<a href="#" class="nav-item">
+					全部商品分类
+					
+				</a>
 				<ul>
-					<li class="header-nav-item">
-						<a href="" herf="#">全部分类</a>
-						<div class="search-keyword-list">
-						<ul>
-							<li class="keyword-item">
-								<a href="#">
-									<span class="keyword" id="key">手机 电话卡</span>
-									<i class="iconfont">&#xe623;</i>
-								</a>
-							</li>
-							<li class="keyword-item"><a href="#"><span class="keyword" id="key">电视 盒子</span><i class="iconfont">&#xe623;</i></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword" id="key">笔记本 平板</span><i class="iconfont">&#xe623;</i></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword" id="key">家电 插线板</span><i class="iconfont">&#xe623;</i></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword" id="key">出行 穿戴</span><i class="iconfont">&#xe623;</i></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword" id="key">智能 路由器</span><i class="iconfont">&#xe623;</i></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword" id="key">电源 配件</span><i class="iconfont">&#xe623;</i></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword" id="key">健康 儿童</span><i class="iconfont">&#xe623;</i></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword" id="key">耳机 音响</span><i class="iconfont">&#xe623;</i></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword" id="key">生活 箱包</span><i class="iconfont">&#xe623;</i></a></li>
-						</ul>
-					</div>
-					</li>
-					<li class="header-nav-item">
-						<a href="" herf="#">小米</a>
-						<div class="box ">
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/mix3-320.png" alt=""></div>
-								<h3 class="product-name">小米MX3</h3>
-								<p class="product-price">
-										<strong>3699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/mix3-320.png" alt=""></div>
-								<h3 class="product-name">小米MX3</h3>
-								<p class="product-price">
-										<strong>3699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/mix3-320.png" alt=""></div>
-								<h3 class="product-name">小米MX3</h3>
-								<p class="product-price">
-										<strong>3699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/mix3-320.png" alt=""></div>
-								<h3 class="product-name">小米MX3</h3>
-								<p class="product-price">
-										<strong>3699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/mix3-320.png" alt=""></div>
-								<h3 class="product-name">小米MX3</h3>
-								<p class="product-price">
-										<strong>3699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/mix3-320.png" alt=""></div>
-								<h3 class="product-name">小米MX3</h3>
-								<p class="product-price">
-										<strong>3699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-						</div>
-					</li>
-					<li class="header-nav-item">
-						<a href="" herf="#">红米</a>
-						<div class="box ">
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/6pro320-220.png" alt=""></div>
-								<h3 class="product-name">红米6Pro</h3>
-								<p class="product-price">
-										<strong>999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/6pro320-220.png" alt=""></div>
-								<h3 class="product-name">红米6Pro</h3>
-								<p class="product-price">
-										<strong>999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/6pro320-220.png" alt=""></div>
-								<h3 class="product-name">红米6Pro</h3>
-								<p class="product-price">
-										<strong>999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/6pro320-220.png" alt=""></div>
-								<h3 class="product-name">红米6Pro</h3>
-								<p class="product-price">
-										<strong>999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/6pro320-220.png" alt=""></div>
-								<h3 class="product-name">红米6Pro</h3>
-								<p class="product-price">
-										<strong>999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/6pro320-220.png" alt=""></div>
-								<h3 class="product-name">红米6Pro</h3>
-								<p class="product-price">
-										<strong>999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-						</div>
-					</li>
-					<li class="header-nav-item">
-						<a href="" herf="#">电视</a>
-						<div class="box ">
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/4s75.png" alt=""></div>
-								<h3 class="product-name">小米4S 75寸</h3>
-								<p class="product-price">
-										<strong>7999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/4s75.png" alt=""></div>
-								<h3 class="product-name">小米4S 75寸</h3>
-								<p class="product-price">
-										<strong>7999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/4s75.png" alt=""></div>
-								<h3 class="product-name">小米4S 75寸</h3>
-								<p class="product-price">
-										<strong>7999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/4s75.png" alt=""></div>
-								<h3 class="product-name">小米4S 75寸</h3>
-								<p class="product-price">
-										<strong>7999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/4s75.png" alt=""></div>
-								<h3 class="product-name">小米4S 75寸</h3>
-								<p class="product-price">
-										<strong>7999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/4s75.png" alt=""></div>
-								<h3 class="product-name">小米4S 75寸</h3>
-								<p class="product-price">
-										<strong>7999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-						</div>
-					</li>
-					<li class="header-nav-item">
-						<a href="" herf="#">笔记本</a>
-						<div class="box ">
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xinbijiben.png" alt=""></div>
-								<h3 class="product-name">小米游戏本</h3>
-								<p class="product-price">
-										<strong>6699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xinbijiben.png" alt=""></div>
-								<h3 class="product-name">小米游戏本</h3>
-								<p class="product-price">
-										<strong>6699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xinbijiben.png" alt=""></div>
-								<h3 class="product-name">小米游戏本</h3>
-								<p class="product-price">
-										<strong>6699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xinbijiben.png" alt=""></div>
-								<h3 class="product-name">小米游戏本</h3>
-								<p class="product-price">
-										<strong>6699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xinbijiben.png" alt=""></div>
-								<h3 class="product-name">小米游戏本</h3>
-								<p class="product-price">
-										<strong>6699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xinbijiben.png" alt=""></div>
-								<h3 class="product-name">小米游戏本</h3>
-								<p class="product-price">
-										<strong>6699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-						</div>
-					</li>
-					<li class="header-nav-item">
-						<a href="" herf="#">空调</a>
-						<div class="box ">
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/kongtiao320-220!160x110.jpg" alt=""></div>
-								<h3 class="product-name">米家空调</h3>
-								<p class="product-price">
-										<strong>1999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/kongtiao320-220!160x110.jpg" alt=""></div>
-								<h3 class="product-name">米家空调</h3>
-								<p class="product-price">
-										<strong>1999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/kongtiao320-220!160x110.jpg" alt=""></div>
-								<h3 class="product-name">米家空调</h3>
-								<p class="product-price">
-										<strong>1999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/kongtiao320-220!160x110.jpg" alt=""></div>
-								<h3 class="product-name">米家空调</h3>
-								<p class="product-price">
-										<strong>1999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/kongtiao320-220!160x110.jpg" alt=""></div>
-								<h3 class="product-name">米家空调</h3>
-								<p class="product-price">
-										<strong>1999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/kongtiao320-220!160x110.jpg" alt=""></div>
-								<h3 class="product-name">米家空调</h3>
-								<p class="product-price">
-										<strong>1999</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-						</div>
-					</li>
-					<li class="header-nav-item">
-						<a href="" herf="#">新品</a>
-						<div class="box ">
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/qingchun-320.png" alt=""></div>
-								<h3 class="product-name">小米8青春版</h3>
-								<p class="product-price">
-										<strong>1399</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/qingchun-320.png" alt=""></div>
-								<h3 class="product-name">小米8青春版</h3>
-								<p class="product-price">
-										<strong>1399</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/qingchun-320.png" alt=""></div>
-								<h3 class="product-name">小米8青春版</h3>
-								<p class="product-price">
-										<strong>1399</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/qingchun-320.png" alt=""></div>
-								<h3 class="product-name">小米8青春版</h3>
-								<p class="product-price">
-										<strong>1399</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/qingchun-320.png" alt=""></div>
-								<h3 class="product-name">小米8青春版</h3>
-								<p class="product-price">
-										<strong>1399</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/qingchun-320.png" alt=""></div>
-								<h3 class="product-name">小米8青春版</h3>
-								<p class="product-price">
-										<strong>1399</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-						</div>
-
-					</li>
-					<li class="header-nav-item">
-						<a href="" herf="#">路由器</a>
-						<div class="box ">
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomiluyouqi4.png" alt=""></div>
-								<h3 class="product-name">小米路由器4</h3>
-								<p class="product-price">
-										<strong>199</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomiluyouqi4.png" alt=""></div>
-								<h3 class="product-name">小米路由器4</h3>
-								<p class="product-price">
-										<strong>199</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomiluyouqi4.png" alt=""></div>
-								<h3 class="product-name">小米路由器4</h3>
-								<p class="product-price">
-										<strong>199</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomiluyouqi4.png" alt=""></div>
-								<h3 class="product-name">小米路由器4</h3>
-								<p class="product-price">
-										<strong>199</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomiluyouqi4.png" alt=""></div>
-								<h3 class="product-name">小米路由器4</h3>
-								<p class="product-price">
-										<strong>199</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomiluyouqi4.png" alt=""></div>
-								<h3 class="product-name">小米路由器4</h3>
-								<p class="product-price">
-										<strong>199</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-						</div>
-					</li>
-					<li class="header-nav-item">
-						<a href="" herf="#">智能硬件</a>
-						<div class="box ">
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomijingshuiqi!160x110.jpg" alt=""></div>
-								<h3 class="product-name">小米净水器</h3>
-								<p class="product-price">
-										<strong>1699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomijingshuiqi!160x110.jpg" alt=""></div>
-								<h3 class="product-name">小米净水器</h3>
-								<p class="product-price">
-										<strong>1699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomijingshuiqi!160x110.jpg" alt=""></div>
-								<h3 class="product-name">小米净水器</h3>
-								<p class="product-price">
-										<strong>1699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomijingshuiqi!160x110.jpg" alt=""></div>
-								<h3 class="product-name">小米净水器</h3>
-								<p class="product-price">
-										<strong>1699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomijingshuiqi!160x110.jpg" alt=""></div>
-								<h3 class="product-name">小米净水器</h3>
-								<p class="product-price">
-										<strong>1699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-							<div class="box1">
-								<span class="flag new-flag">新品</span>
-								<div class="box2"><img src="imgzsc/xiaomijingshuiqi!160x110.jpg" alt=""></div>
-								<h3 class="product-name">小米净水器</h3>
-								<p class="product-price">
-										<strong>1699</strong><span>&nbsp;元起</span>
-								</p>
-							</div>
-						</div>
-					</li>
-					<li class="header-nav-item"><a href="" herf="#">服务</a></li>
+					<li class="header-nav-item"><a href="#">小米手机</a></li>
+					<li class="header-nav-item"><a href="#">红米</a></li>
+					<li class="header-nav-item"><a href="#">电视</a></li>
+					<li class="header-nav-item"><a href="#">笔记本</a></li>
+					<li class="header-nav-item"><a href="#">空调</a></li>
+					<li class="header-nav-item"><a href="#">新品</a></li>
+					<li class="header-nav-item"><a href="#">路由器</a></li>
+					<li class="header-nav-item"><a href="#">智能硬件</a></li>
+					<li class="header-nav-item"><a href="#">服务</a></li>
+					<li class="header-nav-item"><a href="#">社区</a></li>
 				</ul>
 			</nav>
 			<div class="search">
@@ -512,23 +82,49 @@
 				</div>
 				<div class="search-hot-words">
 					<a class="search-hot-words-item" href="#">小米8</a>
-					<a class="search-hot-words-item" href="#">小米MIX 2S</a>
-				</div>	
-					<div class="search-keyword-list">
-						<ul>
-							<li class="keyword-item"><a href="#"><span class="keyword">小米6X</span><span class="num">约有6件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">小米MIX 2S</span><span class="num">约有5件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">黑鲨游戏手机</span><span class="num">约有3件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">红米Note 5</span><span class="num">约有6件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">红米5A</span><span class="num">约有13件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">小米电视4C</span><span class="num">约有5件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">电视32英寸</span><span class="num">约有3件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">笔记本pro</span><span class="num">约有5件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">空气净化器</span><span class="num">约有11件</span></a></li>
-							<li class="keyword-item"><a href="#"><span class="keyword">净水器</span><span class="num">约有8件</span></a></li>
-						</ul>
+					<a class="search-hot-words-item" href="#">小米MIX2S</a>
 				</div>
-			</div>	
+				<div class="search-keyword-list">
+					<ul>
+						<li class="keyword-item"><a href="#"><span class="keyword">小米6X</span><span class="num">约有6件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">小米MIX 2</span><span class="num">约有5件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">黑鲨游戏手机</span><span class="num">约有3件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">红米Note 5</span><span class="num">约有6件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">红米5A</span><span class="num">约有13件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">小米电视4C</span><span class="num">约有5件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">电视32英寸</span><span class="num">约有3件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">笔记本pro</span><span class="num">约有5件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">空气净化器</span><span class="num">约有11件</span></a></li>
+						<li class="keyword-item"><a href="#"><span class="keyword">净水器</span><span class="num">约有8件</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-nav-content">
+			<div class="container">
+				<ul>
+					<li>
+						<div class="img-box">
+							<a href="#">
+								<img src="images/p1.jpg" alt="">
+							</a>
+						</div>
+						<p class="product-name">小米MIX2</p>
+						<p class="product-price">3699元起</p>
+						<span class="tag">新品</span>
+					</li>
+					<li>
+						<div class="img-box">
+							<a href="#">
+								<img src="images/p1.jpg" alt="">
+							</a>
+						</div>
+						<p class="product-name">小米MIX2</p>
+						<p class="product-price">3699元起</p>
+						<span class="tag">新品</span>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</header>
 	<section class="logo">
@@ -817,6 +413,9 @@
 			</div>	
 		</section>
 </body>
+<script src="js/datazsc.js"></script>
+<script src="js/ertong.js"></script>
+<script src="js/多值.js"></script>
 </html>
 
 
