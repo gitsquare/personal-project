@@ -153,6 +153,7 @@ Carousel.prototype.init = function(){
 		oLi.style.position = 'absolute';
 		oLi.style.left = 0;
 		oLi.style.top = 0;
+		oLi.style.cursor = 'pointer';
 		//底部指示按钮
 		var oBtn = document.createElement('li');
 

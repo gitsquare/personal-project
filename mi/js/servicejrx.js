@@ -112,11 +112,13 @@ function handleCarousel(){
 		var oCateContent = document.querySelector('.header-nav .header-nav-category .cate-content');
 		var oCateBox = document.querySelector('.header-nav .header-nav-category .cate-box');
 		var oCate = document.querySelector('.header-nav .header-nav-category .cate-box .cate');
+		var timer = 0;
 		aCateBtn.onmouseenter = function(){
 			oCate.style.display = 'block';
 			for(var i = 0;i<aCateItem.length;i++){
 				aCateItem[i].index = i;
 				aCateItem[i].onmouseenter = function(){
+					clearTimeout(timer);
 					for(var j = 0;j<aCateItem.length;j++){
 						aCateItem[j].className = 'cate-item';
 					}
@@ -124,8 +126,16 @@ function handleCarousel(){
 					this.className = 'cate-item active'
 					loadData(this.index);
 				}
-				oCateBox.onmouseleave = function(){
-					oCateContent.style.display = 'none';
+				oCateContent.onmouseenter = function(){
+					clearTimeout(timer);
+					oCate.style.display = 'block';
+					oCateContent.style.display = 'block';
+				}
+				oCateBox.onmouseleave = oCateContent.onmouseleave = function(){
+					timer = setTimeout(function(){
+						oCate.style.display = 'none';
+						oCateContent.style.display = 'none';
+					})
 					for(var j = 0;j<aCateItem.length;j++){
 						aCateItem[j].className = 'cate-item';
 					}
@@ -145,15 +155,6 @@ function handleCarousel(){
 					html += '</ul>';
 				oCateContent.innerHTML = html;
 			}
-		}
-		oCate.onmouseenter = function(){
-			oCate.style.display = 'block';
-		}
-		oCate.onmouseleave = function(){
-			oCate.style.display = 'none';
-		}
-		oCateContent.onmouseleave = function(){
-			oCate.style.display = 'none';
 		}
 	}
 
