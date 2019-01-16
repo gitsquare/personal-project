@@ -208,6 +208,7 @@ handleElecProduct();
 function handleElecProduct(){
 	var aTabItem = document.querySelectorAll('.elec .tab .tab-item');
 	var oElecProduct = document.querySelector('.elec .elec-product');
+	console.log(oElecProduct)
 	//初始化加载
 	loadData(0);
 	for(var i = 0;i<aTabItem.length;i++){
@@ -223,6 +224,7 @@ function handleElecProduct(){
 	}
 	function loadData(index){
 		var data = aElecItemData[index];
+		console.log(data)
 		var html = '';
 		//根据数据构建html
 		for(var k = 0;k<data.length-1;k++){
@@ -269,5 +271,6 @@ function handleElecProduct(){
 		html +=	'	</a>';
 		html +=	'</li>';
 		oElecProduct.innerHTML = html;
+		console.log(oElecProduct)
 	}
 }

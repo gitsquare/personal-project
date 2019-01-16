@@ -1,24 +1,25 @@
 /* 标签*/
 .flag{
-		position: absolute;
-		top: 0px;
-		left: 50%;
-		width: 66px;
-		height: 22px;
-		line-height: 22px;
-		color: #fff;
-		font-size: 12px;
-		border: 1px solid #ff6700;
-		text-align: center;	
-		z-index: 100;
-		text-align: center;
-	}
-	.new-flag{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 66px;
+	height: 22px;
+	line-height: 22px;
+	color: #fff;
+	font-size: 12px;
+	border: 1px solid #ff6700;
+	text-align: center;	
+	z-index: 100;
+	text-align: center;
+}
+.new-flag{
 		background: #fff;
 		color: #ff6700;
 	}
 .top{
 	background: #333;
+	/*width: 1226px;*/
 }
 .top .top-nav{
 	float: left;
@@ -63,10 +64,6 @@
 .top .cart .cart-box .icon-cart{
 	font-size: 20px;
 	vertical-align: -4px;
-}
-.top .cart .cart-box a:hover{
-	background: #fff;
-	color: #ff6700;
 }
 .top .cart .cart-content{
 	position: absolute;
@@ -127,6 +124,8 @@
 }
 .header{
 	height: 100px;
+	width: 1226px;
+	margin-left: 180px;
 }
 .header .logo{
 	float: left;
@@ -148,13 +147,14 @@
 	float: left;
 	margin-left: 190px;
 }
-.header .header-nav a{
-	
-}
 .header .header-nav .nav-item{
+	width: 190px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
 	position: absolute;
-	left: 300px;
-	top: 78px;
+	left: 235px;
+	top: 40px;
 	font-size: 16px;
 	color: #000;
 	display: inline-block;
@@ -168,6 +168,76 @@
 .header .header-nav .header-nav-item a{
 	font-size: 16px;
 	color: #333;
+}
+.header .header-nav  .cate-box .cate{
+	display: none;
+	width: 200px;
+	height: 400px;
+	border: 1px solid #ff6700;
+	position: absolute;
+	left: 175px;
+	top: 140px;
+	z-index: 999;
+	background-color: #fff;
+}
+.header .header-nav  .cate-box .cate li{
+	height: 40px;
+	line-height: 40px;
+}
+.header .header-nav  .cate-box .cate-content{
+	display: none;
+}
+.header .header-nav  .cate-box .cate-content ul{
+	background-color: #fff;
+	position: absolute;
+	left: 375px;
+	top: 140px;
+	width: 1100px;
+	height: 400px;
+	box-shadow: 0px 2px 2px 0px;
+	overflow: hidden;
+	z-index: 99;
+}
+.header .header-nav  .cate-box .cate-content ul li{
+	width: 265px;
+	height: 80px;
+	line-height: 80px;
+	float: left;
+	margin-left: 10px;
+}
+.header .header-nav  .cate-box .cate-content ul li a{
+	width: 20px;
+	height: 30px;
+	line-height: 30px;
+}
+.header .header-nav  .cate-box .cate-content ul li img{
+	width: 40px;
+	height: 50px;
+}
+.header .header-nav  .cate-box .cate-content ul li span{
+	vertical-align:20px;
+	color: #414141;
+}
+.header .header-nav  .cate-box .cate-content ul li span:hover{
+	color: #ff6700;
+}
+.header .header-nav  .cate-box .cate-content ul li 
+.header .header-nav  .cate-box .cate .cate-item{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+.header .header-nav  .cate-box .active{
+	background-color: #ff6700;
+}
+.header .header-nav  .cate-box .cate .cate-item a{
+	margin-left: 20px;
+	color: #424242;
+}
+.header .header-nav  .cate-box .cate .cate-item i{
+	float: right;
+	color: #e1e1e1;
 }
 .header .header-nav .header-nav-item a:hover{
 	color: #ff6700;
@@ -306,7 +376,7 @@
 	position: absolute;
 	top:50px;
 	left:0;
-	z-index: 999;
+	z-index: 80;
 	width: 247px;
 	border: 1px solid #ff6700;
 	border-top: none;
@@ -369,21 +439,32 @@
 	background: #eee;
 }
 .logo {
-	width: 100%;
+	width: 1226px;
 	overflow: hidden;
 	position: relative;
 }
-.logo .hd{
+.logo .bread{
+	height: 40px;
 	font-size: 12px;
-	color:#757575;
-	margin-left: 200px;
-}
+	line-height: 40px;
+	margin-left: 0px;
+	}
+.logo .bread a{
+	color: #757575;
+	}
+.logo .bread a:hover{
+	color: #616161;
+	}
+.logo .bread .sep{
+	margin: 0 0.5em;
+	color: #b0b0b0;
+	}
 .logo .content{
-		list-style: none;
-		width: 1233px;
-		height: 300px;
-		position: relative;
-		margin-left: 200px;
+	list-style: none;
+	width: 1233px;
+	height: 300px;
+	position: relative;
+	margin-left: 0px;
 }
 .logo li{
 		width: 1233px;
@@ -424,9 +505,9 @@
 	}
 
 .main{
-	width: 100%;
+	width: 1226px;
 	height: 1500px;
-	margin-left: 20px;
+	margin-left: 180px;
 }
 .main .top{
 	width: 100%;
@@ -461,7 +542,7 @@
 	box-shadow: 0 10px 30px rgba(0,0,0,0.2)
 }
 .main .top .box img{
-	margin-top: 80px;
+	margin-top: 40px;
 }
 .main .top .box .list-name{
 	color: #222222;
@@ -494,13 +575,12 @@
 	background: #fff;
 }
 .service{
-	width: 100%;
+	width: 1226px;
 	margin-top: 50px;
 }
 .box1{
 	height: 500px;
 	position: relative;
-	margin-left: 150px;
 }
 .service .box1 h2{
 	width: 100%;
@@ -529,7 +609,6 @@
 .service .box1 .right h3{
 	font-size: 20px;
 	color: #000000;
-	
 	margin-top: 100px;
 }
 .service .box1 .right .desc{
@@ -598,9 +677,10 @@
 	cursor: pointer;
 }
 .service .box2 .header-nav #tab-container li{
+	width: 150px;
 	display: none;
 	position: absolute;
-	left: 0;
+	left: 150px;
 	top: 0;
 }
 .service .box2 .header-nav #tab-container .a1{
@@ -683,8 +763,9 @@
 	margin-top: 20px;
 	float: left;
 	height: 100px;
-	width: 100%;
+	width: 1226px;
 	position: relative;
+	margin-left: -195px;
 }
 .service .header-nav .active{
 	background-color: #ff6700;
@@ -692,16 +773,19 @@
 }
 .service .box2 .header-nav #tab-list li {
 	float: left;
-	width: 180px;
+	width: 150px;
 	height: 100px;
 	line-height: 100px;
 	text-align: center;
+	margin-right: 25px;
 }
 .service .box2 .header-nav #tab-list{
+	width: 100%;
 	height: 100px;
+	margin-left: 50px;
 }
 .contact{
-	width: 100%;
+	width: 1226px;
 }
 .contact h2{
 	width: 100%;
@@ -719,7 +803,7 @@
 	margin-left: 65px;
 }
 .contact .box .box1{
-	width: 360px;
+	width: 380px;
 	height: 250px;
 	float: left;
 	line-height: 250px;
@@ -727,6 +811,15 @@
 	margin-right: 20px;
 	margin-top: 10px;
 	transition: all 0.3s;
+}
+.contact .box .box1 .q-img{
+	position: absolute;
+	left: 30%;
+	top: 25%;
+	display: none;
+}
+.contact .box .box1 img{
+	margin-right: 80px;
 }
 .contact .box .box1:hover{
 	transform: translateY(-2px);
@@ -738,8 +831,15 @@
 .contact .box .box1:nth-child(4){
 	margin-left: 20px;
 }
-.contact .box .box1 span{
-	
+.contact .box .box1 span:nth-child(2){
+	position: absolute;
+	left: 185px;
+	top: -30px;
+}
+.contact .box .box1 span:nth-child(3){
+	position: absolute;
+	left: 185px;
+	top: 0;
 }
 .contact .box .box1 p{
 	font-size: 12px;
@@ -749,7 +849,9 @@
 	left: 50px;
 }
 .end{
+	width: 1226px;
 	height: 300px;
+	margin-left: 180px;
 }
 .end .service{
 	border-bottom: 1px solid #e0e0e0;
@@ -843,7 +945,8 @@
 
 .footer{
 	height: 148px;
-	width: 100%;
+	width: 1226px;
+	margin-left: 180px;
 	position: relative;
 }
 .footer .info .logo{
@@ -896,7 +999,7 @@
 	float: right;
 	position: absolute;
 	top: 20px;
-	right: 150px;
+	right: 0;
 }
 .footer .a2-item img{
 	height: 28px;

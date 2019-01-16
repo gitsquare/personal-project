@@ -1,6 +1,7 @@
 handleCart();
 handleNav();
 handleNav();
+handleCate();
 
 
 //处理购物车
@@ -25,7 +26,7 @@ function handleCart(){
 	}
 	oCart.onmouseleave = function(){
 		oCarLink.style.background = '#424242';
-		oCarLink.style.color = '#fff';
+		oCarLink.style.color = '#b0b0b0';
 		animate(oEmptContent,{height:0},true,function(){
 			oLoading.style.display = 'none';
 			oEmptCart.style.display = 'none';
@@ -35,7 +36,7 @@ function handleCart(){
 //处理导航
 function handleNav(){
 	//获取导航列表
-	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
+	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item>a');
 	var oNavContent = document.querySelector('.header .header-nav-content');
 	var oNavContentContainer = oNavContent.querySelector('.container')
 	var hideTimer = 0;
@@ -103,7 +104,7 @@ function handleNav(){
 //处理导航列表
 function handleNav(){
 	//获取导航列表
-	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
+	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item>a');
 	var oNavContent = document.querySelector('.header .header-nav-content');
 	var oNavContentContainer = oNavContent.querySelector('.container')
 	var hideTimer = 0;
@@ -168,3 +169,65 @@ function handleNav(){
 		oNavContentContainer.innerHTML = html;
 	}
 }
+//处理分类
+function handleCate(){
+		var aCateBtn = document.querySelector('.header-nav>a');
+		var aCateItem = document.querySelectorAll('.header-nav .cate-box .cate .cate-item');
+		var oCateContent = document.querySelector('.header-nav .cate-box .cate-content');
+		var oCateBox = document.querySelector('.header-nav .cate-box');
+		var oCate = document.querySelector('.header-nav .cate-box .cate');
+		var span = document.getElementsByTagName('span')
+		span.className = 'span';
+		aCateBtn.onmouseenter = function(){
+			oCate.style.display = 'block';
+			for(var i = 0;i<aCateItem.length;i++){
+				aCateItem[i].index = i;
+				aCateItem[i].onmouseenter = function(){
+					for(var j = 0;j<aCateItem.length;j++){
+						aCateItem[j].className = 'cate-item';
+					}
+					oCateContent.style.display = 'block';
+					this.className = 'cate-item active'
+					loadData(this.index);
+				}
+				oCateBox.onmouseleave = function(){
+					oCateContent.style.display = 'none';
+					for(var j = 0;j<aCateItem.length;j++){
+						aCateItem[j].className = 'cate-item';
+					}
+				}
+			}
+			function loadData(index){
+				var data = aCateItemDate[index];
+				var html = '<ul>';
+				for(var k = 0;k<data.length;k++){
+					html +=	'<li>';
+					html +=	'	<a href="'+data[k].url+'">';
+					html +=	'		<img src="'+data[k].img+'" alt="">';
+					html +=	'		<span>'+data[k].name+'</span>';
+					html +=	'	</a>';
+					html +=	'</li>';
+				}
+					html += '</ul>';
+				oCateContent.innerHTML = html;
+			}
+		}
+		var timer =0;
+		oCate.onmouseover=oCateContent.onmouseover=function(){
+			oCateContent.style.display='block';
+			clearTimeout(timer);
+		};
+		oCate.onmouseout=oCateContent.onmouseout=function(){
+			// oCateContent.style.display='block';
+			timer =setTimeout(function(){
+			 oCateContent.style.display='none';
+			 oCate.style.display='none';
+			},10)
+		}
+		aCateBtn.onmouseout=function(){
+			oCate.style.display='block';
+			timer =setTimeout(function(){
+			 oCate.style.display='none'
+			},500)
+		}
+}	

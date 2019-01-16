@@ -169,6 +169,91 @@
 	color: #000;
 	display: inline-block;
 }
+.header .header-nav .nav-item{
+	position: absolute;
+	left: 300px;
+	top: 78px;
+	font-size: 16px;
+	color: #000;
+	display: inline-block;
+}
+.header .header-nav .header-nav-item{
+	float: left;
+	height: 100px;
+	line-height: 100px;	
+	margin-right: 20px;
+}
+.header .header-nav .header-nav-item a{
+	font-size: 16px;
+	color: #333;
+}
+.header .header-nav  .cate-box .cate{
+	display: none;
+	width: 200px;
+	height: 400px;
+	border: 1px solid #ff6700;
+	position: absolute;
+	left: 180px;
+	top: 140px;
+	z-index: 999;
+	background-color: #fff;
+}
+.header .header-nav  .cate-box .cate-content{
+	display: none;
+}
+.header .header-nav  .cate-box .cate-content ul{
+	background-color: #fff;
+	position: absolute;
+	left: 380px;
+	top: 140px;
+	width: 1100px;
+	height: 400px;
+	box-shadow: 0px 2px 2px 0px;
+	overflow: hidden;
+	z-index: 99;
+}
+.header .header-nav  .cate-box .cate-content ul li{
+	width: 265px;
+	height: 80px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.header .header-nav  .cate-box .cate-content ul li a{
+	width: 20px;
+	height: 30px;
+}
+.header .header-nav  .cate-box .cate-content ul li img{
+	width: 40px;
+	height: 50px;
+}
+.header .header-nav  .cate-box .cate-content ul li span{
+	vertical-align: 20px;
+	color: #414141;
+}
+.header .header-nav  .cate-box .cate-content ul li span:hover{
+	color: #ff6700;
+}
+.header .header-nav  .cate-box .cate .cate-item{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+.header .header-nav  .cate-box .active{
+	background-color: #ff6700;
+}
+.header .header-nav  .cate-box .cate .cate-item a{
+	margin-left: 20px;
+	color: #424242;
+}
+.header .header-nav  .cate-box .cate .cate-item i{
+	float: right;
+	color: #e1e1e1;
+}
+.header .header-nav .header-nav-item a:hover{
+	color: #ff6700;
+}
 .header .header-nav .header-nav-item{
 	float: left;
 	height: 100px;
@@ -316,7 +401,7 @@
 	position: absolute;
 	top:50px;
 	left:0;
-	z-index: 999;
+	z-index: 80;
 	width: 247px;
 	border: 1px solid #ff6700;
 	border-top: none;
@@ -754,7 +839,6 @@
 	height: 28px;
 }
 .end .foot{
-	height: 40px;
-	background-image: url(../images/slogan.png);
-	background-repeat: no-repeat;
-	background-position:center bottom ;
+	position: absolute;
+	left: 600px;
+	top: 80px;
