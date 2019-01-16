@@ -71,8 +71,24 @@
 
 /*头部区域开始*/
 	.header{
-		height: 100px;
+		width: 100%;
+		background-color: #fff;
+	} 
+	.header .container{
+		width: 100%;
 	}
+	.header .container .header-box{
+		width: 1226px;
+		height: 100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header .container.fixed{
+		position: fixed;
+		top: 0;
+		background-color: #fff;
+		z-index: 999;
+	} 
 	.header .header-logo{
 		float: left;
 		width: 150px;
@@ -172,6 +188,8 @@
 	.home .banner{
 		position: relative;
 		margin-bottom: 14px;
+		height: 464px;
+		width: 1226px;
 	}
 	.home .sider{
 		position: absolute;
