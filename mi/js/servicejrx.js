@@ -131,11 +131,11 @@ function handleCarousel(){
 					oCate.style.display = 'block';
 					oCateContent.style.display = 'block';
 				}
-				oCateBox.onmouseleave = oCateContent.onmouseleave = function(){
+				aCateBtn.onmouseleave = oCateBox.onmouseleave = oCateContent.onmouseleave = function(){
 					timer = setTimeout(function(){
 						oCate.style.display = 'none';
 						oCateContent.style.display = 'none';
-					})
+					},300)
 					for(var j = 0;j<aCateItem.length;j++){
 						aCateItem[j].className = 'cate-item';
 					}

@@ -167,7 +167,7 @@ handleElecProduct();
 //倒计时
 	function handleTime(){
 		var oTimeNum = document.querySelectorAll('.timer-num');
-		var endDate = new Date('2018-12-25 20:50:00');
+		var endDate = new Date('2019-01-17 12:00:00');
 		var endtimes = endDate.getTime();
 		var timer = 0
 		function to2Str(num){

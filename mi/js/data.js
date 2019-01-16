@@ -689,16 +689,12 @@ var aCateItemDate = [
 var aElecItemData = [
 	[
 		{
-			url:'',
-			img:'imagesjrx/el1.jpg',
-			name:'小米MX2 8GB+128GB 黑',
-			desc:'Unibody 全陶瓷',
-			price:'3699',
-			del:'4699',
-			flag:{
-				name:'off-flag',
-				content:'减800元'
-			},
+			url:'../mi-band/mi-band.html',
+			img:'imagesjrx/shouhuan.jpg',
+			name:'小米手环3',
+			desc:'',
+			price:'166',
+			del:'199',
 			view:{
 				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
 				author:'yonghu'
@@ -707,8 +703,8 @@ var aElecItemData = [
 		{
 			url:'',
 			img:'imagesjrx/el1.jpg',
-			name:'小米MX2 8GB+128GB 黑',
-			desc:'Unibody 全陶瓷',
+			name:'小米电视4X 43英寸',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -723,8 +719,8 @@ var aElecItemData = [
 		{
 			url:'',
 			img:'imagesjrx/el1.jpg',
-			name:'小米MX2 8GB+128GB 黑',
-			desc:'Unibody 全陶瓷',
+			name:'小米电视4X 43英寸',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -739,8 +735,8 @@ var aElecItemData = [
 		{
 			url:'',
 			img:'imagesjrx/el1.jpg',
-			name:'小米MX2 8GB+128GB 黑',
-			desc:'Unibody 全陶瓷',
+			name:'小米电视4X 43英寸',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -755,8 +751,8 @@ var aElecItemData = [
 		{
 			url:'',
 			img:'imagesjrx/el1.jpg',
-			name:'小米MX2 8GB+128GB 黑',
-			desc:'Unibody 全陶瓷',
+			name:'小米电视4X 43英寸',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -771,8 +767,8 @@ var aElecItemData = [
 		{
 			url:'',
 			img:'imagesjrx/el1.jpg',
-			name:'小米MX2 8GB+128GB 黑',
-			desc:'Unibody 全陶瓷',
+			name:'小米电视4X 43英寸',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -787,8 +783,8 @@ var aElecItemData = [
 		{
 			url:'',
 			img:'imagesjrx/el1.jpg',
-			name:'小米MX2 8GB+128GB 黑',
-			desc:'Unibody 全陶瓷',
+			name:'小米电视4X 43英寸',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -820,7 +816,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/el2.jpg',
 			name:'小米电视',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
@@ -832,7 +828,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/el2.jpg',
 			name:'小米电视',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
@@ -844,7 +840,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/el2.jpg',
 			name:'小米电视',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
@@ -856,7 +852,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/el2.jpg',
 			name:'小米电视',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -872,7 +868,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/el3.jpg',
 			name:'小米电视',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -888,7 +884,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/el3.jpg',
 			name:'小米电视',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -904,7 +900,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/el3.jpg',
 			name:'小米电视',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -920,7 +916,7 @@ var aElecItemData = [
 			top:{
 				url:'',
 				img:'imagesjrx/ca.png',
-				name:'小米MX2 8GB+128GB 黑',
+				name:'小米电视4X 43英寸',
 				price:'3699',
 			},
 			bottom:{
@@ -936,7 +932,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/bijiben.png',
 			name:'小米电脑',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -952,7 +948,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/bijiben.png',
 			name:'小米电脑',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -968,7 +964,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/bijiben.png',
 			name:'小米电脑',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -984,7 +980,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/bijiben.png',
 			name:'小米电脑',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
@@ -996,7 +992,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/bijiben.png',
 			name:'小米电脑',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
@@ -1008,7 +1004,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/bijiben.png',
 			name:'小米电脑',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -1024,7 +1020,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/bijiben.png',
 			name:'小米电脑',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -1040,7 +1036,7 @@ var aElecItemData = [
 			top:{
 				url:'',
 				img:'imagesjrx/ca.png',
-				name:'小米MX2 8GB+128GB 黑',
+				name:'小米电视4X 43英寸',
 				price:'3699',
 			},
 			bottom:{
@@ -1056,7 +1052,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/jiqiren.jpg',
 			name:'小米扫地机器人',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
@@ -1068,7 +1064,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/jiqiren.jpg',
 			name:'小米扫地机器人',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
@@ -1080,7 +1076,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/jiqiren.jpg',
 			name:'小米扫地机器人',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -1096,7 +1092,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/jiqiren.jpg',
 			name:'小米扫地机器人',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -1112,7 +1108,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/shoudiantong.jpg',
 			name:'小米随身手电筒',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			flag:{
@@ -1128,7 +1124,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/shoudiantong.jpg',
 			name:'小米随身手电筒',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
@@ -1140,7 +1136,7 @@ var aElecItemData = [
 			url:'',
 			img:'imagesjrx/shoudiantong.jpg',
 			name:'小米随身手电筒',
-			desc:'Unibody 全陶瓷',
+			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
@@ -1152,7 +1148,7 @@ var aElecItemData = [
 			top:{
 				url:'',
 				img:'imagesjrx/ca.png',
-				name:'小米MX2 8GB+128GB 黑',
+				name:'小米电视4X 43英寸',
 				price:'3699',
 			},
 			bottom:{

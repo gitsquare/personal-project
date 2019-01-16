@@ -156,6 +156,11 @@
 		line-height: 100px;
 		margin-right: 20px;
 	}
+	.header .header-nav .header-nav-category>a{
+		display: block;
+		height: 100px;
+		padding-left: 30px;
+	}
 	.header .header-nav .header-nav-category a{
 		font-size: 16px;
 		color: #333;
