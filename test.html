@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.clearfix:after{
+			display: block;
+			content: "";
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+		.fa{
+			float: left;
+			width: 200px;
+		}
+		.son1,.son2{
+			float: left;
+			/*width: 100px;*/
+			height: 100px;
+			border: 1px solid #000;
+		}
+		.gf2{
+			width: 100px;
+			height: 100px;
+			border: 1px solid #f00;
+		}
+	</style>
+</head>
+<body>
+	<div class="gf ">
+		<div class="fa">
+			<span class="son1">span1</span>
+			<span class="son2">span2</span>
+		</div>
+	</div>
+	<div class="gf2">gf2</div>
+</body>
+</html>
