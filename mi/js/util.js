@@ -1,35 +1,3 @@
-/*
-function animate(obj,attr,target){
-	clearInterval(obj.timer);
-	var ispeed = 0;
-	obj.timer = setInterval(function(){
-		var current = parseFloat(getComputedStyle(obj,false)[attr]);
-		if(attr == 'opacity'){
-			current = Math.round(current * 100);
-		}
-		if(current > target){
-			iSpeed = -10;
-		}else{
-			iSpeed = 10;
-		}
-		if(Math.abs(target - current) < Math.abs(iSpeed)){
-			if(attr == 'opacity'){
-			obj.style.opacity = target / 100;
-			}else{
-				obj.style[attr] = target + 'px';
-			}
-			clearInterval(obj.timer);
-		}else{
-			if(attr == 'opacity'){
-				obj.style.opacity = (current + iSpeed)/100;
-			}else{
-				obj.style[attr] = current + iSpeed + 'px';
-			}
-		}
-	},30)
-}
-*/
-
 function animate(obj,options,isLinear,fnEnd){
 	//设置默认是匀速动画
 	if(isLinear == undefined){
@@ -59,9 +27,9 @@ function animate(obj,options,isLinear,fnEnd){
 			if(isLinear){
 				//确定匀速动画的速度
 				if(current > options[attr]){
-					iSpeed = -15;
+					iSpeed = -18;
 				}else{
-					iSpeed = 15;
+					iSpeed = 18;
 				}
 				//匀速动画终止条件
 				if(Math.abs(options[attr] - current) < Math.abs(iSpeed)){
@@ -190,6 +158,7 @@ Carousel.prototype.init = function(){
 	this.oBox.appendChild(this.oRightArrow);
 	//添加底部指示按钮到外层父容器中
 	this.oBox.appendChild(this.oUlBtn);
+	// 把底部按钮放到容器中间的时候使用
 	// this.oUlBtn.style.marginLeft = - this.oUlBtn.offsetWidth * 0.5 + 'px';
 }
 
@@ -197,14 +166,12 @@ Carousel.prototype.bindEvent = function(){
 	var _this = this;
 	//绑定右按钮
 	this.oRightArrow.onclick = function(){
-		
 		//2.显示下一张
 			_this.now++;
 			if(_this.now>=_this.aImg.length){
 				_this.now = 0;
 			}
 			_this.tab();
-			
 	}
 	//绑定左按钮
 	this.oLeftArrow.onclick = function(){
@@ -223,7 +190,6 @@ Carousel.prototype.bindEvent = function(){
 		}
 	}
 }
-
 Carousel.prototype.tab = function(){
 	//1.清除所有
 	for(var i = 0;i<this.aImg.length;i++){
@@ -237,7 +203,6 @@ Carousel.prototype.tab = function(){
 	animate(this.oUlImg.children[this.now],{opacity:100});
 	this.oUlBtn.children[this.now].className = 'active';
 }
-
 Carousel.prototype.auto = function(){
 	var timer = 0;
 	var _this = this;

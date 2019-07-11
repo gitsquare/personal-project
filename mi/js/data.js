@@ -1,29 +1,29 @@
-var aNavItemDate = [
+var aNavItemData = [
 	[
 		{
-			url:'',
-			img:'imagesjrx/ph1.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph1.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'新品'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph1.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph1.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'新品'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph1.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph1.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'新品'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph1.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph1.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'新品'
@@ -31,29 +31,29 @@ var aNavItemDate = [
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/ph4.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph4.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph4.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph4.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'新品'
@@ -61,69 +61,69 @@ var aNavItemDate = [
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/el1.jpg',
+			url:'https://www.mi.com',
+			img:'images/el1.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/el2.jpg',
+			url:'https://www.mi.com',
+			img:'images/el2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/el3.jpg',
+			url:'https://www.mi.com',
+			img:'images/el3.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 		},
 		{
-			url:'',
-			img:'imagesjrx/el4.png',
+			url:'https://www.mi.com',
+			img:'images/el4.png',
 			name:'小米MIX3',
 			price:'3299元',
 		},
 		{
-			url:'',
-			img:'imagesjrx/el1.jpg',
+			url:'https://www.mi.com',
+			img:'images/el1.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/el2.jpg',
+			url:'https://www.mi.com',
+			img:'images/el2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 		}
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/bijiben.png',
+			url:'https://www.mi.com',
+			img:'images/bijiben.png',
 			name:'小米笔记本',
 			price:'4999元',
 		},
 		{
-			url:'',
-			img:'imagesjrx/bijiben.png',
-			name:'小米笔记本',
-			price:'4999元',
-			tag:'热卖'
-		},
-		{
-			url:'',
-			img:'imagesjrx/bijiben.png',
+			url:'https://www.mi.com',
+			img:'images/bijiben.png',
 			name:'小米笔记本',
 			price:'4999元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/bijiben.png',
+			url:'https://www.mi.com',
+			img:'images/bijiben.png',
+			name:'小米笔记本',
+			price:'4999元',
+			tag:'热卖'
+		},
+		{
+			url:'https://www.mi.com',
+			img:'images/bijiben.png',
 			name:'小米笔记本',
 			price:'4999元',
 			tag:'新品'
@@ -131,28 +131,28 @@ var aNavItemDate = [
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/kongtiao.jpg',
+			url:'https://www.mi.com',
+			img:'images/kongtiao.jpg',
 			name:'米家互联网空调（一级能效）',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/kongtiao.jpg',
+			url:'https://www.mi.com',
+			img:'images/kongtiao.jpg',
 			name:'米家互联网空调（一级能效）',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/kongtiao.jpg',
+			url:'https://www.mi.com',
+			img:'images/kongtiao.jpg',
 			name:'米家互联网空调（一级能效）',
 			price:'3299元',
 		},
 		{
-			url:'',
-			img:'imagesjrx/kongtiao.jpg',
+			url:'https://www.mi.com',
+			img:'images/kongtiao.jpg',
 			name:'米家互联网空调（一级能效）',
 			price:'3299元',
 			tag:'新品'
@@ -160,89 +160,29 @@ var aNavItemDate = [
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/ph3.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph3.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
-			name:'小米MIX3',
-			price:'3299元',
-			tag:'新品'
-		}
-	],
-	[
-		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
-			name:'小米路由器4',
-			price:'199元',
-			tag:'热卖'
-		},
-		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
-			name:'小米路由器4',
-			price:'199元',
-			tag:'热卖'
-		},
-		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
-			name:'小米路由器4',
-			price:'199元',
-			tag:'热卖'
-		},
-		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
-			name:'小米路由器4',
-			price:'199元',
-			tag:'新品'
-		}
-	],
-	[
-		{
-			url:'',
-			img:'imagesjrx/ph3.jpg',
-			name:'小米MIX3',
-			price:'3299元',
-			tag:'热卖'
-		},
-		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
-			name:'小米MIX3',
-			price:'3299元',
-			tag:'热卖'
-		},
-		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
-			name:'小米MIX3',
-			price:'3299元',
-			tag:'热卖'
-		},
-		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'新品'
@@ -250,437 +190,467 @@ var aNavItemDate = [
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/ph3.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
+			name:'小米路由器4',
+			price:'199元',
+			tag:'热卖'
+		},
+		{
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
+			name:'小米路由器4',
+			price:'199元',
+			tag:'热卖'
+		},
+		{
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
+			name:'小米路由器4',
+			price:'199元',
+			tag:'热卖'
+		},
+		{
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
+			name:'小米路由器4',
+			price:'199元',
+			tag:'新品'
+		}
+	],
+	[
+		{
+			url:'https://www.mi.com',
+			img:'images/ph3.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'热卖'
 		},
 		{
-			url:'',
-			img:'imagesjrx/ph2.jpg',
+			url:'https://www.mi.com',
+			img:'images/ph2.jpg',
 			name:'小米MIX3',
 			price:'3299元',
 			tag:'新品'
 		}
-	],
+	]
 ]
 
-var aCateItemDate = [
+var aCateItemData = [
 	[
 		{
-			url:'',
-			img:'imagesjrx/small1.jpg',
+			url:'https://www.mi.com',
+			img:'images/small1.jpg',
 			name:'红米6X'
 		},
 		{
-			url:'',
-			img:'imagesjrx/small2.png',
+			url:'https://www.mi.com',
+			img:'images/small2.png',
 			name:'小米8'
 		},
 		{
-			url:'',
-			img:'imagesjrx/small3.jpg',
+			url:'https://www.mi.com',
+			img:'images/small3.jpg',
 			name:'米粉卡 日租卡'
 		},
 		{
-			url:'',
-			img:'imagesjrx/small1.jpg',
+			url:'https://www.mi.com',
+			img:'images/small1.jpg',
 			name:'红米6X'
 		},
 		{
-			url:'',
-			img:'imagesjrx/small2.png',
+			url:'https://www.mi.com',
+			img:'images/small2.png',
 			name:'小米8'
 		},
 		{
-			url:'',
-			img:'imagesjrx/small3.jpg',
+			url:'https://www.mi.com',
+			img:'images/small3.jpg',
 			name:'米粉卡 日租卡'
 		},
 		{
-			url:'',
-			img:'imagesjrx/small1.jpg',
+			url:'https://www.mi.com',
+			img:'images/small1.jpg',
 			name:'红米6X'
 		},
 		{
-			url:'',
-			img:'imagesjrx/small2.png',
+			url:'https://www.mi.com',
+			img:'images/small2.png',
 			name:'小米8'
 		},
 		{
-			url:'',
-			img:'imagesjrx/small3.jpg',
+			url:'https://www.mi.com',
+			img:'images/small3.jpg',
 			name:'米粉卡 日租卡'
 		}
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/el1.jpg',
+			url:'https://www.mi.com',
+			img:'images/el1.jpg',
 			name:'小米电视4A '
 		},
 		{
-			url:'',
-			img:'imagesjrx/el2.jpg',
+			url:'https://www.mi.com',
+			img:'images/el2.jpg',
 			name:'小米电视4A 32英寸'
 		},
 		{
-			url:'',
-			img:'imagesjrx/el3.jpg',
+			url:'https://www.mi.com',
+			img:'images/el3.jpg',
 			name:'小米电视4A 43英寸'
 		},
 		{
-			url:'',
-			img:'imagesjrx/el4.png',
+			url:'https://www.mi.com',
+			img:'images/el4.png',
 			name:'小米电视4A 50英寸'
 		},{
-			url:'',
-			img:'imagesjrx/el5.jpg',
+			url:'https://www.mi.com',
+			img:'images/el5.jpg',
 			name:'小米电视4A 55英寸'
 		},
 		{
-			url:'',
-			img:'imagesjrx/el2.jpg',
+			url:'https://www.mi.com',
+			img:'images/el2.jpg',
 			name:'小米电视4A 58英寸'
 		}
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/bijiben.png',
+			url:'https://www.mi.com',
+			img:'images/bijiben.png',
 			name:'小米笔记本'
 		},
 		{
-			url:'',
-			img:'imagesjrx/bijiben.png',
+			url:'https://www.mi.com',
+			img:'images/bijiben.png',
 			name:'小米笔记本'
 		},
 		{
-			url:'',
-			img:'imagesjrx/bijiben.png',
+			url:'https://www.mi.com',
+			img:'images/bijiben.png',
 			name:'小米笔记本'
 		},
 		{
-			url:'',
-			img:'imagesjrx/bijiben.png',
+			url:'https://www.mi.com',
+			img:'images/bijiben.png',
 			name:'小米笔记本'
 		},
 		{
-			url:'',
-			img:'imagesjrx/bijiben.png',
+			url:'https://www.mi.com',
+			img:'images/bijiben.png',
 			name:'小米笔记本'
 		},
 		{
-			url:'',
-			img:'imagesjrx/bijiben.png',
+			url:'https://www.mi.com',
+			img:'images/bijiben.png',
 			name:'小米笔记本'
 		}
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/kongtiao.jpg',
+			url:'https://www.mi.com',
+			img:'images/kongtiao.jpg',
 			name:'米家互联网空调'
 		},
 		{
-			url:'',
-			img:'imagesjrx/kongtiao.jpg',
+			url:'https://www.mi.com',
+			img:'images/kongtiao.jpg',
 			name:'米家互联网空调'
 		},
 		{
-			url:'',
-			img:'imagesjrx/kongtiao.jpg',
+			url:'https://www.mi.com',
+			img:'images/kongtiao.jpg',
 			name:'米家互联网空调'
 		},
 		{
-			url:'',
-			img:'imagesjrx/kongtiao.jpg',
+			url:'https://www.mi.com',
+			img:'images/kongtiao.jpg',
 			name:'米家互联网空调'
 		}
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/pinghengche.jpg',
+			url:'https://www.mi.com',
+			img:'images/pinghengche.jpg',
 			name:'平衡车'
 		},
 		{
-			url:'',
-			img:'imagesjrx/pinghengche.jpg',
+			url:'https://www.mi.com',
+			img:'images/pinghengche.jpg',
 			name:'平衡车'
 		},
 		{
-			url:'',
-			img:'imagesjrx/pinghengche.jpg',
+			url:'https://www.mi.com',
+			img:'images/pinghengche.jpg',
 			name:'平衡车'
 		},
 		{
-			url:'',
-			img:'imagesjrx/pinghengche.jpg',
+			url:'https://www.mi.com',
+			img:'images/pinghengche.jpg',
 			name:'平衡车'
 		},
 		{
-			url:'',
-			img:'imagesjrx/pinghengche.jpg',
+			url:'https://www.mi.com',
+			img:'images/pinghengche.jpg',
 			name:'平衡车'
 		},
 		{
-			url:'',
-			img:'imagesjrx/pinghengche.jpg',
+			url:'https://www.mi.com',
+			img:'images/pinghengche.jpg',
 			name:'平衡车'
 		},
 		{
-			url:'',
-			img:'imagesjrx/pinghengche.jpg',
+			url:'https://www.mi.com',
+			img:'images/pinghengche.jpg',
 			name:'平衡车'
 		},
 		{
-			url:'',
-			img:'imagesjrx/pinghengche.jpg',
+			url:'https://www.mi.com',
+			img:'images/pinghengche.jpg',
 			name:'平衡车'
 		}
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
 			name:'路由器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
 			name:'路由器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
 			name:'路由器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
 			name:'路由器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
 			name:'路由器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
 			name:'路由器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
 			name:'路由器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
 			name:'路由器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
 			name:'路由器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/luyouqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/luyouqi.jpg',
 			name:'路由器'
 		}
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/yidongdianyuan.jpg',
+			url:'https://www.mi.com',
+			img:'images/yidongdianyuan.jpg',
 			name:'移动电源'
 		},
 		{
-			url:'',
-			img:'imagesjrx/yidongdianyuan.jpg',
+			url:'https://www.mi.com',
+			img:'images/yidongdianyuan.jpg',
 			name:'移动电源'
 		},
 		{
-			url:'',
-			img:'imagesjrx/yidongdianyuan.jpg',
+			url:'https://www.mi.com',
+			img:'images/yidongdianyuan.jpg',
 			name:'移动电源'
 		},
 		{
-			url:'',
-			img:'imagesjrx/yidongdianyuan.jpg',
+			url:'https://www.mi.com',
+			img:'images/yidongdianyuan.jpg',
 			name:'移动电源'
 		},
 		{
-			url:'',
-			img:'imagesjrx/yidongdianyuan.jpg',
+			url:'https://www.mi.com',
+			img:'images/yidongdianyuan.jpg',
 			name:'移动电源'
 		},
 		{
-			url:'',
-			img:'imagesjrx/yidongdianyuan.jpg',
+			url:'https://www.mi.com',
+			img:'images/yidongdianyuan.jpg',
 			name:'移动电源'
 		},
 		{
-			url:'',
-			img:'imagesjrx/yidongdianyuan.jpg',
+			url:'https://www.mi.com',
+			img:'images/yidongdianyuan.jpg',
 			name:'移动电源'
 		},
 		{
-			url:'',
-			img:'imagesjrx/yidongdianyuan.jpg',
+			url:'https://www.mi.com',
+			img:'images/yidongdianyuan.jpg',
 			name:'移动电源'
 		},
 		{
-			url:'',
-			img:'imagesjrx/yidongdianyuan.jpg',
+			url:'https://www.mi.com',
+			img:'images/yidongdianyuan.jpg',
 			name:'移动电源'
 		},
 		{
-			url:'',
-			img:'imagesjrx/yidongdianyuan.jpg',
+			url:'https://www.mi.com',
+			img:'images/yidongdianyuan.jpg',
 			name:'移动电源'
 		}
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/chuifengji.jpg',
+			url:'https://www.mi.com',
+			img:'images/chuifengji.jpg',
 			name:'吹风机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/chuifengji.jpg',
+			url:'https://www.mi.com',
+			img:'images/chuifengji.jpg',
 			name:'吹风机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/chuifengji.jpg',
+			url:'https://www.mi.com',
+			img:'images/chuifengji.jpg',
 			name:'吹风机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/chuifengji.jpg',
+			url:'https://www.mi.com',
+			img:'images/chuifengji.jpg',
 			name:'吹风机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/chuifengji.jpg',
+			url:'https://www.mi.com',
+			img:'images/chuifengji.jpg',
 			name:'吹风机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/chuifengji.jpg',
+			url:'https://www.mi.com',
+			img:'images/chuifengji.jpg',
 			name:'吹风机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/chuifengji.jpg',
+			url:'https://www.mi.com',
+			img:'images/chuifengji.jpg',
 			name:'吹风机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/chuifengji.jpg',
+			url:'https://www.mi.com',
+			img:'images/chuifengji.jpg',
 			name:'吹风机'
 		}
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/erji.jpg',
+			url:'https://www.mi.com',
+			img:'images/erji.jpg',
 			name:'耳机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/erji.jpg',
+			url:'https://www.mi.com',
+			img:'images/erji.jpg',
 			name:'耳机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/erji.jpg',
+			url:'https://www.mi.com',
+			img:'images/erji.jpg',
 			name:'耳机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/erji.jpg',
+			url:'https://www.mi.com',
+			img:'images/erji.jpg',
 			name:'耳机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/erji.jpg',
+			url:'https://www.mi.com',
+			img:'images/erji.jpg',
 			name:'耳机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/erji.jpg',
+			url:'https://www.mi.com',
+			img:'images/erji.jpg',
 			name:'耳机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/erji.jpg',
+			url:'https://www.mi.com',
+			img:'images/erji.jpg',
 			name:'耳机'
 		},
 		{
-			url:'',
-			img:'imagesjrx/erji.jpg',
+			url:'https://www.mi.com',
+			img:'images/erji.jpg',
 			name:'耳机'
 		}
 	],
 	[
 		{
-			url:'',
-			img:'imagesjrx/quwenqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/quwenqi.jpg',
 			name:'驱蚊器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/quwenqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/quwenqi.jpg',
 			name:'驱蚊器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/quwenqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/quwenqi.jpg',
 			name:'驱蚊器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/quwenqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/quwenqi.jpg',
 			name:'驱蚊器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/quwenqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/quwenqi.jpg',
 			name:'驱蚊器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/quwenqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/quwenqi.jpg',
 			name:'驱蚊器'
 		},{
-			url:'',
-			img:'imagesjrx/quwenqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/quwenqi.jpg',
 			name:'驱蚊器'
 		},
 		{
-			url:'',
-			img:'imagesjrx/quwenqi.jpg',
+			url:'https://www.mi.com',
+			img:'images/quwenqi.jpg',
 			name:'驱蚊器'
 		}
 	]
@@ -690,19 +660,15 @@ var aElecItemData = [
 	[
 		{
 			url:'../mi-band/mi-band.html',
-			img:'imagesjrx/shouhuan.jpg',
+			img:'images/shouhuan.jpg',
 			name:'小米手环3',
-			desc:'',
+			desc:'及超薄机身/2GB+8GB',
 			price:'166',
 			del:'199',
-			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
-				author:'yonghu'
-			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/el1.jpg',
+			img:'images/el1.jpg',
 			name:'小米电视4X 43英寸',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -712,13 +678,25 @@ var aElecItemData = [
 				content:'新品'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/el1.jpg',
+			img:'images/el1.jpg',
+			name:'小米电视4X 43英寸',
+			desc:'及超薄机身/2GB+8GB',
+			price:'3699',
+			del:'4699',
+			flag:{
+				name:'new-flag',
+				content:'新品'
+			},
+		},
+		{
+			url:'',
+			img:'images/el1.jpg',
 			name:'小米电视4X 43英寸',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -728,29 +706,13 @@ var aElecItemData = [
 				content:'新品'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/el1.jpg',
-			name:'小米电视4X 43英寸',
-			desc:'及超薄机身/2GB+8GB',
-			price:'3699',
-			del:'4699',
-			flag:{
-				name:'new-flag',
-				content:'新品'
-			},
-			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
-				author:'yonghu'
-			}
-		},
-		{
-			url:'',
-			img:'imagesjrx/el1.jpg',
+			img:'images/el1.jpg',
 			name:'小米电视4X 43英寸',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -760,13 +722,25 @@ var aElecItemData = [
 				content:'减800元'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/el1.jpg',
+			img:'images/el1.jpg',
+			name:'小米电视4X 43英寸',
+			desc:'及超薄机身/2GB+8GB',
+			price:'3699',
+			del:'4699',
+			flag:{
+				name:'off-flag',
+				content:'减800元'
+			},
+		},
+		{
+			url:'',
+			img:'images/el1.jpg',
 			name:'小米电视4X 43英寸',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -776,30 +750,14 @@ var aElecItemData = [
 				content:'减800元'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
-				author:'yonghu'
-			}
-		},
-		{
-			url:'',
-			img:'imagesjrx/el1.jpg',
-			name:'小米电视4X 43英寸',
-			desc:'及超薄机身/2GB+8GB',
-			price:'3699',
-			del:'4699',
-			flag:{
-				name:'off-flag',
-				content:'减800元'
-			},
-			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			top:{
 				url:'',
-				img:'imagesjrx/hezi.jpg',
+				img:'images/hezi.jpg',
 				name:'小米盒子',
 				price:'199'
 			},
@@ -814,43 +772,43 @@ var aElecItemData = [
 	[
 		{
 			url:'',
-			img:'imagesjrx/el2.jpg',
+			img:'images/el2.jpg',
 			name:'小米电视',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/el2.jpg',
+			img:'images/el2.jpg',
 			name:'小米电视',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/el2.jpg',
+			img:'images/el2.jpg',
 			name:'小米电视',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/el2.jpg',
+			img:'images/el2.jpg',
 			name:'小米电视',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -860,13 +818,13 @@ var aElecItemData = [
 				content:'新品'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/el3.jpg',
+			img:'images/el3.jpg',
 			name:'小米电视',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -876,13 +834,13 @@ var aElecItemData = [
 				content:'减800元'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/el3.jpg',
+			img:'images/el3.jpg',
 			name:'小米电视',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -892,13 +850,13 @@ var aElecItemData = [
 				content:'减800元'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/el3.jpg',
+			img:'images/el3.jpg',
 			name:'小米电视',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -908,14 +866,14 @@ var aElecItemData = [
 				content:'新品'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			top:{
 				url:'',
-				img:'imagesjrx/ca.png',
+				img:'images/ca.png',
 				name:'小米电视4X 43英寸',
 				price:'3699',
 			},
@@ -930,7 +888,7 @@ var aElecItemData = [
 	[
 		{
 			url:'',
-			img:'imagesjrx/bijiben.png',
+			img:'images/bijiben.png',
 			name:'小米电脑',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -940,13 +898,13 @@ var aElecItemData = [
 				content:'减800元'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/bijiben.png',
+			img:'images/bijiben.png',
 			name:'小米电脑',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -956,13 +914,13 @@ var aElecItemData = [
 				content:'减800元'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/bijiben.png',
+			img:'images/bijiben.png',
 			name:'小米电脑',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -972,37 +930,37 @@ var aElecItemData = [
 				content:'减800元'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/bijiben.png',
+			img:'images/bijiben.png',
 			name:'小米电脑',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/bijiben.png',
+			img:'images/bijiben.png',
 			name:'小米电脑',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/bijiben.png',
+			img:'images/bijiben.png',
 			name:'小米电脑',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -1012,13 +970,13 @@ var aElecItemData = [
 				content:'减800元'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/bijiben.png',
+			img:'images/bijiben.png',
 			name:'小米电脑',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -1028,14 +986,14 @@ var aElecItemData = [
 				content:'新品'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			top:{
 				url:'',
-				img:'imagesjrx/ca.png',
+				img:'images/ca.png',
 				name:'小米电视4X 43英寸',
 				price:'3699',
 			},
@@ -1050,31 +1008,31 @@ var aElecItemData = [
 	[
 		{
 			url:'',
-			img:'imagesjrx/jiqiren.jpg',
+			img:'images/jiqiren.jpg',
 			name:'小米扫地机器人',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/jiqiren.jpg',
+			img:'images/jiqiren.jpg',
 			name:'小米扫地机器人',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/jiqiren.jpg',
+			img:'images/jiqiren.jpg',
 			name:'小米扫地机器人',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -1084,13 +1042,13 @@ var aElecItemData = [
 				content:'新品'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/jiqiren.jpg',
+			img:'images/jiqiren.jpg',
 			name:'小米扫地机器人',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -1100,13 +1058,13 @@ var aElecItemData = [
 				content:'减800元'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/shoudiantong.jpg',
+			img:'images/shoudiantong.jpg',
 			name:'小米随身手电筒',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
@@ -1116,38 +1074,38 @@ var aElecItemData = [
 				content:'新品'
 			},
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/shoudiantong.jpg',
+			img:'images/shoudiantong.jpg',
 			name:'小米随身手电筒',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			url:'',
-			img:'imagesjrx/shoudiantong.jpg',
+			img:'images/shoudiantong.jpg',
 			name:'小米随身手电筒',
 			desc:'及超薄机身/2GB+8GB',
 			price:'3699',
 			del:'4699',
 			view:{
-				recommend:'我要不催货，还不给我送货，都等了一个星期了，买了是为了看NBA',
+				recommend:'挺不错的，很酷的样子，非常nice',
 				author:'yonghu'
 			}
 		},
 		{
 			top:{
 				url:'',
-				img:'imagesjrx/ca.png',
+				img:'images/ca.png',
 				name:'小米电视4X 43英寸',
 				price:'3699',
 			},

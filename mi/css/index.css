@@ -20,6 +20,9 @@
 	.hd .more{
 		float: right;
 	}
+	.hd .more a{
+		transition: all 0.3s;
+	}
 	.hd .more.move{
 		margin-top: 24px;
 	}
@@ -97,16 +100,14 @@
 		margin-bottom: 14px;
 		overflow: hidden;
 		transition: all 0.2s linear;
-		list-style: none;
 	}
 	.product-item-min{
 		height: 143px;
-		margin-bottom: 14px;
+		margin: 0 0 14px 14px !important;
 		padding: 40px 0 0 30px;
 		text-align: left;
 		box-sizing: border-box;
 		transition: all 0.2s linear;
-		list-style: none;
 	}
 	.product-item-min:hover{
 		box-shadow: 0 15px 30px rgba(0,0,0,0.1);
@@ -118,6 +119,7 @@
 	}
 	.product-item-m:hover .view{
 		height: 80px;
+		opacity: 1;
 	}
 	.product-item-m .view{
 		position: absolute;
@@ -125,27 +127,29 @@
 		bottom: 0px;
 		width: 100%;
 		height: 0px;
+		font-size: 12px;
 		background: #ff6700;
-		transition: height 0.2s linear;
+		opacity: 0;
+		transition: all 0.2s linear;
+	}
+	.product-item-m .view a{
+		display: block;
+		padding: 8px 30px;
 	}
 	.product-item-m .view .recommend{
-		padding: 10px 30px 0px 30px;
 		height: 40px;
 		line-height: 20px;
 		overflow: hidden;
 		margin-bottom: 5px;
-		text-align: left;
-		font-size: 12px;
 		color: #fff;
+		text-align: left;
 	}
 	.product-item-m .view .author{
-		padding-left: 30px;
-		text-align: left;
-		font-size: 12px;
-		color: #ccc;
+		color: rgba(255,255,255,0.6);
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
+		text-align: left;
 	}
 	.product-item:nth-child(4n+1){
 		margin-left: 0;
@@ -251,6 +255,31 @@
 		color: #413b36;
 		margin: 0 0.5em;
 	}
+	.top .top-nav .top-nav-item#downloadApp .box{
+		position: absolute;
+		top: 27px;
+		left: 50%;
+		width: 124px;
+		padding: 18px 0px 10px;
+		background: #fff;
+		margin-left: -55px;
+		box-shadow: 0 1px 5px rgb(170,170,170);
+		z-index: 999;
+		display: none;
+	}
+	.top .top-nav .top-nav-item#downloadApp:hover .box{
+		display: block;
+	}
+	.top .top-nav .top-nav-item#downloadApp .box em{
+		position: absolute;
+		top: -8px;
+		left: 50px;
+		width: 0;
+		height: 0;
+		border-width: 0 10px 10px;
+		border-style: solid;
+		border-color: transparent transparent #fff;
+	}
 	.top .user-info{
 		float: right;
 		width: 160px;
@@ -301,7 +330,7 @@
 		display: none;
 		margin-top: 40px;
 		font-size: 12px;
-		font-weight: 400;
+		color: #424242;
 	}
 /*顶部区域结束*/
 
@@ -322,10 +351,7 @@
 		display: block;
 		width: 100%;
 		height: 100%;
-		/*background-image: url(../imagesjrx/logo.png);
-		background-repeat: no-repeat;
-		background-position: 50% 50%;*/
-		background: url(../imagesjrx/logo.png) no-repeat 50% 50%;
+		background: url(../images/logo.png) no-repeat 50% 50%;
 		text-indent: -999em;
 	}
 	.header .header-nav{
@@ -336,9 +362,9 @@
 		float: left;
 		height: 100px;
 		line-height: 100px;
-		margin-right: 20px;
 	}
 	.header .header-nav .header-nav-item a{
+		padding-right: 20px;
 		font-size: 16px;
 		color: #333;
 	}
@@ -350,10 +376,9 @@
 		top: 100px;
 		width: 100%;
 		height: 0;
-		/*border-top: 1px solid #ccc;*/
 		z-index: 1000;
 		background-color: #fff;
-		box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+		box-shadow: 0 2px 2px rgba(0,0,0,0.3);
 		overflow: hidden;
 	}
 	.header .header-nav-content li{
@@ -362,7 +387,6 @@
 		width: 200px;
 		height: 100%;
 		text-align: center;
-
 	}
 	.header .header-nav-content li .img-box{
 		width: 100%;
@@ -551,11 +575,6 @@
 		box-shadow: 0 2px 2px 2px rgba(0,0,0,0.15);
 		z-index: 9999;
 	}
-	.home .banner .cate-content .children-list{
-		float: left;
-		height: 460px;
-		width: 248px;
-	}
 	.home .banner .cate-content li{
 		float: left;
 		width: 248px;
@@ -606,8 +625,8 @@
 	}
 	.home .banner .bottomBtn{
 		position: absolute;
-		right: 10px;
-		bottom: 10px;
+		right: 30px;
+		bottom: 20px;
 	}
 	.home .banner .bottomBtn li{
 		float: left;
@@ -617,8 +636,9 @@
 		border-color: rgba(255,255,255,0.3);
 		border-radius: 10px;
 		background-color: rgba(0,0,0,0.5);
-		margin-right: 5px;
+		margin-right: 10px;
 		cursor: pointer;
+		transition: all 0.2s;
 	}
 	.home .banner .bottomBtn li.active{
 		background-color: rgba(255,255,255,0.4);
@@ -777,6 +797,8 @@
 	.flash .product-item{
 		height:340px;
 		padding: 30px 20px 0px 20px;
+		border-top-width: 1px;
+		border-top-style: solid;
 	}
 	.flash .product-item .bg{
 		position: absolute;
@@ -788,35 +810,26 @@
 		opacity: 0.3;
 	}
 	.flash .product-item:nth-child(1){
-		border-top: 1px solid blue;
+		border-top-color: blue;
 	}
 	.flash .product-item:nth-child(2){
-		border-top: 1px solid pink;
+		border-top-color: pink;
 	}
 	.flash .product-item:nth-child(3){
-		border-top: 1px solid purple;
+		border-top-color: purple;
 	}
 	.flash .product-item:nth-child(4){
-		border-top: 1px solid yellow;
+		border-top-color: yellow;
 	}
 	.flash .product-item:nth-child(5){
-		border-top: 1px solid red;
-	}
-	.flash .product-item:nth-child(6){
-		border-top: 1px solid pink;
-	}
-	.flash .product-item:nth-child(7){
-		border-top: 1px solid green;
-	}
-	.flash .product-item:nth-child(8){
-		border-top: 1px solid skyblue;
+		border-top-color: red;
 	}
 /*home-flash区域结束*/
 
 /*main区域开始*/
 	.main{
-		height: 2058px;
 		background: #f5f5f5;
+		padding-bottom: 60px;
 	}
 	.main .phone{
 		margin-bottom: 40px;
@@ -842,7 +855,6 @@
 	.main .elec .col1 .product-item{
 		margin-left: 0px;
 		padding: 0px;
-		list-style: none;
 	}
 	.main .elec .bd{
 		height: 614px;
@@ -858,11 +870,11 @@
 		margin-left: 14px;
 		background: #fff;
 		text-align: center;
-		transition: all 0.3s linear;
+		transition: all 0.2s linear;
 	}
 	.main .video .video-item:hover{
-		box-shadow: 0 5px 30px rgba(0,0,0,0.2);
-		transform: translateY(-2px);	
+		box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+		transform: translate3d(0, -2px, 0);	
 	}
 	.main .video .video-item:first-child{
 		margin-left: 0;
@@ -881,12 +893,13 @@
 		position: absolute;
 		left:20px;
 		bottom: 10px;
-		width: 36px;
-		height: 24px;
-		line-height: 24px;
+		width: 32px;
+		height: 20px;
+		line-height: 20px;
 		border:2px solid #fff;
-		border-radius: 20px;
+		border-radius: 12px;
 		background: rgba(0,0,0,0.6);
+		transition: all 0.2s;
 	}
 	.main .video .video-item .figure .play i{
 		font-size: 30px;
@@ -897,17 +910,17 @@
 		border-color: #ff6700;
 	}
 	.main .video .video-item .title{
+		font-size: 14px;
+		font-weight: 400;
 		margin-bottom: 10px;
 	}
 	.main .video .video-item .title a{
-		font-size: 14px;
 		color: #333;
 	}
 	.main .video .video-item .title a:hover{
 		color: #ff6700;
 	}
 	.main .video .video-item .desc{
-		width: 100%;
 		height: 18px;
 		line-height: 18px;
 		overflow: hidden;
@@ -940,15 +953,16 @@
 	}
 	.footer .service-item a{
 		font-size: 16px;
-		color: #656565;
+		color: #616161;
+		transition: color 0.2s;
 	}
 	.footer .service-item a:hover{
 		color: #ff6700;
 	}
 	.footer .service-item a i{
+		margin-right: 6px;
 		font-size: 24px;
 		vertical-align: -4px;
-		margin-right: 6px;
 	}
 	.footer .links{
 		padding: 40px 0;
@@ -981,9 +995,8 @@
 		text-align: center;
 	}
 	.footer .link-contact .phone{
-		font-size: 18px;
+		font-size: 22px;
 		color: #ff6700;
-		font-weight: bold;
 	}
 	.footer .link-contact .work-time,
 	.footer .link-contact .desc{
@@ -996,16 +1009,11 @@
 	.footer .link-contact a{
 		display: inline-block;
 		width: 120px;
-		height: 30px;
-		line-height: 30px;
-		text-align: center;
+		height: 28px;
+		line-height: 28px;
 		border: 1px solid #ff6700;
 		color: #ff6700;
-		transition: background-color 0.5s;
-	}
-	.footer .link-contact a i{
-		vertical-align: -1px;
-		margin-right: 2px;
+		transition: all 0.4s;
 	}
 	.footer .link-contact a:hover{
 		background: #ff6700;
@@ -1024,13 +1032,8 @@
 		width: 57px;
 		height: 57px;
 		margin-right: 10px;
-		background-color: #ff6700;
-		background-image: url(../imagesjrx/logo.png);
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
-	.end .info .site{
-		float: left;
+		background: #ff6700 url(../images/logo.png) no-repeat center center;
+		text-indent: -9999em;
 	}
 	.end .info .site .nav-link a{
 		color: #757575;
@@ -1053,15 +1056,17 @@
 		color: #b0b0b0;
 	}
 	.end .info .links{
-		float: right;
+		height: 28px;
+	    margin: 4px 0 0;
+	    padding-left: 67px;
 	}
 	.end .info .links img{
 		height: 28px;
 	}
 	.end .slogan{
-		height: 60px;
-		background-image: url(../imagesjrx/slogan.png);
-		background-repeat: no-repeat;
-		background-position: center bottom;
+		margin: 32px auto 0;
+		width: 267px;
+		height: 19px;
+		background: url(../images/slogan.png) no-repeat center bottom;
 	}
 /*end区域开始*/

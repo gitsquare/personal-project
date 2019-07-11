@@ -2,33 +2,41 @@ handleCart();
 handleNav();
 handleCarousel();
 handleCate();
-handleTime();
+handleCountdown();
 handleFlashProduct();
 handleElecProduct();
 
 //处理购物车
 	function handleCart(){
+		//1.获取元素
 		var oCart = document.querySelector('.top .cart');
 		var oCartLink = document.querySelector('.top .cart .cart-box a');
 		var oCartContent = document.querySelector('.top .cart .cart-content');
 		var oLoader = oCartContent.querySelector('.loader');
 		var oEmptyCart = oCartContent.querySelector('.empty-cart');
 		oCart.onmouseenter = function(){
-			oCartLink.style.backgroundColor = '#fff';
+			//1.改变购物车图标的背景色和字体颜色
+			oCartLink.style.background = '#fff';
 			oCartLink.style.color = '#ff6700';
+			//2.加载loading图标
 			oLoader.style.display = 'block';
-			//显示购物车内容，假设购物车完全显示就获取到了购物车数据
+			//3.显示购物车内容,假设购物车完全显示就获取到了获取购物车数据
 			animate(oCartContent,{height:100},true,function(){
 				oLoader.style.display = 'none';
+				//此处会根据请求结果显示
 				oEmptyCart.style.display = 'block';
 			});
 		}
 		oCart.onmouseleave = function(){
-			oCartLink.style.backgroundColor = '#424242';
+			//1.改变购物车图标的背景色和字体颜色
+			oCartLink.style.background = '#424242';
 			oCartLink.style.color = '#b0b0b0';
-			animate(oCartContent,{height:0},true);
-			oLoader.style.display = 'none';
-			oEmptyCart.style.display = 'none';
+			//2.隐藏购物车内容
+			animate(oCartContent,{height:0},true,function(){
+				//3.隐藏购物车数据和loading图片
+				oLoader.style.display = 'none';
+				oEmptyCart.style.display = 'none';
+			});	
 		}
 	}
 
@@ -42,19 +50,24 @@ handleElecProduct();
 		for(var i = 0;i<aNavItem.length-2;i++){
 			aNavItem[i].index = i;
 			aNavItem[i].onmouseenter = function(){
+				//从某个NavItem移向另一个，不让oNavContent消失
 				clearTimeout(hideTimer);
-				oNavContent.style.borderTop = '1px solid #fff';
+				oNavContent.style.borderTop = '1px solid #ddd';
+				//鼠标移入之后，先出现loader
 				oNavContentContainer.innerHTML = '<div class="loader"></div>';
 				animate(oNavContent,{height:180},true,function(){
 					oNavContent.style.overflow = 'visible';
 				});
+
 				//模拟数据加载
-				var index = this.index;
-				//去除不必要的加载
+				// 因为定时器中的this指向window，所以需要把this.index保存，或者用bind改变this指向
+				// var index = this.index;
+				//去除不必要的加载，在500ms以内从某个NavItem移向另一个再返回到那个NavItem，就不需要展示另一个，所以需要清除定时器
 				clearTimeout(loadTimer);
 				var loadTimer = setTimeout(function(){
-					loadData(index);
-				},500)
+					// loadData(index);
+					loadData(this.index);
+				}.bind(this),500)
 			}
 			aNavItem[i].onmouseleave = function(){
 				hideNavContent();
@@ -72,15 +85,15 @@ handleElecProduct();
 				animate(oNavContent,{height:0},true,function(){
 					oNavContent.style.borderTop = 'none';
 				})
-			},500)
+			},300)
 		}
 		function loadData(index){
-			var data = aNavItemDate[index];
+			var data = aNavItemData[index];
 			var html = '<ul>';
 			for(var i = 0;i<data.length;i++){
 				html +=	'<li>';
 				html +=	'	<div class="img-box">';
-				html +=	'		<a href="#">';
+				html +=	'		<a href="'+data[i].url+'">';
 				html +=	'			<img src=" '+data[i].img+' " alt="">';
 				html +=	'		</a>';
 				html +=	'	</div>';
@@ -100,7 +113,13 @@ handleElecProduct();
 	function handleCarousel(){
 		new Carousel({
 			id:'carousel',
-			aImg:['imagesjrx/b1.jpg','imagesjrx/b2.jpg','imagesjrx/b3.jpg'],
+			aImg:[
+					'images/b1.jpg',
+					'images/b2.jpg',
+					'images/b3.jpg',
+					'images/b4.jpg',
+					'images/b5.jpg'	
+				],
 			width:1226,
 			height:460,
 			playDuration:5000
@@ -115,6 +134,7 @@ handleElecProduct();
 		for(var i = 0;i<aCateItem.length;i++){
 			aCateItem[i].index = i;
 			aCateItem[i].onmouseenter = function(){
+				//从某个aCateItem[i]到另一个aCateItem[i]需要把active清除掉
 				for(var j = 0;j<aCateItem.length;j++){
 					aCateItem[j].className = 'cate-item';
 				}
@@ -122,15 +142,17 @@ handleElecProduct();
 				this.className = 'cate-item active'
 				loadData(this.index);
 			}
+			// 只要在oCateBox中就不会消失，离开才会消失
 			oCateBox.onmouseleave = function(){
 				oCateContent.style.display = 'none';
 				for(var j = 0;j<aCateItem.length;j++){
+					//离开oCateBox后，清除active
 					aCateItem[j].className = 'cate-item';
 				}
 			}
 		}
 		function loadData(index){
-			var data = aCateItemDate[index];
+			var data = aCateItemData[index];
 			var html = '<ul>';
 			for(var k = 0;k<data.length;k++){
 				html +=	'<li>';
@@ -143,36 +165,18 @@ handleElecProduct();
 				html += '</ul>';
 			oCateContent.innerHTML = html;
 		}
-		/*function loadData(index){
-			var data = aCateItemDate[index];
-			var ZS = Math.ceil(data.length/6);
-			for(var l = 0;l<ZS;l++){
-				var html = '<ul class="children-list">';
-				for(var k = 0;k<data.length;k++){
-					html +=	'<li>';
-					html +=	'	<a href="'+data[k].url+'">';
-					html +=	'		<img src="'+data[k].img+'" alt="">';
-					html +=	'		<span>'+data[k].name+'</span>';
-					html +=	'	</a>';
-					html +=	'</li>';
-				}
-				html += '</ul>';
-				oCateContent.innerHTML = html;
-			}
-			console.log(html);
-		}*/
 	}
 
 //倒计时
-	function handleTime(){
-		var oTimeNum = document.querySelectorAll('.timer-num');
+	function handleCountdown(){
+		var oTimeNum = document.querySelectorAll('.flash .timer-num');
 		var endDate = new Date('2019-08-1 12:00:00');
 		var endtimes = endDate.getTime();
 		var timer = 0
 		function to2Str(num){
 				return num < 10 ? '0'+ num : ''+ num;
 			}
-		function tonow(){
+		function handleTimer(){
 			var allMilsec = endtimes - Date.now();
 			if(allMilsec < 0){
 				allMilsec = 0;
@@ -186,28 +190,27 @@ handleElecProduct();
 			oTimeNum[1].innerHTML = to2Str(iMinute);
 			oTimeNum[2].innerHTML = to2Str(iSecond);
 		}
-		timer = setInterval(tonow,1000);
-		tonow();
+		timer = setInterval(handleTimer,1000);
+		handleTimer();
 	}
 	
 //处理闪购商品
-	function handleFlashProduct(){
-		var oProductList = document.querySelector('.flash .product-list');
-		var aSpan = document.querySelectorAll('.flash .ctr-btn');
+function handleFlashProduct(){
+	var oProductList = document.querySelector('.flash .product-list');
+	var aSpan = document.querySelectorAll('.flash .ctr-btn');
 
-		aSpan[0].onclick = function(){
-			oProductList.style.marginLeft = '0px';
-		}
-		aSpan[1].onclick = function(){
-			oProductList.style.marginLeft = '-978px';
-		}
+	aSpan[0].onclick = function(){
+		oProductList.style.marginLeft = '0px';
 	}
+	aSpan[1].onclick = function(){
+		oProductList.style.marginLeft = '-978px';
+	}
+}
 
 //处理家电选项卡
 function handleElecProduct(){
 	var aTabItem = document.querySelectorAll('.elec .tab .tab-item');
 	var oElecProduct = document.querySelector('.elec .elec-product');
-	console.log(oElecProduct)
 	//初始化加载
 	loadData(0);
 	for(var i = 0;i<aTabItem.length;i++){
@@ -223,7 +226,6 @@ function handleElecProduct(){
 	}
 	function loadData(index){
 		var data = aElecItemData[index];
-		console.log(data)
 		var html = '';
 		//根据数据构建html
 		for(var k = 0;k<data.length-1;k++){
@@ -242,11 +244,13 @@ function handleElecProduct(){
 			}
 			if(data[k].view){
 				html +=	'	<div class="view">';
-				html +=	'		<p class="recommend">'+data[k].view.recommend+'';
-				html +=	'		</p>';
-				html +=	'		<p class="author">';
-				html +=	'			来自于<span>'+data[k].view.author+'</span>的评价';
-				html +=	'		</p>';
+				html +=	'		<a href="#">';
+				html +=	'			<p class="recommend">'+data[k].view.recommend+'';
+				html +=	'			</p>';
+				html +=	'			<p class="author">';
+				html +=	'				来自于<span>'+data[k].view.author+'</span>的评价';
+				html +=	'			</p>';
+				html +=	'		</a>';
 				html +=	'	</div>';
 			}
 			html +=	'</li>';
@@ -270,6 +274,5 @@ function handleElecProduct(){
 		html +=	'	</a>';
 		html +=	'</li>';
 		oElecProduct.innerHTML = html;
-		console.log(oElecProduct)
 	}
 }

@@ -6,7 +6,7 @@
 	<meta name="description" content="小米商城直营小米公司旗下所有产品，囊括小米手机系列小米MIX 3、小米8、小米Note 3，红米手机系列红米5 Plus、红米6 Pro，智能硬件，配件及小米生活周边，同时提供小米客户服务及售后支持。" />
 	<meta name="keywords" content="小米,小米8,小米Note3,红米5Plus,小米MIX3,小米商城" />
 	<title>仿小米首页</title>
-	<link rel="icon" href="imagesjrx/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/common.css">
@@ -22,9 +22,31 @@
 					<li class="top-nav-item"><a href="#">MIUI</a><span class="sep">|</span></li>
 					<li class="top-nav-item"><a href="#">loT</a><span class="sep">|</span></li>
 					<li class="top-nav-item"><a href="#">云服务</a><span class="sep">|</span></li>
-					<li class="top-nav-item"><a href="#">水滴</a><span class="sep">|</span></li>
 					<li class="top-nav-item"><a href="#">金融</a><span class="sep">|</span></li>
 					<li class="top-nav-item"><a href="#">有品</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="#">小爱开放平台</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="qiye.html">企业团购</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="#">资质证照</a><span class="sep">|</span></li>
+					<li class="top-nav-item"><a href="#">协议规则</a><span class="sep">|</span></li>
+					<li class="top-nav-item" id="downloadApp">
+						<a href="#" style="position: relative;">
+							下载app
+							<span class="box">
+								<em></em>
+								<img 
+									src="images/download.png" 
+									alt="小米商城" 
+									width="90" 
+									height="90" 
+									style="display: block;margin: 0 auto;"
+								>
+								<span style="display: block;text-align: center;font-size: 14px;color: #333;line-height: 1;margin-top: 14px;">
+									小米商城APP
+								</span>
+							</span>
+						</a>
+						<span class="sep">|</span>
+					</li>
 					<li class="top-nav-item"><a href="#">Select Region</a></li>
 				</ul>
 			</nav>
@@ -71,7 +93,7 @@
 					<li class="header-nav-item"><a href="#">新品</a></li>
 					<li class="header-nav-item"><a href="#">路由器</a></li>
 					<li class="header-nav-item"><a href="#">智能硬件</a></li>
-					<li class="header-nav-item"><a href="servicejrx.html">服务</a></li>
+					<li class="header-nav-item"><a href="service.html">服务</a></li>
 					<li class="header-nav-item"><a href="#">社区</a></li>
 				</ul>
 			</nav>
@@ -100,6 +122,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- 不能写到.container里面，因为宽度是浏览器的100%，不能受.container的限制 -->
 		<div class="header-nav-content">
 			<div class="container">
 				<div class="loader"></div>
@@ -122,7 +145,7 @@
 							<li class="cate-item"><a href="#">出行 穿戴<i class="iconfont">&#xe623;</i></a></li>
 							<li class="cate-item"><a href="#">智能 路由器<i class="iconfont">&#xe623;</i></a></li>
 							<li class="cate-item"><a href="#">电源 配件<i class="iconfont">&#xe623;</i></a></li>
-							<li class="cate-item"><a href="ertongzsc.html">健康 儿童<i class="iconfont">&#xe623;</i></a></li>
+							<li class="cate-item"><a href="#">健康 儿童<i class="iconfont">&#xe623;</i></a></li>
 							<li class="cate-item"><a href="#">耳机 音箱<i class="iconfont">&#xe623;</i></a></li>
 							<li class="cate-item"><a href="#">生活 箱包<i class="iconfont">&#xe623;</i></a></li>
 						</ul>
@@ -140,7 +163,7 @@
 					<ul class="hot-channel">
 						<li class="hot-channel-item right-line"><a href="#"><i class="iconfont">&#xe903;</i>一元活动</a></li>
 						<li class="hot-channel-item right-line"><a href="#"><i class="iconfont">&#xe904;</i>以旧换新</a></li>
-						<li class="hot-channel-item"><a href="tuangoujrx.html"><i class="iconfont">&#xe905;</i>企业团购</a></li>
+						<li class="hot-channel-item"><a href="qiye.html"><i class="iconfont">&#xe905;</i>企业团购</a></li>
 						<li class="hot-channel-item top-line right-line"><a href="#"><i class="iconfont">&#xe906;</i>米粉卡</a></li>
 						<li class="hot-channel-item top-line right-line"><a href="#"><i class="iconfont">&#xe907;</i>话费充值</a></li>
 						<li class="hot-channel-item top-line"><a href="#"><i class="iconfont">&#xe908;</i>选购手机</a></li>
@@ -148,9 +171,9 @@
 				</div>
 				<div class="col2">
 					<ul class="hot-promo">
-						<li class="hot-promo-item"><a href="#"><img src="imagesjrx/ad1.jpg" alt="" class="hot-promo-item"></a></li>
-						<li class="hot-promo-item"><a href="#"><img src="imagesjrx/ad2.jpg" alt="" class="hot-promo-item"></a></li>
-						<li class="hot-promo-item"><a href="#"><img src="imagesjrx/ad3.jpg" alt="" class="hot-promo-item"></a></li>
+						<li class="hot-promo-item"><a href="#"><img src="images/ad1.jpg" alt="" class="hot-promo-item"></a></li>
+						<li class="hot-promo-item"><a href="#"><img src="images/ad2.jpg" alt="" class="hot-promo-item"></a></li>
+						<li class="hot-promo-item"><a href="#"><img src="images/ad3.jpg" alt="" class="hot-promo-item"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -165,7 +188,7 @@
 				<div class="bd clearfix">
 					<div class="col1 timer">
 						<p class="timer-name">12:00 场</p>
-						<img  class="timer-img" src="imagesjrx/flash.png" alt="">
+						<img  class="timer-img" src="images/flash.png" alt="">
 						<p class="timer-desc">距离开始还要</p>
 						<div class="timer-box">
 							<span class="timer-num"></span>
@@ -178,26 +201,41 @@
 					<div class="col2">
 						<ul class="product-list">
 							<li class="product-item">
-								<a href="../flash/flash.html">
+								<a href="#">
 									<div class="bg"></div>
 								</a>
 								<div class="content">
-									<img src="imagesjrx/p1.jpg" alt="" class="product-img">
+									<img src="images/p1.jpg" alt="" class="product-img">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
 									<p class="product-desc">Unibody 全陶瓷</p>
 									<p class="product-price">
 										<strong>3699</strong><span>&nbsp;元</span>
 										<del>4699元</del>
 									</p>
-									<span class="flag flag-off">一折秒杀</span>
+									<span class="flag off-flag">一折秒杀</span>
 								</div>
 							</li>
 							<li class="product-item">
-								<a href="../flash/flash.html">
+								<a href="#">
 									<div class="bg"></div>
 								</a>
 								<div class="content">
-									<img src="imagesjrx/p2.jpg" alt="" class="product-img">
+									<img src="images/p2.jpg" alt="" class="product-img">
+									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
+									<p class="product-desc">Unibody 全陶瓷</p>
+									<p class="product-price">
+										<strong>3699</strong><span>&nbsp;元</span>
+										<del>4699元</del>
+									</p>
+									<span class="flag off-flag">一折秒杀</span>
+								</div>
+							</li>
+							<li class="product-item">
+								<a href="#">
+									<div class="bg"></div>
+								</a>
+								<div class="content">
+									<img src="images/p1.jpg" alt="" class="product-img">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
 									<p class="product-desc">Unibody 全陶瓷</p>
 									<p class="product-price">
@@ -207,25 +245,11 @@
 								</div>
 							</li>
 							<li class="product-item">
-								<a href="../flash/flash.html">
+								<a href="#">
 									<div class="bg"></div>
 								</a>
 								<div class="content">
-									<img src="imagesjrx/p1.jpg" alt="" class="product-img">
-									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
-									<p class="product-desc">Unibody 全陶瓷</p>
-									<p class="product-price">
-										<strong>3699</strong><span>&nbsp;元</span>
-										<del>4699元</del>
-									</p>
-								</div>
-							</li>
-							<li class="product-item">
-								<a href="../flash/flash.html">
-									<div class="bg"></div>
-								</a>
-								<div class="content">
-									<img src="imagesjrx/p2.jpg" alt="" class="product-img">
+									<img src="images/p2.jpg" alt="" class="product-img">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
 									<p class="product-desc">Unibody 全陶瓷</p>
 									<p class="product-price">
@@ -235,11 +259,11 @@
 								</div>
 							</li>	
 							<li class="product-item">
-								<a href="../flash/flash.html">
+								<a href="#">
 									<div class="bg"></div>
 								</a>
 								<div class="content">
-									<img src="imagesjrx/p2.jpg" alt="" class="product-img">
+									<img src="images/p2.jpg" alt="" class="product-img">
 									<h3 class="product-name">小米MX2 8GB+128GB 黑黑黑黑黑黑黑黑黑黑黑黑黑黑黑黑黑</h3>
 									<p class="product-desc">Unibody 全陶瓷</p>
 									<p class="product-price">
@@ -249,11 +273,25 @@
 								</div>
 							</li>
 							<li class="product-item">
-								<a href="../flash/flash.html">
+								<a href="#">
 									<div class="bg"></div>
 								</a>
 								<div class="content">
-									<img src="imagesjrx/p2.jpg" alt="" class="product-img">
+									<img src="images/p2.jpg" alt="" class="product-img">
+									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
+									<p class="product-desc">Unibody 全陶瓷</p>
+									<p class="product-price">
+										<strong>3699</strong><span>&nbsp;元</span>
+									</p>
+									<span class="flag off-flag">一折秒杀</span>
+								</div>
+							</li>
+							<li class="product-item">
+								<a href="#">
+									<div class="bg"></div>
+								</a>
+								<div class="content">
+									<img src="images/p2.jpg" alt="" class="product-img">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
 									<p class="product-desc">Unibody 全陶瓷</p>
 									<p class="product-price">
@@ -262,24 +300,11 @@
 								</div>
 							</li>
 							<li class="product-item">
-								<a href="../flash/flash.html">
+								<a href="#">
 									<div class="bg"></div>
 								</a>
 								<div class="content">
-									<img src="imagesjrx/p2.jpg" alt="" class="product-img">
-									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
-									<p class="product-desc">Unibody 全陶瓷</p>
-									<p class="product-price">
-										<strong>3699</strong><span>&nbsp;元</span>
-									</p>
-								</div>
-							</li>
-							<li class="product-item">
-								<a href="../flash/flash.html">
-									<div class="bg"></div>
-								</a>
-								<div class="content">
-									<img src="imagesjrx/p2.jpg" alt="" class="product-img">
+									<img src="images/p2.jpg" alt="" class="product-img">
 									<h3 class="product-name">小米MX2 8GB+128GB 黑bbbbbbbbbb</h3>
 									<p class="product-desc">Unibody 全陶瓷</p>
 									<p class="product-price">
@@ -293,7 +318,7 @@
 			</div>
 			<div class="ad">
 				<a href="#">
-					<img src="imagesjrx/long_ad1.jpg" alt="" class="ad-img">
+					<img src="images/long_ad1.jpg" alt="" class="ad-img">
 				</a>	
 			</div>
 		</div>
@@ -314,13 +339,13 @@
 				</div>
 				<div class="bd clearfix">
 					<div class="col1">
-						<a href="../111/MIX3(jly).html"><img src="imagesjrx/phont-left.png" alt=""></a>
+						<a href="#"><img src="images/phont-left.png" alt=""></a>
 					</div>
 					<div class="col2">
 						<ul>
 							<li class="product-item product-item-m">
 								<a href="#">
-									<img src="imagesjrx/ph3.jpg" alt="" class="product-img">
+									<img src="images/ph3.jpg" alt="" class="product-img">
 								</a>
 								<a href="#">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
@@ -334,7 +359,7 @@
 							</li>
 							<li class="product-item product-item-m">
 								<a href="#">
-									<img src="imagesjrx/ph3.jpg" alt="" class="product-img">
+									<img src="images/ph3.jpg" alt="" class="product-img">
 								</a>
 								<a href="#">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
@@ -348,7 +373,7 @@
 							</li>
 							<li class="product-item product-item-m">
 								<a href="#">
-									<img src="imagesjrx/ph3.jpg" alt="" class="product-img">
+									<img src="images/ph3.jpg" alt="" class="product-img">
 								</a>
 								<a href="#">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
@@ -361,7 +386,7 @@
 							</li>
 							<li class="product-item product-item-m">
 								<a href="#">
-									<img src="imagesjrx/ph3.jpg" alt="" class="product-img">
+									<img src="images/ph3.jpg" alt="" class="product-img">
 								</a>
 								<a href="#">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
@@ -374,7 +399,7 @@
 							</li>
 							<li class="product-item product-item-m">
 								<a href="#">
-									<img src="imagesjrx/ph3.jpg" alt="" class="product-img">
+									<img src="images/ph3.jpg" alt="" class="product-img">
 								</a>
 								<a href="#">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
@@ -387,7 +412,7 @@
 							</li>
 							<li class="product-item product-item-m">
 								<a href="#">
-									<img src="imagesjrx/ph3.jpg" alt="" class="product-img">
+									<img src="images/ph3.jpg" alt="" class="product-img">
 								</a>
 								<a href="#">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
@@ -400,7 +425,7 @@
 							</li>
 							<li class="product-item product-item-m">
 								<a href="#">
-									<img src="imagesjrx/ph3.jpg" alt="" class="product-img">
+									<img src="images/ph3.jpg" alt="" class="product-img">
 								</a>
 								<a href="#">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
@@ -413,7 +438,7 @@
 							</li>
 							<li class="product-item product-item-m">
 								<a href="#">
-									<img src="imagesjrx/ph3.jpg" alt="" class="product-img">
+									<img src="images/ph3.jpg" alt="" class="product-img">
 								</a>
 								<a href="#">
 									<h3 class="product-name">小米MX2 8GB+128GB 白</h3>
@@ -430,7 +455,7 @@
 			</div>
 			<div class="ad">
 				<a href="#">
-					<img src="imagesjrx/long_ad1.jpg" alt="" class="ad-img">
+					<img src="images/long_ad1.jpg" alt="" class="ad-img">
 				</a>	
 			</div>
 			<div class="elec">
@@ -447,12 +472,14 @@
 				</div>
 				<div class="bd clearfix">
 					<div class="col1">
-						<li class="product-item product-item-m">
-							<a href="#"><img src="imagesjrx/e1.png" alt=""></a>
-						</li>		
-						<li class="product-item product-item-m">
-							<a href="#"><img src="imagesjrx/e2.png" alt=""></a>
-						</li>			
+						<ul>
+							<li class="product-item product-item-m">
+								<a href="#"><img src="images/e1.png" alt=""></a>
+							</li>		
+							<li class="product-item product-item-m">
+								<a href="#"><img src="images/e2.png" alt=""></a>
+							</li>	
+						</ul>		
 					</div>
 					<div class="col2">
 						<ul class="elec-product"></ul>
@@ -461,7 +488,7 @@
 			</div>
 			<div class="ad">
 				<a href="#">
-					<img src="imagesjrx/long_ad1.jpg" alt="" class="ad-img">
+					<img src="images/long_ad1.jpg" alt="" class="ad-img">
 				</a>
 			</div>
 			<div class="video">
@@ -478,7 +505,7 @@
 						<li class="video-item">
 							<div class="figure">
 								<a href="#">
-									<img src="imagesjrx/lj.png" alt="">
+									<img src="images/lj.png" alt="">
 									<span class="play">
 										<i class="iconfont">&#xe601;</i>
 									</span>
@@ -495,7 +522,7 @@
 						<li class="video-item">
 							<div class="figure">
 								<a href="#">
-									<img src="imagesjrx/lj.png" alt="">
+									<img src="images/lj.png" alt="">
 									<span class="play">
 										<i class="iconfont">&#xe601;</i>
 									</span>
@@ -511,7 +538,7 @@
 						<li class="video-item">
 							<div class="figure">
 								<a href="#">
-									<img src="imagesjrx/lj.png" alt="">
+									<img src="images/lj.png" alt="">
 									<span class="play">
 										<i class="iconfont">&#xe601;</i>
 									</span>
@@ -527,7 +554,7 @@
 						<li class="video-item">
 							<div class="figure">
 								<a href="#">
-									<img src="imagesjrx/lj.png" alt="">
+									<img src="images/lj.png" alt="">
 									<span class="play">
 										<i class="iconfont">&#xe601;</i>
 									</span>
@@ -594,7 +621,7 @@
 				<dl class="link-item">
 					<dt>服务支持</dt>
 					<dd><a href="#">售后政策</a></dd>
-					<dd><a href="fuwuzsc.html">自助服务</a></dd>
+					<dd><a href="service.html">自助服务</a></dd>
 					<dd><a href="#">相关下载</a></dd>
 				</dl>
 				<dl class="link-item">
@@ -604,29 +631,30 @@
 					<dd><a href="#">授权体验店</a></dd>
 				</dl>
 				<dl class="link-item">
-					<dt>帮助中心</dt>
-					<dd><a href="#">账户管理</a></dd>
-					<dd><a href="#">购物指南</a></dd>
-					<dd><a href="#">订单操作</a></dd>
+					<dt>关于小米</dt>
+					<dd><a href="#">了解小米</a></dd>
+					<dd><a href="#">加入小米</a></dd>
+					<dd><a href="#">投资者关系</a></dd>
 				</dl>
 				<dl class="link-item">
-					<dt>帮助中心</dt>
-					<dd><a href="#">账户管理</a></dd>
-					<dd><a href="#">购物指南</a></dd>
-					<dd><a href="#">订单操作</a></dd>
+					<dt>关注我们</dt>
+					<dd><a href="#">新浪微博</a></dd>
+					<dd><a href="#">官方微信</a></dd>
+					<dd><a href="#">联系我们</a></dd>
 				</dl>
 				<dl class="link-item">
-					<dt>帮助中心</dt>
-					<dd><a href="#">账户管理</a></dd>
-					<dd><a href="#">购物指南</a></dd>
-					<dd><a href="#">订单操作</a></dd>
+					<dt>特色服务</dt>
+					<dd><a href="#">F码通道</a></dd>
+					<dd><a href="#">礼物码</a></dd>
+					<dd><a href="#">防伪查询</a></dd>
 				</dl>	
 				<div class="link-contact">
 					<p class="phone">400-100-5678</p>
 					<p class="work-time">周一至周日 8:00-18:00</p>
 					<p class="desc">（仅收市话费）</p>
 					<a href="#">
-						<i class="iconfont">&#xe600;</i>联系客服
+						<i class="iconfont">&#xe600;</i>
+						联系客服
 					</a>
 				</div>												
 			</div>
@@ -638,7 +666,7 @@
 	<section class="end">
 		<div class="container">
 			<div class="info clearfix">
-				<div class="logo"></div>
+				<div class="logo">小米官网</div>
 				<div class="site">
 					<p class="nav-link">
 						<a href="#">小米商城</a>
@@ -681,19 +709,19 @@
 				</div>
 				<div class="links">
 					<a href="#">
-						<img src="imagesjrx/truste.png" alt="">
+						<img src="images/truste.png" alt="">
 					</a>
 					<a href="#">
-						<img src="imagesjrx/v-logo-1.png" alt="">
+						<img src="images/v-logo-1.png" alt="">
 					</a>
 					<a href="#">
-						<img src="imagesjrx/v-logo-2.png" alt="">
+						<img src="images/v-logo-2.png" alt="">
 					</a>
 					<a href="#">
-						<img src="imagesjrx/v-logo-3.png" alt="">
+						<img src="images/v-logo-3.png" alt="">
 					</a>
 					<a href="#">
-						<img src="imagesjrx/v-logo-4.png" alt="">
+						<img src="images/v-logo-4.png" alt="">
 					</a>			
 				</div>
 			</div>
